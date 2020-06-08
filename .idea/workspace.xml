@@ -104,11 +104,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="15">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -116,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="-148">
               <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
             </state>
           </provider>
@@ -139,6 +139,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="720">
               <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -257,13 +266,13 @@
         <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/thirdparty/fdk_aac/include/aacdecoder_lib.h" />
-        <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp" />
-        <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h" />
         <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp" />
         <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/java/com/devyk/fdkaac_audio_encode_decode/sample/FDKAACEncodeActivty.kt" />
         <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp" />
         <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h" />
+        <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp" />
       </list>
     </option>
   </component>
@@ -295,6 +304,36 @@
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="decode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -465,7 +504,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32967034" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32967034" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -481,7 +520,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Build" order="6" weight="0.5193878" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.70714283" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35306123" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.2857143" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32959184" />
@@ -810,13 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -920,20 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3480">
@@ -985,6 +1003,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="56" />
         </state>
       </provider>
     </entry>
