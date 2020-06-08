@@ -1,0 +1,15 @@
+Executable : /Users/devyk/Data/Android/SDK/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp
+-B/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a
+-DANDROID_ABI=arm64-v8a
+-DANDROID_PLATFORM=android-21
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/arm64-v8a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/devyk/Data/Android/NDK/android-ndk-r15c
+-DCMAKE_C_FLAGS=-DSTDC_HEADERS
+-DCMAKE_TOOLCHAIN_FILE=/Users/devyk/Data/Android/NDK/android-ndk-r15c/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/devyk/Data/Android/SDK/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

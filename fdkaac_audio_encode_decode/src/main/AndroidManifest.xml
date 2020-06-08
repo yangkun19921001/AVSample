@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.devyk.fdkaac_audio_encode_decode">
+    <application>
+        <activity android:name="com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty"/>
+        <activity android:name="com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty"/>
+        <activity android:name=".sample.FDKAACDecodeActivity"/>
+    </application>
+</manifest>

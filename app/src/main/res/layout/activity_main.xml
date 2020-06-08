@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button android:onClick="AudioCapture" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Audio 采集"/>
+
+        <Button android:onClick="fdkaac_encode" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="FDK-AAC 编码"/>
+        <Button android:onClick="fdkaac_decode" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="FDK-AAC 解码"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

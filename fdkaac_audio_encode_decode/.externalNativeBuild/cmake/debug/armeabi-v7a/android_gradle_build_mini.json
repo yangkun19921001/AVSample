@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/devyk/Data/Android/SDK/cmake/3.6.4111459/bin/cmake --build /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "native-fdkaac-Debug-armeabi-v7a": {
+      "artifactName": "native-fdkaac",
+      "buildCommand": "/Users/devyk/Data/Android/SDK/cmake/3.6.4111459/bin/cmake --build /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-fdkaac",
+      "abi": "armeabi-v7a",
+      "output": "/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-fdkaac.so"
+    },
+    "fdk-aac-Debug-armeabi-v7a": {
+      "artifactName": "fdk-aac",
+      "abi": "armeabi-v7a",
+      "output": "/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/../../../../thirdparty/fdk_aac/libs/armeabi-v7a/libfdk-aac.a"
+    }
+  }
+}

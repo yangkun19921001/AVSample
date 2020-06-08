@@ -1,0 +1,22 @@
+[1/4] Building CXX object CMakeFiles/native-fdkaac.dir/native-fdkaac.cpp.o
+[2/4] Building CXX object CMakeFiles/native-fdkaac.dir/encode/AACEncoder.cpp.o
+[3/4] Building CXX object CMakeFiles/native-fdkaac.dir/decode/AACDecoder.cpp.o
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp:6:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:51:32: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    AACENC_InfoStruct mEncInfo = {0};
+                               ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:52:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    uint8_t *mInBuffer = 0;
+                       ^
+2 warnings generated.
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:18:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+3 warnings generated.
+[4/4] Linking CXX shared library /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-fdkaac.so

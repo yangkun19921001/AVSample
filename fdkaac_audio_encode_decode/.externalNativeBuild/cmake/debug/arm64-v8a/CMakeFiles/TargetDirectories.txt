@@ -1,0 +1,3 @@
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native-fdkaac.dir

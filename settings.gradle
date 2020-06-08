@@ -1,0 +1,10 @@
+include ':app',                                                 //测试组件
+        ':common',                                              //核心组件
+        ':ffmpeg_audio_encode_decode',                          //ffmpeg audio 软编解码
+        ':ffmpeg_video_encode_decode',                          //ffmpeg video 软编解码
+        ':mediacodec_audio_encode_decode',                      //Android MediaCodec Audio 硬件编解码
+        ':mediacodec_video_encode_decode',                      //Android MediaCodec Video 硬件编解码
+        ':x264_video_encode_decode',                            //libx264 Video 编解码
+        ':fdkaac_audio_encode_decode',                          //libfdk-aac audio   编解码
+        ':lame_audio_encode_decode',                            //mp3 编解码
+        ':yuv_convert'                                          //YUV 格式转换相关

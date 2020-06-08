@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="OPEN_PERMISSIONS">权限是否已经开启</string>
+    <string name="GET_PERMISSION_ERROR">权限获取成功!</string>
+</resources>

@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.devyk.avsample"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置编译的 SO 库架构
+//            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 在Android代码块中添加如下配置：（可优化最上图中transformClassDexBuilderForDebug的时间）
+    dexOptions {
+        preDexLibraries true
+        maxProcessCount 8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //test
+    testImplementation rootProject.ext.testDeps["junit"]
+
+
+    //utils
+    implementation rootProject.ext.commonDeps["android_utils"]
+    implementation project(path: ':fdkaac_audio_encode_decode')
+    implementation project(path: ':mediacodec_audio_encode_decode')
+    implementation project(path: ':mediacodec_video_encode_decode')
+    implementation project(path: ':ffmpeg_video_encode_decode')
+    implementation project(path: ':x264_video_encode_decode')
+    implementation project(path: ':lame_audio_encode_decode')
+    implementation project(path: ':ffmpeg_audio_encode_decode')
+
+
+    //项目 MVP 框架
+//    implementation project(path: ':common')
+//    implementation 'com.github.yangkun19921001:KAVEdit:v1.0.1'
+
+
+
+
+
+}
+

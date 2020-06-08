@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AVSample.iml" filepath="$PROJECT_DIR$/AVSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" filepath="$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" filepath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" filepath="$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lame_audio_encode_decode/lame_audio_encode_decode.iml" filepath="$PROJECT_DIR$/lame_audio_encode_decode/lame_audio_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" filepath="$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" filepath="$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x264_video_encode_decode/x264_video_encode_decode.iml" filepath="$PROJECT_DIR$/x264_video_encode_decode/x264_video_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuv_convert/yuv_convert.iml" filepath="$PROJECT_DIR$/yuv_convert/yuv_convert.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,126 @@
+ext {
+
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+            versionCode      : 101,
+            versionName      : "1.0.1"
+    ]
+
+    version = [
+            androidSupportSdkVersion: "28.0.0",
+            androidXSdkVersion      : "1.1.0",
+            retrofitSdkVersion      : "2.7.2",
+            dagger2SdkVersion       : "2.26",
+            glideSdkVersion         : "4.11.0",
+            butterknifeSdkVersion   : "10.2.1",
+            rxlifecycleSdkVersion   : "1.0",
+            rxlifecycle2SdkVersion  : "2.2.2",
+            espressoSdkVersion      : "3.0.1",
+            canarySdkVersion        : "2.2",
+            rxJava                  : "2.2.2",
+            rxAndroid               : "2.1.0",
+            rxKotlin                : "2.3.0",
+            anko                    : "0.10.7"
+    ]
+
+
+    supportDeps = [
+            "supportv4"        : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "appcompatv7"      : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "cardview"         : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "design"           : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "constraint-layout": "com.android.support.constraint:constraint-layout:1.1.3",
+            "annotations"      : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "vector-drawable"  : "com.android.support:support-vector-drawable:${version["androidSupportSdkVersion"]}"
+    ]
+
+    androidx = [
+            //androidx
+            "appcompat"        : "androidx.appcompat:appcompat:${version["androidXSdkVersion"]}",
+            "design"           : "com.google.android.material:material:${version["androidXSdkVersion"]}",
+            "legacy-support-v4": "androidx.legacy:legacy-support-v4:1.0.0",
+            "cardview"         : "androidx.cardview:cardview:1.0.0",
+            "annotations"      : "androidx.annotation:annotation:${version["androidXSdkVersion"]}",
+            "recyclerview"     : "androidx.recyclerview:recyclerview:${version["androidXSdkVersion"]}",
+    ]
+
+    //网络框架
+    retrofit = [
+            "retrofit"                : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            "retrofitConverterGson"   : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            "retrofitAdapterRxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            "okhttp3LoggerInterceptor": 'com.squareup.okhttp3:logging-interceptor:3.11.0',
+            "retrofitConverterMoshi"  : 'com.squareup.retrofit2:converter-moshi:2.4.0',
+            "retrofitKotlinMoshi"     : "com.squareup.moshi:moshi-kotlin:1.7.0"
+    ]
+
+    //异步、数据操作...
+    rxs = [
+            "rxJava"         : "io.reactivex.rxjava2:rxjava:${version["rxJava"]}",
+            "rxAndroid"      : "io.reactivex.rxjava2:rxandroid:${version["rxAndroid"]}",
+            "rxKotlin"       : "io.reactivex.rxjava2:rxkotlin:${version["rxKotlin"]}",
+            "anko"           : "org.jetbrains.anko:anko:${version["anko"]}",
+            "rxerrorhandler2": "me.jessyan:rxerrorhandler:2.1.1",
+            "rxpermissions2" : "com.github.tbruyelle:rxpermissions:0.10.2"
+    ]
+
+    //测试
+    testDeps = [
+            "junit"                    : 'junit:junit:4.12',
+            "runner"                   : 'com.android.support.test:runner:1.0.2',
+            "espresso-core"            : "com.android.support.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
+            "espresso-contrib"         : "com.android.support.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
+            "espresso-intents"         : "com.android.support.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
+            "leakcanary-debug"         : 'com.squareup.leakcanary:leakcanary-android:1.6.1',
+            "leakcanary-release"       : 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1',
+            "leakcanary-debug-fragment": 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1',
+            "debug-db"                 : 'com.amitshekhar.android:debug-db:1.0.4'
+    ]
+
+    commonDeps = [
+            "glide"                 : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "brvh"                  : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35',
+            "banner"                : 'cn.bingoogolapple:bga-banner:2.2.4@aar',
+            "agentweb"              : 'com.just.agentweb:agentweb:4.0.2',
+            "multidex"              : 'com.android.support:multidex:1.0.3',
+            //"vertical-tablayout": 'q.rorbin:VerticalTabLayout:1.2.5',
+            "flow-layout"           : 'com.hyman:flowlayout-lib:1.1.2',
+            "eventbus"              : 'org.greenrobot:eventbus:3.1.1',
+            //"bugly"           : 'com.tencent.bugly:crashreport:2.6.6.1',
+            "bugly-crash-up"        : 'com.tencent.bugly:crashreport_upgrade:1.3.5',
+            "swipeback"             : 'com.cxz:swipeback:1.0.1',
+            "material-dialogs"      : 'com.afollestad.material-dialogs:commons:0.9.4.4',
+            "logger"                : 'com.orhanobut:logger:2.1.1',
+            "litepal"               : 'org.litepal.android:core:2.0.0',
+            "fab"                   : 'com.github.clans:fab:1.6.4',
+            "materialdatetimepicker": 'com.wdullaer:materialdatetimepicker:3.6.4',
+            "android-autosize"      : 'me.jessyan:autosize:1.1.0',
+            "spinkit"               : 'com.github.ybq:Android-SpinKit:1.2.0',
+            "android_utils"         : 'com.blankj:utilcodex:1.29.0'
+    ]
+
+    //其它依赖库
+    otherDeps = [
+            "glideCompiler": "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "glideOkhttp"  : "com.github.bumptech.glide:okhttp3-integration:${version["glideSdkVersion"]}"
+    ]
+
+    kotlin = [
+            "core-ktx": "androidx.core:core-ktx:${version["androidXSdkVersion"]}",
+    ]
+
+    bug = [
+            //bugly
+            "crashreport"              : "com.tencent.bugly:crashreport:latest.release",
+            "nativecrashreport"        : "com.tencent.bugly:nativecrashreport:latest.release",
+
+
+            //devyk
+            "devyk_native_crash_report": "com.github.yangkun19921001:YKCrash:1.0.2"
+    ]
+
+
+}
