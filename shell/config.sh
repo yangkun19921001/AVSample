@@ -1,6 +1,7 @@
+#!/usr/bin/env bash
 
 #NDK路径
-export ANDROID_NDK_ROOT=/home/byhook/android/android-ndk-r10e
+export ANDROID_NDK_ROOT=/home/byhook/android/android-ndk-r15c
 
 export AOSP_TOOLCHAIN_SUFFIX=4.9
 

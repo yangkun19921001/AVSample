@@ -7,7 +7,7 @@
 - os: `云服务器 centos`
 - NDK: [android-ndk-r15c-linux-x86_64.zip](https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip?hl=zh_cn)
 - FDK-AAC: `0.1.6`
-- x264: 
+- x264: 最新版-`commit 33f9e1474613f59392be5ab6a7e7abf60fa63622`
 - lame:
 
   
