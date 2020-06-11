@@ -7,6 +7,7 @@ import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
 import com.devyk.ikavedit.base.BaseActivity
+import com.devyk.x264_video_encode.sample.x264EncodeActivity
 
 class MainActivity : BaseActivity() {
     override fun initListener() {
@@ -45,6 +46,14 @@ class MainActivity : BaseActivity() {
      */
     fun fdkaac_decode(view: View) {
         startActivity(Intent(this, FDKAACDecodeActivity::class.java))
+
+    }
+
+    /**
+     * libx264 编码
+     */
+    fun x264_encode(view: View) {
+        startActivity(Intent(this, x264EncodeActivity::class.java))
 
     }
 }

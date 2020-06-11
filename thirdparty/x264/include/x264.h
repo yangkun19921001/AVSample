@@ -754,10 +754,10 @@ typedef struct x264_sei_t
 
 typedef struct x264_image_t
 {
-    int     i_csp;       /* Colorspace */
-    int     i_plane;     /* Number of image planes */
-    int     i_stride[4]; /* Strides for each plane */
-    uint8_t *plane[4];   /* Pointers to each plane */
+    int     i_csp;       /* Colorspace 图像空间颜色*/
+    int     i_plane;     /* 图像平面数目 */
+    int     i_stride[4]; /* 每个图像平面的跨度，也就是每一行数据的字节数 */
+    uint8_t *plane[4];   /* 每个图像平面存放数据的起始地址，plane[0]是Y平面，plane[1]是U平面，plane[2]是V平面 */
 } x264_image_t;
 
 typedef struct x264_image_properties_t

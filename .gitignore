@@ -9,6 +9,10 @@
 
 # FILE
 file/
+*.yuv
+*.h264
+*.pcm
+*.aac
 
 # Java class files
 *.class

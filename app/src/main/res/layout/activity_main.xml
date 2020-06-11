@@ -19,6 +19,9 @@
         <Button android:onClick="fdkaac_decode" android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:text="FDK-AAC 解码"/>
 
+        <Button android:onClick="x264_encode" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="x264 编码"/>
+
     </LinearLayout>
 
 

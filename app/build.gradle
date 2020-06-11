@@ -60,7 +60,7 @@ dependencies {
     implementation project(path: ':mediacodec_audio_encode_decode')
     implementation project(path: ':mediacodec_video_encode_decode')
     implementation project(path: ':ffmpeg_video_encode_decode')
-    implementation project(path: ':x264_video_encode_decode')
+    implementation project(path: ':x264_video_encode')
     implementation project(path: ':lame_audio_encode_decode')
     implementation project(path: ':ffmpeg_audio_encode_decode')
 
