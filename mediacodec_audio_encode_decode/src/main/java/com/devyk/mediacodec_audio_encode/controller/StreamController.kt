@@ -16,6 +16,7 @@ import java.nio.ByteBuffer
  * </pre>
  */
 public class StreamController : OnAudioEncodeListener {
+
     private var mPacker: IMediaCodecListener? = null
     private lateinit var mAudioController: IAudioController
 
@@ -81,7 +82,7 @@ public class StreamController : OnAudioEncodeListener {
     }
 
     override fun onAudioEncode(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {
-        mPacker?.onAudioData(bb, bi)
+        mPacker?.onAudioAACData(bb, bi)
     }
 
 

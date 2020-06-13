@@ -9,3 +9,21 @@ package com.devyk.mediacodec_audio_encode.mediacodec
  *     desc    : This is ICodec
  * </pre>
  */
+public interface ICodec{
+
+
+    /**
+     * 准备编码
+     */
+    fun prepareCoder()
+
+    /**
+     * 将数据送入编解码器
+     */
+    fun enqueueCodec(input: ByteArray?);
+
+    /**
+     * 停止编码
+     */
+    fun stop();
+}

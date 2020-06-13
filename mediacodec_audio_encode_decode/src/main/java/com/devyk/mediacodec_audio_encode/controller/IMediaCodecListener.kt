@@ -14,7 +14,7 @@ import java.nio.ByteBuffer
  */
 public interface IMediaCodecListener {
     //处理音频硬编编码器输出的数据
-    fun onAudioData(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {}
+    fun onAudioAACData(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {}
 
     //开始打包，一般进行打包的预处理
     abstract fun start()

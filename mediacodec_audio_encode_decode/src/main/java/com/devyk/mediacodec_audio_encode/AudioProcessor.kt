@@ -27,22 +27,27 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
     private val mRecordBuffer: ByteArray
     private val mRecordBufferSize: Int
 
-
-    private var mFileOutputStream:FileOutputStream? = null
-
+    /**
+     * 初始化
+     */
     init {
-        mRecordBufferSize = AudioUtils.getMinBufferSize(audioConfiguration!!.frequency,audioConfiguration.channelCount)
+        mRecordBufferSize = AudioUtils.getMinBufferSize(audioConfiguration!!.frequency, audioConfiguration.channelCount)
         mRecordBuffer = ByteArray(mRecordBufferSize)
         mAudioEncoder = AudioEncoder(audioConfiguration)
-        mAudioEncoder!!.prepareEncoder()
-//        mFileOutputStream = FileOutputStream("/sdcard/avsample/test.pcm");
+        mAudioEncoder!!.prepareCoder()
     }
 
 
+    /**
+     * 设置音频硬编码监听
+     */
     fun setAudioHEncodeListener(listener: OnAudioEncodeListener?) {
         mAudioEncoder!!.setOnAudioEncodeListener(listener)
     }
 
+    /**
+     * 停止
+     */
     fun stopEncode() {
         mStopFlag = true
         if (mAudioEncoder != null) {
@@ -51,10 +56,16 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
         }
     }
 
+    /**
+     * 暂停
+     */
     fun pauseEncode(pause: Boolean) {
         mPauseFlag = pause
     }
 
+    /**
+     * 静音
+     */
     fun setMute(mute: Boolean) {
         mMute = mute
     }
@@ -73,12 +84,10 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
             if (readLen!! > 0) {
                 if (mMute) {
                     val clearM: Byte = 0
+                    //内部全部是 0 bit
                     Arrays.fill(mRecordBuffer, clearM)
                 }
-                if (mAudioEncoder != null) {
-//                    mFileOutputStream?.write(mRecordBuffer)
-                    mAudioEncoder!!.offerEncoder(mRecordBuffer)
-                }
+                mAudioEncoder?.enqueueCodec(mRecordBuffer)
             }
         }
     }

@@ -23,7 +23,7 @@
                 android:text="x264 编码"/>
         <Button android:onClick="mediacode_audio_encode" android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="音频实时硬编码-MediaCodec"/>
+                android:text="音频实时硬编解码-MediaCodec"/>
 
     </LinearLayout>
 

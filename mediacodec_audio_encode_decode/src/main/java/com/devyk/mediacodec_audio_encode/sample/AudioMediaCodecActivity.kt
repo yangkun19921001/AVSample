@@ -4,10 +4,12 @@ import android.media.MediaCodec
 import android.util.Log
 import android.view.View
 import com.devyk.ikavedit.base.BaseActivity
+import com.devyk.mediacodec_audio_encode.AudioConfiguration
 import com.devyk.mediacodec_audio_encode.R
 import com.devyk.mediacodec_audio_encode.controller.AudioControllerImpl
 import com.devyk.mediacodec_audio_encode.controller.IMediaCodecListener
 import com.devyk.mediacodec_audio_encode.controller.StreamController
+import com.devyk.mediacodec_audio_encode.mediacodec.*
 import com.devyk.mediacodec_audio_encode.utils.ADTSUtils
 import kotlinx.android.synthetic.main.activity_audio_mediacodec.*
 import java.io.File
@@ -23,16 +25,22 @@ import java.nio.ByteBuffer
  *     desc    : This is AudioMediaCodecActivity
  * </pre>
  */
-public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener {
+public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener,OnAudioDecodeListener {
 
 
     private var mStreamController: StreamController? = null
 
     private var mFileOutputStream: FileOutputStream? = null
+    private var mFileOutputStream_PCM: FileOutputStream? = null
+
+    var mDecode: AudioDecoder? = null
+
 
     private val AAC_DIR = "sdcard/AVSample/"
 
-    private val AAC_PATH = "${AAC_DIR}mediacodec_44100_1_16.bit.aac"
+    private val AAC_PATH = "${AAC_DIR}mediacodec_44100_1_16_bit.aac"
+
+    private val PCM_PATH = "${AAC_DIR}mediacodec_44100_1_16_bit.pcm"
 
     private var mAudio: ByteArray? = null
 
@@ -55,6 +63,14 @@ public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener {
     }
 
     override fun initData() {
+        var audioConfiguration = AudioConfiguration.Builder()
+            .setCodecType(AudioConfiguration.CodeType.DECODE)
+            .setAdts(1)//有 ADTS 数据
+            .build();
+        mDecode = AudioDecoder(audioConfiguration)
+        mDecode?.prepareCoder()
+        mDecode?.setOnAudioEncodeListener(this)
+
     }
 
     override fun init() {
@@ -68,7 +84,14 @@ public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener {
             File(AAC_PATH).delete()
         }
         File(AAC_PATH).createNewFile()
+
+
+        if (File(PCM_PATH).exists()) {
+            File(PCM_PATH).delete()
+        }
+        File(PCM_PATH).createNewFile()
         mFileOutputStream = FileOutputStream(AAC_PATH, true)
+        mFileOutputStream_PCM = FileOutputStream(PCM_PATH, true)
 
 
     }
@@ -82,24 +105,42 @@ public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener {
     }
 
     fun stopEncode(view: View) {
+        //内部是控制编码的
         mStreamController?.stop()
+        mDecode?.stop()
         mFileOutputStream?.close()
+        mFileOutputStream_PCM?.close()
+    }
+
+    /**
+     * AAC - PCM 解码完成的回调
+     */
+    override fun onAudioPCMData(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {
+        var mAudio = ByteArray(bi.size)
+        bb.position(bi.offset)
+        bb.limit(bi.offset + bi.size)
+        bb.get(mAudio)
+        mFileOutputStream_PCM?.write(mAudio)
     }
 
 
     /**
-     * 编码完成的数据
+     * PCM - AAC 编码完成的回调
      */
-    override fun onAudioData(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {
-        super.onAudioData(bb, bi)
-        mAudio = ByteArray(bi.size + 7 )
+    override fun onAudioAACData(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {
+        super.onAudioAACData(bb, bi)
+        mAudio = ByteArray(bi.size + 7)
         //添加 adts 头
         bb.position(bi.offset)
         bb.limit(bi.offset + bi.size)
         bb.get(mAudio, 7, bi.size)
-        ADTSUtils.addADTStoPacket(mAudio!!, mAudio!!.size, 2, 44100,1)
+        ADTSUtils.addADTStoPacket(mAudio!!, mAudio!!.size, 2, 44100, 1)
         //打印 ADTS
-        Log.e(TAG,"mAudio[0]=${mAudio!![0]} mAudio[1]=${mAudio!![1]} mAudio[2]=${mAudio!![2]} mAudio[3]=${mAudio!![3]} mAudio[4]=${mAudio!![4]} mAudio[5]=${mAudio!![5]} mAudio[6]=${mAudio!![6]}")
+        Log.e(
+            TAG,
+            "mAudio[0]=${mAudio!![0]} mAudio[1]=${mAudio!![1]} mAudio[2]=${mAudio!![2]} mAudio[3]=${mAudio!![3]} mAudio[4]=${mAudio!![4]} mAudio[5]=${mAudio!![5]} mAudio[6]=${mAudio!![6]}"
+        )
+        mDecode?.enqueueCodec(mAudio!!)
         mFileOutputStream?.write(mAudio, 0, mAudio!!.size)
     }
 
@@ -108,6 +149,8 @@ public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener {
         super.onDestroy()
         mStreamController?.stop()
         mFileOutputStream?.close()
+        mFileOutputStream_PCM?.close()
+        mDecode?.stop()
     }
 
 }

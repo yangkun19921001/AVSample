@@ -18,6 +18,7 @@ class AudioConfiguration private constructor(builder: Builder) {
     val maxBps: Int
     val frequency: Int
     val encoding: Int
+    val codeType: CodeType
     val channelCount: Int
     val adts: Int
     val aacProfile: Int
@@ -30,6 +31,7 @@ class AudioConfiguration private constructor(builder: Builder) {
         maxBps = builder.maxBps
         frequency = builder.frequency
         encoding = builder.encoding
+        codeType = builder.codeType
         channelCount = builder.channelCount
         adts = builder.adts
         mime = builder.mime
@@ -47,6 +49,7 @@ class AudioConfiguration private constructor(builder: Builder) {
         public var channelCount = DEFAULT_CHANNEL_COUNT
         public var adts = DEFAULT_ADTS
         public var mime = DEFAULT_MIME
+        public var codeType = DEFAULT_CODE_TYPE
         public var aacProfile = DEFAULT_AAC_PROFILE
         public var aec = DEFAULT_AEC
 
@@ -96,6 +99,11 @@ class AudioConfiguration private constructor(builder: Builder) {
             return this
         }
 
+        fun setCodecType(codeType: CodeType): Builder {
+            this.codeType = codeType
+            return this
+        }
+
         fun build(): AudioConfiguration {
             return AudioConfiguration(this)
         }
@@ -106,6 +114,7 @@ class AudioConfiguration private constructor(builder: Builder) {
         val DEFAULT_MAX_BPS = 64
         val DEFAULT_MIN_BPS = 32
         val DEFAULT_ADTS = 0
+        val DEFAULT_CODE_TYPE = CodeType.ENCODE
         val DEFAULT_MIME = "audio/mp4a-latm"
         val DEFAULT_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT
         val DEFAULT_AAC_PROFILE = MediaCodecInfo.CodecProfileLevel.AACObjectLC
@@ -117,5 +126,11 @@ class AudioConfiguration private constructor(builder: Builder) {
         fun createDefault(): AudioConfiguration {
             return Builder().build()
         }
+    }
+
+
+    public enum class CodeType(codeType: Int) {
+        ENCODE(1),
+        DECODE(2),
     }
 }

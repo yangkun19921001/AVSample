@@ -13,5 +13,5 @@ import java.nio.ByteBuffer
  * </pre>
  */
 public interface OnAudioEncodeListener {
-    abstract fun onAudioEncode(bb: ByteBuffer, bi: MediaCodec.BufferInfo)
+    fun onAudioEncode(bb: ByteBuffer, bi: MediaCodec.BufferInfo)
 }

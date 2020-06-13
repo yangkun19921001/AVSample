@@ -24,7 +24,7 @@
 | ------------------------------------------------------------ | --------------------------------- | -------- | -------- |
 | [fdkaac_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/fdkaac_audio_encode_decode/src/main/cpp) | Libfdk-aac 音频编解码             | ✅        | 2020-06-08 |
 | [x264_video_encode](https://github.com/yangkun19921001/AVSample/tree/master/x264_video_encode)                                        | Libx264 视频编码                | ✅       | 2020-06-11 |
-| [mediacodec_audio_encode_decode]()                           | Android MediaCodec AAC 硬编解码   | ❌        |         |
+| [mediacodec_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_audio_encode_decode) | Android MediaCodec AAC 硬编解码   | ✅       | 2020-06-14 |
 | [mediacodec_video_encode_decode]()                           | Android MediaCodec H264 硬编解码  | ❌        |         |
 | [ffmpeg_audio_encode_decode]()                               | FFmpeg API 实现音频 AAC 软编解码  | ❌        |         |
 | [ffmpeg_video_encode_decode]()                               | FFmpeg API 实现视频 H264 软编解码 | ❌        |         |
