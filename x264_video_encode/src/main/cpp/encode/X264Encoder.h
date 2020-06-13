@@ -13,13 +13,13 @@
 #include "../x264Common.h"
 
 
-static enum {
+ static enum {
     YUV420p = 1,
     YUV420sp = 2,
 };
 
 typedef struct {
-    uint8_t *data = 0;
+    uint8_t *data =0;
     uint32_t type = YUV420p;
 } AVPacket;
 
@@ -27,8 +27,8 @@ typedef struct {
 
 /**
  * 资料参考
- * @see https://wangpengcheng.github.io/2019/04/19/libx264_learn_note/
  * @see 雷神 x264编码： https://blog.csdn.net/leixiaohua1020/article/details/42078645
+ * @see https://wangpengcheng.github.io/2019/04/19/libx264_learn_note/
  */
 class X264Encoder {
 protected:

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MiuiWeatherView">
+        <attr name="line_interval" format="dimension"/>
+        <attr name="min_point_height" format="dimension"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+</resources>

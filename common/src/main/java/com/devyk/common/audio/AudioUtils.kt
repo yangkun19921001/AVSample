@@ -28,7 +28,7 @@ import java.nio.ByteBuffer
  * 利用ffmpeg将PCM文件转换为WAV文件
  * 		ffmpeg -f s16le  -sample_rate 44100  -channels 1 -i record.pcm -acodec pcm_s16le record.wav
  */
-public class AudioUtils {
+public object AudioUtils {
 
     private var TAG = javaClass.simpleName;
 
@@ -113,6 +113,8 @@ public class AudioUtils {
         }
         return true
     }
+
+    public fun getAudioRecord(): AudioRecord? = mAudioRecord
 
     /**
      * 开始录制

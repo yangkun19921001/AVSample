@@ -35,10 +35,6 @@ object AudioCapture : Runnable {
      */
     private var mRecordListener: OnRecordListener? = null
 
-    /**
-     * 音频工具类
-     */
-    private var mAudioUtils: AudioUtils? = null
 
     /**
      * 线程
@@ -52,37 +48,34 @@ object AudioCapture : Runnable {
         channelConfig: Int = AudioFormat.CHANNEL_IN_MONO,
         audioFormat: Int = AudioFormat.ENCODING_PCM_16BIT
     ) {
-        mAudioUtils = AudioUtils();
-        mAudioUtils?.run {
-            if (initAudioRecord(audioSource, sampleRateInHz, channelConfig, audioFormat)) {
-                mReadSize = getBufferSize()
-            }
+        if (AudioUtils.initAudioRecord(audioSource, sampleRateInHz, channelConfig, audioFormat)) {
+            mReadSize = getBufferSize()
         }
 
+
     }
+
+
+    fun getBufferSize(): Int = AudioUtils.getMinBufferSize()
 
     /**
      * 开始录制
      */
     fun startRecording() {
         if (isRecording()) return
-        if (mAudioUtils == null) {
-            init()
-        }
         isRecording = true
         mThread = Thread(this);
         mThread!!.start()
-        mAudioUtils?.startRecord()
+        AudioUtils.startRecord()
         mRecordListener?.onStart()
     }
 
     fun stopRecording() {
         if (!isRecording()) return
         isRecording = false
-        mAudioUtils?.stopRecord()
-        mAudioUtils?.releaseRecord()
+        AudioUtils.stopRecord()
+        AudioUtils.releaseRecord()
         mRecordListener?.onStop()
-        mAudioUtils = null;
     }
 
     /**
@@ -97,7 +90,7 @@ object AudioCapture : Runnable {
         var byteArray = ByteArray(mReadSize);
         while (isRecording) {
             try {
-                if (mAudioUtils?.read(mReadSize, byteArray)!! > 0) {
+                if (AudioUtils.read(mReadSize, byteArray)!! > 0) {
                     mRecordListener?.onData(byteArray)
                 }
             } catch (error: InterruptedException) {

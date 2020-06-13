@@ -119,6 +119,10 @@ void X264Encoder::init(const char *outH264Path, int width, int height, int video
 }
 
 /**
+ *
+ * YUV 存储格式可以参考：
+ * @see https://github.com/byhook/ffmpeg4android/blob/master/readme/%E5%9B%BE%E8%A7%A3YU12%E3%80%81I420%E3%80%81YV12%E3%80%81NV12%E3%80%81NV21%E3%80%81YUV420P%E3%80%81YUV420SP%E3%80%81YUV422P%E3%80%81YUV444P%E7%9A%84%E5%8C%BA%E5%88%AB.md
+ *
  * 正式编码，这里的 packet 是 YUV 的包装类，接收 I420 预览数据
  * @param packet
  */
@@ -134,7 +138,7 @@ void X264Encoder::encode(AVPacket *packet) {
         case YUV420p:
             //copy U 数据
             memcpy(this->pIc_in->img.plane[1], packet->data + this->mYSize, this->mUVSize);
-            //copy V 数据
+            //copy V 数据 packet->data + this->mYSize + this->mUVSize == packet->data + this->mYSize*5/4
             memcpy(this->pIc_in->img.plane[2], packet->data + this->mYSize + this->mUVSize, this->mUVSize);
             break;
         case YUV420sp:
@@ -165,25 +169,25 @@ void X264Encoder::encode(AVPacket *packet) {
 
 
     //如果是关键帧
-//    int sps_len = 0;
-//    int pps_len = 0;
-//    uint8_t sps[100];
-//    uint8_t pps[100];
-//
-//    for (int i = 0; i < pi_nal; ++i) {
-//        if (pp_nal[i].i_type == NAL_SPS) {
-//            //排除掉 h264的间隔 00 00 00 01
-//            sps_len = pp_nal[i].i_payload - 4;
-//            memcpy(sps, pp_nal[i].p_payload + 4, sps_len);
-//        } else if (pp_nal[i].i_type == NAL_PPS) {
-//            pps_len = pp_nal[i].i_payload - 4;
-//            memcpy(pps, pp_nal[i].p_payload + 4, pps_len);
-//            //pps肯定是跟着sps的
-//            sendSpsPps(sps, pps, sps_len, pps_len);
-//        } else {
-//            sendFrame(pp_nal[i].i_type, pp_nal[i].p_payload, pp_nal[i].i_payload, 0);
-//        }
-//    }
+    int sps_len = 0;
+    int pps_len = 0;
+    uint8_t sps[100];
+    uint8_t pps[100];
+
+    for (int i = 0; i < pi_nal; ++i) {
+        if (pp_nal[i].i_type == NAL_SPS) {
+            //排除掉 h264的间隔 00 00 00 01
+            sps_len = pp_nal[i].i_payload - 4;
+            memcpy(sps, pp_nal[i].p_payload + 4, sps_len);
+        } else if (pp_nal[i].i_type == NAL_PPS) {
+            pps_len = pp_nal[i].i_payload - 4;
+            memcpy(pps, pp_nal[i].p_payload + 4, pps_len);
+            //pps肯定是跟着sps的
+            sendSpsPps(sps, pps, sps_len, pps_len);
+        } else {
+            sendFrame(pp_nal[i].i_type, pp_nal[i].p_payload, pp_nal[i].i_payload, 0);
+        }
+    }
 
 
 }
