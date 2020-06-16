@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.devyk.mediacodec_video_encode"/>
+          package="com.devyk.mediacodec_video_encode">
+    <application>
+        <activity android:name=".sample.H264MediaCodecEDActivity"/>
+    </application>
+</manifest>

@@ -3,13 +3,13 @@ package com.devyk.avsample
 import android.content.Intent
 import android.view.View
 import com.blankj.utilcode.util.GsonUtils
-import com.devyk.avsample.miuiweatherline.WeatherActivity
 import com.devyk.common.FindFiles
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
+import com.devyk.mediacodec_video_encode.sample.H264MediaCodecEDActivity
 import com.devyk.x264_video_encode.sample.x264EncodeActivity
 
 class MainActivity : BaseActivity() {
@@ -17,7 +17,6 @@ class MainActivity : BaseActivity() {
     }
 
     override fun initData() {
-         FindFiles.main()
     }
 
     override fun init() {
@@ -31,11 +30,7 @@ class MainActivity : BaseActivity() {
      * 音频采集
      */
     fun AudioCapture(view: View) {
-
         startActivity(Intent(this, AudioRecordActivty::class.java))
-
-
-
     }
 
     /**
@@ -63,10 +58,17 @@ class MainActivity : BaseActivity() {
     }
 
     /**
-     * libx264 编码
+     * AAC 硬编码
      */
-    fun mediacode_audio_encode(view: View) {
+    fun mediacode_audio_ed(view: View) {
         startActivity(Intent(this, AudioMediaCodecActivity::class.java))
 
+    }
+
+    /**
+     * h264 硬编码
+     */
+    fun mediacode_video_ed(view: View){
+        startActivity(Intent(this, H264MediaCodecEDActivity::class.java))
     }
 }

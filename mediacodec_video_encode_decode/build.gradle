@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 //apply plugin: 'com.novoda.bintray-release'
-
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
@@ -56,4 +56,5 @@ dependencies {
     //test
     testImplementation rootProject.ext.testDeps["junit"]
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':common')
 }

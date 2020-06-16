@@ -13,7 +13,7 @@
 
 
     <Button
-            android:text="开始实时编解码码"
+            android:text="开始实时编解码"
             android:onClick="startEncode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

@@ -69,6 +69,8 @@ public class AudioMediaCodec {
                     //ByteBuffer key（暂时不了解该参数的含义，但必须设置）
                     val data = byteArrayOf(0x11.toByte(), 0x90.toByte())
                     val csd_0 = ByteBuffer.wrap(data)
+                    //配置解码器 csd-0 信息
+                    //参考：https://developer.android.com/reference/android/media/MediaCodec
                     format.setByteBuffer("csd-0", csd_0)
                     mediaCodec = MediaCodec.createDecoderByType(configuration.mime)
                     mediaCodec.configure(format, null, null, 0)

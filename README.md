@@ -18,14 +18,16 @@
 
 **进阶路线图可以在组件库找到对应代码**
 
-> 计划一周更新一个组件库
+> 由于工作时间比较忙，所以只能抽空更新。
+>
+> 暂时定于一周一更 ，不忙就多更！
 
 | 组件库                                                       | 对应关系                          | 是否完成 | 完成时间 |
 | ------------------------------------------------------------ | --------------------------------- | -------- | -------- |
 | [fdkaac_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/fdkaac_audio_encode_decode/src/main/cpp) | Libfdk-aac 音频编解码             | ✅        | 2020-06-08 |
 | [x264_video_encode](https://github.com/yangkun19921001/AVSample/tree/master/x264_video_encode)                                        | Libx264 视频编码                | ✅       | 2020-06-11 |
 | [mediacodec_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_audio_encode_decode) | Android MediaCodec AAC 硬编解码   | ✅       | 2020-06-14 |
-| [mediacodec_video_encode_decode]()                           | Android MediaCodec H264 硬编解码  | ❌        |         |
+| [mediacodec_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_video_encode_decode) | Android MediaCodec H264 硬编解码  | ✅       | 2020-06-16 |
 | [ffmpeg_audio_encode_decode]()                               | FFmpeg API 实现音频 AAC 软编解码  | ❌        |         |
 | [ffmpeg_video_encode_decode]()                               | FFmpeg API 实现视频 H264 软编解码 | ❌        |         |
 | [lame_audio_encode_decode]()                                 | MP3 编解码                        | ❌        |         |
