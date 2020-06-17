@@ -3,9 +3,11 @@
 ARCH=$1
 
 source config.sh $ARCH
+#编译打包的路径
 LIBS_DIR=$(cd `dirname $0`; pwd)/libs/libfdk-aac
 echo "LIBS_DIR="$LIBS_DIR
 
+#fdk-aac 源码位置 可以通过  pwd 获取
 cd fdk-aac-0.1.6
 
 

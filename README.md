@@ -5,9 +5,15 @@
 ##编译环境
 
 - os: `云服务器 centos`
+
 - NDK: [android-ndk-r15c-linux-x86_64.zip](https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip?hl=zh_cn)
+
 - FDK-AAC: `0.1.6`
+
 - x264: 最新版-`commit 33f9e1474613f59392be5ab6a7e7abf60fa63622`
+
+- Ffmpeg: 3.4.6
+
 - lame:
 
   
@@ -73,9 +79,12 @@
 
 ##参考
 
+- [雷神-最简单的基于FFmpeg的移动端例子：Android 视频解码器-单个库版](https://blog.csdn.net/leixiaohua1020/article/details/47011021)
+
 - 《展晓凯-音视频进阶指南》
 
 - [**ffmpeg4android**](https://github.com/byhook/ffmpeg4android)
 
 - [字节流动 · NDK_OpenGLES_3_0](https://github.com/githubhaohao/NDK_OpenGLES_3_0)
+
 

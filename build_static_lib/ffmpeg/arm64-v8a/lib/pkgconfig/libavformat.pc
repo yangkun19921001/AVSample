@@ -1,0 +1,14 @@
+prefix=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/lib
+includedir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.83.100
+Requires: libavcodec >= 57.107.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lx264 -lfdk-aac -lm -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,1 +1,79 @@
-ninja: no work to do.
+[1/4] Building CXX object CMakeFiles/native-fdkaac.dir/native-fdkaac.cpp.o
+[2/4] Building CXX object CMakeFiles/native-fdkaac.dir/encode/AACEncoder.cpp.o
+[3/4] Building CXX object CMakeFiles/native-fdkaac.dir/decode/AACDecoder.cpp.o
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.cpp:5:
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:12:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/../common.h:13:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]
+#define LOG_TAG "FDK-AAC"
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:9:9: note: previous definition is here
+#define LOG_TAG decode_
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:68:18: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int mPckSize = 0;
+                 ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:70:21: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    byte *mSpecInfo = 0;
+                    ^
+3 warnings generated.
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:5:
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:12:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/../common.h:13:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]
+#define LOG_TAG "FDK-AAC"
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:9:9: note: previous definition is here
+#define LOG_TAG decode_
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:68:18: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int mPckSize = 0;
+                 ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/AACDecoder.h:70:21: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    byte *mSpecInfo = 0;
+                    ^
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:12:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:13:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]
+#define LOG_TAG encode_
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/decode/../common.h:13:9: note: previous definition is here
+#define LOG_TAG "FDK-AAC"
+        ^
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp:12:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:33:32: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    AACENC_InfoStruct mEncInfo = {0};
+                               ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:34:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    uint8_t *mInBuffer = 0;
+                       ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:41:29: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    bool isFlagGlobalHeader = false;
+                            ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:43:19: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    FILE *aacFile = 0;
+                  ^
+8 warnings generated.
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp:6:
+In file included from /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:14:
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/../common.h:13:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]
+#define LOG_TAG "FDK-AAC"
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:13:9: note: previous definition is here
+#define LOG_TAG encode_
+        ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:33:32: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    AACENC_InfoStruct mEncInfo = {0};
+                               ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:34:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    uint8_t *mInBuffer = 0;
+                       ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:41:29: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    bool isFlagGlobalHeader = false;
+                            ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.h:43:19: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    FILE *aacFile = 0;
+                  ^
+/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp:56:16: warning: implicit conversion of NULL constant to 'int' [-Wnull-conversion]
+        return NULL;
+        ~~~~~~ ^~~~
+               0
+6 warnings generated.
+[4/4] Linking CXX shared library /Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-fdkaac.so

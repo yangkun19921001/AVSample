@@ -1,0 +1,14 @@
+prefix=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/lib
+includedir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.107.100
+Requires: libavresample >= 3.7.0, libswscale >= 4.8.100, libpostproc >= 54.7.100, libswresample >= 2.9.100, libavformat >= 57.83.100, libavcodec >= 57.107.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -lx264 -lfdk-aac -lm -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}

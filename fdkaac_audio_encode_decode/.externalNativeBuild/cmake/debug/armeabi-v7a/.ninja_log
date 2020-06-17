@@ -17,3 +17,7 @@
 0	72	0	CMakeFiles/native-fdkaac.dir/encode/AACEncoder.cpp.o	e366da987cdfb96b
 0	75	0	CMakeFiles/native-fdkaac.dir/native-fdkaac.cpp.o	b0205ac4410d3de0
 75	181	0	/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-fdkaac.so	9b6fb1d58d3445af
+2	97	0	CMakeFiles/native-fdkaac.dir/decode/AACDecoder.cpp.o	55af6a23be41df11
+2	103	0	CMakeFiles/native-fdkaac.dir/native-fdkaac.cpp.o	73b5fe1294bbc09a
+2	185	0	CMakeFiles/native-fdkaac.dir/encode/AACEncoder.cpp.o	c474318aa1494532
+186	394	0	/Users/devyk/Data/Project/sample/github_code/AVSample/fdkaac_audio_encode_decode/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-fdkaac.so	9b6fb1d58d3445af

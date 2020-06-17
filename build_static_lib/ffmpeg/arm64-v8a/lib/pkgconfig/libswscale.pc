@@ -1,0 +1,14 @@
+prefix=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/lib
+includedir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.8.100
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

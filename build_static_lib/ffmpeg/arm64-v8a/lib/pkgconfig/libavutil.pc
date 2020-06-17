@@ -1,0 +1,14 @@
+prefix=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/lib
+includedir=/root/shell/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
