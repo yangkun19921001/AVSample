@@ -266,8 +266,8 @@ void AACEncoder::writeAACPacketToFile(uint8_t *data, int datalen) {
                     3：C+L+R
 */
 void AACEncoder::addADTS2Packet(uint8_t *packet, int packetLen) {
-    int profile = 1;//5;//0 : LC; 5 : HE-AAC; 29: HEV2
-    int freqIdx = 4; // 48KHz
+    int profile = 1;
+    int freqIdx = 4; // 44.1KHz
     int chanCfg = 1; // 通道
 
     PutBitContext pb;

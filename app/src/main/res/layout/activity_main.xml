@@ -28,6 +28,10 @@
                 android:layout_height="wrap_content"
                 android:text="视频实时硬编解码-MediaCodec"/>
 
+        <Button android:onClick="ffmpeg_audio_encode" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ffmpeg 音频编码"/>
+
     </LinearLayout>
 
 

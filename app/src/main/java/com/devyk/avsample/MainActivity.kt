@@ -7,6 +7,7 @@ import com.devyk.common.FindFiles
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
+import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACEncodeActivity
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
 import com.devyk.mediacodec_video_encode.sample.H264MediaCodecEDActivity
@@ -68,7 +69,14 @@ class MainActivity : BaseActivity() {
     /**
      * h264 硬编码
      */
-    fun mediacode_video_ed(view: View){
+    fun mediacode_video_ed(view: View) {
         startActivity(Intent(this, H264MediaCodecEDActivity::class.java))
+    }
+
+    /**
+     * ffmpeg 音频编码
+     */
+    fun ffmpeg_audio_encode(view: View) {
+        startActivity(Intent(this, FFmpegAACEncodeActivity::class.java))
     }
 }

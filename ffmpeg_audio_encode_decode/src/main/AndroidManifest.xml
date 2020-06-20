@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.devyk.ffmpeg_audio_encode"/>
+          package="com.devyk.ffmpeg_audio_encode">
+    <application>
+        <activity android:name=".sample.FFmpegAACEncodeActivity"/>
+    </application>
+</manifest>
