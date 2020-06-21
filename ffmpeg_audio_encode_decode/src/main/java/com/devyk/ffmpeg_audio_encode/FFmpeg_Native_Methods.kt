@@ -16,7 +16,8 @@ public class FFmpeg_Native_Methods {
         }
     }
 
-    public external fun init( outAACPath:String,bitRate:Int, channels:Int,sampleRate:Int):Int;
-    public external fun encode(byteArray: ByteArray):Int;
+    public external fun init(outAACPath: String, bitRate: Int, channels: Int, sampleRate: Int): Int;
+    public external fun init(inAACPath: String, outPCMPath: String): Int;
+    public external fun encode(byteArray: ByteArray): Int;
     public external fun release();
 }

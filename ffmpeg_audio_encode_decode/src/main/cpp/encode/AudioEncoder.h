@@ -55,6 +55,8 @@ typedef struct PCMPacket {
  */
 class AudioEncoder {
 
+     typedef void (*EncodeCallback)(uint8_t *data, int len);
+
 private:
     /**
      * 封装格式上下文
@@ -114,6 +116,12 @@ private:
      */
     double duration = 0;
 
+
+    /**
+     * 编码回调
+     */
+    EncodeCallback mCallback;
+
 private:
     /**
      * 实例化一个音频流
@@ -156,6 +164,8 @@ public:
 
     void encodePacket();
 
+
+    void addEncodeCallback(EncodeCallback);
 
 
 };

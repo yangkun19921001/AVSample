@@ -14,14 +14,14 @@
 
 
     <Button
-            android:text="开始编码"
-            android:onClick="startRecord"
+            android:text="开始解码"
+            android:onClick="startDecode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     <Button
-            android:text="停止编码"
-            android:onClick="stopRecord"
+            android:text="停止解码"
+            android:onClick="stopDecode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

@@ -7,7 +7,7 @@
 FILE *outFile;
 
 
-void AudioEncoder::addADTStoPacket(uint8_t* packet, int packetLen) {
+void AudioEncoder::addADTStoPacket(uint8_t *packet, int packetLen) {
     int profile = 2;//2 : LC; 5 : HE-AAC; 29: HEV2
     int freqIdx = 4; // 48KHz
     int chanCfg = 1; // Mono
@@ -163,6 +163,7 @@ int AudioEncoder::init(const char *outAACPath, int publishBitRate, int audioChan
     this->mSampleRate = audioSampleRate;
     this->mBitRate = publishBitRate;
     this->samplesCursor = 0;
+    this->mCallback = NULL;
     //1. 注册FFmpeg所有编解码器。
     avcodec_register_all();
     av_register_all();
@@ -273,6 +274,10 @@ void AudioEncoder::encodePacket() {
     while (avcodec_receive_packet(this->pCodeccCtx, pPacket) == 0) {
         writeAACPakcetToFile(pPacket->data, pPacket->size);
 
+        //将编码完成的数据回调回去
+        if (mCallback)
+            mCallback(pPacket->data, pPacket->size);
+
         if (this->pCodeccCtx->coded_frame && this->pCodeccCtx->coded_frame->pts != AV_NOPTS_VALUE)
             pPacket->pts = av_rescale_q(this->pCodeccCtx->coded_frame->pts, this->pCodeccCtx->time_base,
                                         this->pAudioStream->time_base);
@@ -326,6 +331,12 @@ void AudioEncoder::release() {
     fclose(outFile);
 
 }
+
+void AudioEncoder::addEncodeCallback(EncodeCallback encodeCallback) {
+    this->mCallback = encodeCallback;
+}
+
+
 
 
 

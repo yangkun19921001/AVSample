@@ -2,5 +2,6 @@
           package="com.devyk.ffmpeg_audio_encode">
     <application>
         <activity android:name=".sample.FFmpegAACEncodeActivity"/>
+        <activity android:name=".sample.FFmpegAACDecodeActivity"/>
     </application>
 </manifest>

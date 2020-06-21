@@ -7,6 +7,7 @@ import com.devyk.common.FindFiles
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
+import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACDecodeActivity
 import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACEncodeActivity
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
@@ -74,9 +75,16 @@ class MainActivity : BaseActivity() {
     }
 
     /**
-     * ffmpeg 音频编码
+     * ffmpeg 音频编码 AAC
      */
     fun ffmpeg_audio_encode(view: View) {
         startActivity(Intent(this, FFmpegAACEncodeActivity::class.java))
+    }
+
+    /**
+     * ffmpeg 音频解码 AAC-PCM
+     */
+    fun ffmpeg_audio_decode(view: View) {
+        startActivity(Intent(this, FFmpegAACDecodeActivity::class.java))
     }
 }

@@ -11,12 +11,16 @@ set(FDK-AAC_PATH ${THIRD_PARTY_ROOT}/fdk_aac)
 set(X264_PATH ${THIRD_PARTY_ROOT}/x264)
 #编码路径
 set(NATIVE_AUDIO_ENCODE_PATH ${CMAKE_SOURCE_DIR}/encode)
+#解码路径
+set(NATIVE_AUDIO_DECODE_PATH ${CMAKE_SOURCE_DIR}/decode)
 
 
 #FFmpeg 头文件
 include_directories(${FFMPEG_PATH}/include)
 #编码路径
 include_directories(${NATIVE_AUDIO_ENCODE_PATH})
+#解码路径
+include_directories(${NATIVE_AUDIO_DECODE_PATH})
 #cpp 目录下的头文件
 include_directories(${CMAKE_SOURCE_DIR})
 #fdk-aac
@@ -26,6 +30,8 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 #编码 CPP
 FILE(GLOB NATIVE_ENCODE_ALL_CPP ${NATIVE_AUDIO_ENCODE_PATH}/*.cpp)
+#解码 CPP
+FILE(GLOB NATIVE_DECODE_ALL_CPP ${NATIVE_AUDIO_DECODE_PATH}/*.cpp)
 #JNI 接口
 FILE(GLOB JNI_CPP ${CMAKE_SOURCE_DIR}/*.cpp)
 
@@ -57,6 +63,7 @@ set_target_properties(x264 PROPERTIES IMPORTED_LOCATION ${X264_PATH}/libs/${CMAK
 add_library(native-ffmpeg-audio SHARED
         ${JNI_CPP}
         ${NATIVE_ENCODE_ALL_CPP}
+        ${NATIVE_DECODE_ALL_CPP}
         )
 
 

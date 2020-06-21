@@ -52,14 +52,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3763acd-30d9-4728-960e-bda2afedccaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/common.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACDecodeActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -68,36 +63,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build_native-fdkaac_arm64-v8a.stdout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build_native-fdkaac_arm64-v8a.stdout.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_generate_cmake_ninja_json_arm64-v8a.stdout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_generate_cmake_ninja_json_arm64-v8a.stdout.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_native-fdkaac_armeabi-v7a.command.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_native-fdkaac_armeabi-v7a.stderr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_native-fdkaac_armeabi-v7a.stdout.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_generate_cmake_ninja_json_armeabi-v7a.stdout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_generate_cmake_ninja_json_armeabi-v7a.stdout.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/lame_audio_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lame_audio_encode_decode/lame_audio_encode_decode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yuv_convert/yuv_convert.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yuv_convert/yuv_convert.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,23 +136,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="274" lean-forward="true" selection-start-line="274" selection-end-line="274" />
+            <state relative-caret-position="-233">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h">
+        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+            <state relative-caret-position="185">
+              <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
               <folding>
-                <element signature="e#138#156#0" expanded="true" />
-                <element signature="e#151#182#0" expanded="true" />
+                <element signature="e#137#155#0" expanded="true" />
+                <element signature="e#208#239#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,17 +161,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavcodec/avcodec.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="4559" column="5" selection-start-line="4559" selection-start-column="5" selection-end-line="4559" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/channel_layout.h">
+        <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavformat/avformat.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+            <state relative-caret-position="2293">
+              <caret line="1243" column="2" selection-start-line="1243" selection-start-column="2" selection-end-line="1243" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavformat/avio.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/common.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#93#117#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,10 +207,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/cpp/native-jni.cpp">
+        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACDecodeActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+            <state relative-caret-position="115">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+              <folding>
+                <element signature="e#46#404#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,8 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="339">
+              <caret line="113" column="58" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
               <folding>
                 <element signature="e#38#54#0" expanded="true" />
               </folding>
@@ -221,20 +230,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../Android/NDK/android-ndk-r15c/sysroot/usr/include/stdint.h">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libswresample/swresample.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="305" column="4" selection-start-line="305" selection-start-column="4" selection-end-line="305" selection-end-column="4" />
+            <state relative-caret-position="685">
+              <caret line="96" column="47" lean-forward="true" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -252,8 +252,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>encode</find>
-      <find>decode</find>
       <find>param.</find>
       <find>x264_image_t</find>
       <find>points</find>
@@ -282,11 +280,14 @@
       <find>avcodec_fill_audio_frame</find>
       <find>outFile</find>
       <find>writeAACPakcetToFile</find>
+      <find>writePCMPakcetToFile</find>
+      <find>startDecoder</find>
     </findStrings>
     <replaceStrings>
       <replace>mAacencoder</replace>
       <replace>LOGE</replace>
       <replace>pParam-&gt;</replace>
+      <replace>AudioDecoder</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -295,9 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/AudioEncoder.kt" />
-        <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/ICodec.kt" />
-        <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/AudioProcessor.kt" />
         <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/OnAudioEncodeListener.kt" />
         <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/IMediaCodecListener.kt" />
         <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/StreamController.kt" />
@@ -332,20 +330,23 @@
         <option value="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt" />
         <option value="$PROJECT_DIR$/shell/build_fdkaac.sh" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/build.gradle" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" />
         <option value="$PROJECT_DIR$/config.gradle" />
-        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt" />
-        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.h" />
         <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.cpp" />
-        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h" />
         <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.h" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACDecodeActivity.kt" />
+        <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -360,9 +361,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,37 +372,47 @@
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fdkaac_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="encode" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="avsample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="avsample" type="462c0819:PsiDirectoryNode" />
+              <item name="MainActivity" type="2c5a2ef7:KtClassOrObjectTreeNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -430,6 +439,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ffmpeg_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="decode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -466,6 +484,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ffmpeg_audio_encode" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ffmpeg_audio_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ffmpeg_audio_encode" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="FFmpegAACDecodeActivity" type="2c5a2ef7:KtClassOrObjectTreeNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -538,6 +567,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -566,6 +597,7 @@
       <recent name="com.devyk.x264_video_encode" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.devyk.ffmpeg_audio_encode.sample" />
       <recent name="com.devyk.mediacodec_video_encode.mediacodec" />
       <recent name="com.devyk.fdkaac_audio_encode.sample" />
     </key>
@@ -714,9 +746,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3968254" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3968254" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -726,15 +759,15 @@
       <window_info id="Capture Tool" order="8" />
       <window_info id="Favorites" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.13877551" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.6989796" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Build" order="6" visible="true" weight="0.030612245" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1734694" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.2132653" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1377551" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32959184" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.30510205" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.38265306" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32959184" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -852,12 +885,6 @@
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/FFmpeg_Native_Methods.kt</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt</url>
           <line>55</line>
           <properties />
@@ -966,34 +993,74 @@
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
-          <line>167</line>
-          <option name="timeStamp" value="211" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp</url>
-          <line>47</line>
+          <line>97</line>
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
-          <line>235</line>
+          <line>236</line>
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
-          <line>248</line>
+          <line>249</line>
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
-          <line>263</line>
+          <line>264</line>
           <option name="timeStamp" value="290" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
-          <line>221</line>
+          <line>222</line>
           <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp</url>
+          <line>280</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>76</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>106</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>229</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/common.h</url>
+          <line>24</line>
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>212</line>
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>30</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp</url>
+          <line>18</line>
+          <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/devyk/common/FindFiles.java</url>
@@ -1071,42 +1138,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shell/build_fdkaac_all.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/build_ffmpeg_merge_all.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_all.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_merge.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_merge_all.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#50#592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thirdparty/fdk_aac/include/aacdecoder_lib.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1140,13 +1171,6 @@
     <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/common.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="3" selection-start-line="92" selection-start-column="3" selection-end-line="92" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/java/com/devyk/fdkaac_audio_encode_decode/FDKAACDecode.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1169,29 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1249,40 +1250,6 @@
     <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/native-fdkaac.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#46#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/common.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <element signature="e#93#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavformat/avformat.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="2444" selection-start-line="2444" selection-end-line="2444" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1300,77 +1267,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/TestEncoder.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/channel_layout.h">
+    <entry file="file://$USER_HOME$/Desktop/TestEncoder.cpp" />
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.h" />
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.cpp" />
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/samplefmt.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+        <state relative-caret-position="124">
+          <caret line="150" column="57" selection-start-line="150" selection-start-column="3" selection-end-line="150" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.h">
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/channel_layout.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding>
-            <element signature="e#49#67#0" expanded="true" />
-            <element signature="e#124#166#0" expanded="true" />
-            <element signature="e#188#219#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2700">
+          <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/cpp/native-jni.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="1260">
           <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Android/NDK/android-ndk-r15c/sysroot/usr/include/stdint.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="1005">
           <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavcodec/avcodec.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="4559" column="5" selection-start-line="4559" selection-start-column="5" selection-end-line="4559" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/TestEncoder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="182" column="22" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libswresample/swresample.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="4575">
           <caret line="305" column="4" selection-start-line="305" selection-start-column="4" selection-end-line="305" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/log.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="296" column="5" selection-start-line="296" selection-start-column="5" selection-end-line="296" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#46#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="167" column="20" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+          <folding>
+            <element signature="e#138#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/attributes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/res/layout/activity_ffmpeg_aac_encode.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/time.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavformat/avio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/common.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#93#117#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="339">
+          <caret line="113" column="58" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
           <folding>
             <element signature="e#38#54#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/samplefmt.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="150" column="57" selection-start-line="150" selection-start-column="3" selection-end-line="150" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1381,21 +1413,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.h">
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+        <state relative-caret-position="185">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
           <folding>
-            <element signature="e#138#156#0" expanded="true" />
-            <element signature="e#151#182#0" expanded="true" />
+            <element signature="e#137#155#0" expanded="true" />
+            <element signature="e#208#239#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/encode/AudioEncoder.cpp">
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavformat/avformat.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="274" lean-forward="true" selection-start-line="274" selection-end-line="274" />
+        <state relative-caret-position="2293">
+          <caret line="1243" column="2" selection-start-line="1243" selection-start-column="2" selection-end-line="1243" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACDecodeActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="e#46#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavcodec/avcodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="96" column="47" lean-forward="true" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
         </state>
       </provider>
     </entry>
