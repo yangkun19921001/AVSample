@@ -11,6 +11,10 @@ AudioEncoder *mAudioEncoder = 0;
 AudioDecoder *mAudioDecoder = 0;
 
 
+#define FDK_AAC "libfdk_aac"
+#define X264 "libx264"
+
+
 /**
  *
  * @param jniEnv
@@ -21,7 +25,6 @@ AudioDecoder *mAudioDecoder = 0;
  * @param sampleRate
  * @return
  */
-
 
 void EncodeCallback(uint8_t *data, int len) {
 
@@ -71,7 +74,7 @@ Android_JNI_decode_init(JNIEnv *jniEnv, jobject job, jstring inAACPath, jstring 
     const char *in_url = jniEnv->GetStringUTFChars(inAACPath, 0);
     const char *out_url = jniEnv->GetStringUTFChars(outPCMPath, 0);
 
-    ret = mAudioDecoder->init(in_url, out_url,"libfdk_aac");
+    ret = mAudioDecoder->init(in_url, out_url, X264);
     mAudioDecoder->start();
     jniEnv->ReleaseStringUTFChars(inAACPath, in_url);
     jniEnv->ReleaseStringUTFChars(outPCMPath, out_url);
@@ -110,10 +113,10 @@ static void Android_JNI_release(JNIEnv *jniEnv, jobject job) {
 
 
 static JNINativeMethod nativeMethods[] = {
-        {"init",    "(Ljava/lang/String;III)I",                   (void *) Android_JNI_encode_init},
+        {"init",    "(Ljava/lang/String;III)I",                (void *) Android_JNI_encode_init},
         {"init",    "(Ljava/lang/String;Ljava/lang/String;)I", (void *) Android_JNI_decode_init},
-        {"encode",  "([B)I",                                      (void *) Android_JNI_encode},
-        {"release", "()V",                                        (void *) Android_JNI_release}
+        {"encode",  "([B)I",                                   (void *) Android_JNI_encode},
+        {"release", "()V",                                     (void *) Android_JNI_release}
 };
 
 

@@ -24,8 +24,10 @@ public class FFmpegAACDecodeActivity : BaseActivity() {
     var mNativeMethods: FFmpeg_Native_Methods? = null
 
 //    private var mAACPath = "sdcard/avsample/ffmpeg_aac_441.aac";
-    private var mAACPath = "sdcard/avsample/test8k.mp3";
-    private var mPCMPath = "sdcard/avsample/ffmpeg_aac_decode_441.pcm";
+//    private var mAACPath = "sdcard/avsample/test8k.mp3";
+    private var mAACPath = "sdcard/avsample/mediacodec_video.h264";
+//    private var mPCMPath = "sdcard/avsample/ffmpeg_aac_decode_441.pcm";
+    private var mPCMPath = "sdcard/avsample/ffmpeg_decode_video.yuv";
     @Volatile
     private var isInit = -1;
 

@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-//apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -41,7 +40,7 @@ android {
     }
     externalNativeBuild {
         cmake {
-//            path file('src/main/cpp/CMakeLists.txt')
+            path file('src/main/cpp/CMakeLists.txt')
         }
     }
 
@@ -56,4 +55,5 @@ dependencies {
     //test
     testImplementation rootProject.ext.testDeps["junit"]
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':common')
 }

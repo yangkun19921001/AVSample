@@ -36,6 +36,10 @@
                 android:layout_height="wrap_content"
                 android:text="ffmpeg 音频解码"/>
 
+        <Button android:onClick="ffmpeg_video_encode" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ffmpeg 视频编码"/>
+
     </LinearLayout>
 
 

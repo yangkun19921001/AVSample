@@ -21,7 +21,6 @@ int AudioDecoder::alloc_audio_stream(const char *code_name) {
         LOGI("Couldn't find a valid audio codec");
         return 0;
     }
-
     pCodeccCtx = avcodec_alloc_context3(avCodec);
     if (!pCodeccCtx) {
         printf("avcodec_alloc_context3 error");
@@ -212,7 +211,7 @@ void AudioDecoder::startDecoder() {
         count++;
         LOGE("decode startDecoder！%d %d\n", isStart, count);
         if (count == 42) {
-            break;
+//            break;
         }
         AVPacket *packet = av_packet_alloc();
         AACPacket *pck = new AACPacket();

@@ -9,6 +9,7 @@ import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
 import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACDecodeActivity
 import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACEncodeActivity
+import com.devyk.ffmpeg_video_encode.FFmpegVideoEncoderActivity
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
 import com.devyk.mediacodec_video_encode.sample.H264MediaCodecEDActivity
@@ -86,5 +87,12 @@ class MainActivity : BaseActivity() {
      */
     fun ffmpeg_audio_decode(view: View) {
         startActivity(Intent(this, FFmpegAACDecodeActivity::class.java))
+    }
+
+    /**
+     * ffmpeg 音频解码 AAC-PCM
+     */
+    fun ffmpeg_video_encode(view: View) {
+        startActivity(Intent(this, FFmpegVideoEncoderActivity::class.java))
     }
 }
