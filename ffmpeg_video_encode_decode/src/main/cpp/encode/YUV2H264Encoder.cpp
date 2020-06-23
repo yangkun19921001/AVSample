@@ -26,6 +26,7 @@ YUV2H264Encoder::init(const char *inYUV420sp, const char *outH264, int width, in
     //打开输出文件
     if (avio_open(&this->pFormatCtx->pb, outH264, AVIO_FLAG_READ_WRITE) < 0) {
         LOGE("open file error:%s\n", outH264);
+        release();
         return ret = 0;
     }
     //初始化一个新的视频流，和配置一些编码参数，最后打开编码器
@@ -106,13 +107,12 @@ int YUV2H264Encoder::allo_video_stream() {
     pCodecCtx->time_base.num = 1;
     pCodecCtx->time_base.den = fps; //相当于 fps
     pCodecCtx->max_b_frames = 3;
-    pCodecCtx->max_b_frames = 3;
 
 
-
-    pCodecCtx->qmin = 10;
-    pCodecCtx->qmax = 51;
-
+    //下面 2 个参数的含义 参考：https://stackoverflow.com/questions/18563764/why-low-qmax-value-improve-video-quality
+    //官方建议使用默认值 参考：https://sites.google.com/site/linuxencoding/x264-ffmpeg-mapping
+    pCodecCtx->qmin = 10;//qmin 0 -qmax 1提供最高质量
+    pCodecCtx->qmax = 51;//qmin 50和qmax 51给出最低质量
 
     // Set Option
     AVDictionary *param = 0;
@@ -132,6 +132,7 @@ int YUV2H264Encoder::allo_video_stream() {
 
     if (!this->pCodec) {
         LOGE("not find libx264 encoder!\n");
+        release();
         return 0;
     }
     int ret = 0;

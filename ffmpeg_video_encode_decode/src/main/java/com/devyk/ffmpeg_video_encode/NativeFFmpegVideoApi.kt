@@ -16,12 +16,26 @@ public class NativeFFmpegVideoApi {
         }
     }
 
+    /**
+     * 编码初始化
+     */
     public external fun init(
         inYUV420spPath: String,
         outH264Path: String,
         width: Int,
         height: Int,
         fps: Int,
+        videoRate: Int
+    ): Int;
+
+    /**
+     * 解码初始化
+     */
+    public external fun init(
+        inYUV420spPath: String,
+        outH264Path: String,
+        width: Int,
+        height: Int,
         videoRate: Int
     ): Int;
 
