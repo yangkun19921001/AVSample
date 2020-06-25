@@ -98,4 +98,5 @@ abstract class BaseActivity : AppCompatActivity() {
         timer.stop()
     }
 
+
 }

@@ -1,5 +1,12 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">common</string>
     <string name="OPEN_PERMISSIONS">权限是否已经开启</string>
     <string name="GET_PERMISSION_ERROR">权限获取成功!</string>
+
+    <string name="stop_encoder" tools:ignore="ExtraTranslation">结束编码</string>
+    <string name="start_encoder" tools:ignore="ExtraTranslation">开始编码</string>
+
+
+    <string name="stop_decoder" tools:ignore="ExtraTranslation">结束解码</string>
+    <string name="start_decoder" tools:ignore="ExtraTranslation">开始解码</string>
 </resources>

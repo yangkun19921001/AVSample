@@ -10,6 +10,8 @@ import com.devyk.ffmpeg_audio_encode.sample.FFmpegAACEncodeActivity
 import com.devyk.ffmpeg_video_encode.sample.FFmpegVideoDecoderActivity
 import com.devyk.ffmpeg_video_encode.sample.FFmpegVideoEncoderActivity
 import com.devyk.ikavedit.base.BaseActivity
+import com.devyk.lame_audio_encode_decode.sample.FFmpegMp3DecoderActivity
+import com.devyk.lame_audio_encode_decode.sample.LameEncoderActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
 import com.devyk.mediacodec_video_encode.sample.H264MediaCodecEDActivity
 import com.devyk.x264_video_encode.sample.x264EncodeActivity
@@ -100,5 +102,19 @@ class MainActivity : BaseActivity() {
      */
     fun ffmpeg_video_decode(view: View) {
         startActivity(Intent(this, FFmpegVideoDecoderActivity::class.java))
+    }
+
+    /**
+     * ffmpeg Mp3编码  pcm - > mp3
+     */
+    fun lame_mp3_encode(view: View) {
+        startActivity(Intent(this, LameEncoderActivity::class.java))
+    }
+
+    /**
+     * ffmpeg Mp3编码  mp3 - > pcm
+     */
+    fun ffmpeg_mp3_decode(view: View) {
+        startActivity(Intent(this, FFmpegMp3DecoderActivity::class.java))
     }
 }

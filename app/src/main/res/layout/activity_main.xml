@@ -37,7 +37,6 @@
                 android:text="ffmpeg 音频解码"/>
 
 
-
         <Button android:onClick="ffmpeg_video_encode" android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ffmpeg 视频编码"/>
@@ -45,6 +44,14 @@
         <Button android:onClick="ffmpeg_video_decode" android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ffmpeg 视频解码"/>
+
+        <Button android:onClick="lame_mp3_encode" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lame mp3 编码"/>
+
+        <Button android:onClick="ffmpeg_mp3_decode" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ffmpeg mp3 解码"/>
 
     </LinearLayout>
 

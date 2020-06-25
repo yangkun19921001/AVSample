@@ -38,7 +38,7 @@
 | [mediacodec_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_video_encode_decode) | Android MediaCodec H264 硬编解码  | ✅       | 2020-06-16 |
 | [ffmpeg_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_audio_encode_decode)                               | FFmpeg API 实现音频 AAC 软编解码  |  ✅         |   2020-06-21      |
 | [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |
-| [lame_audio_encode_decode]()                                 | MP3 编解码                       | ❌        |         |
+| [lame_ffmpeg_mp3_encode_decode]()                                 | MP3 编解码                       | ✅          |    2020-06-25     |
 |                                                              |                                 |          |          |
 
  

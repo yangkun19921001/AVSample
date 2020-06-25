@@ -57,17 +57,15 @@ dependencies {
     //utils
     implementation rootProject.ext.commonDeps["android_utils"]
     implementation project(path: ':fdkaac_audio_encode_decode')
+    implementation project(path: ':x264_video_encode')
     implementation project(path: ':mediacodec_audio_encode_decode')
     implementation project(path: ':mediacodec_video_encode_decode')
-    implementation project(path: ':ffmpeg_video_encode_decode')
-    implementation project(path: ':x264_video_encode')
-    implementation project(path: ':lame_audio_encode_decode')
     implementation project(path: ':ffmpeg_audio_encode_decode')
+    implementation project(path: ':ffmpeg_video_encode_decode')
+    implementation project(path: ':lame_ffmpeg_mp3_encode_decode')
 
 
-    //项目 MVP 框架
-//    implementation project(path: ':common')
-//    implementation 'com.github.yangkun19921001:KAVEdit:v1.0.1'
+
 
 
 

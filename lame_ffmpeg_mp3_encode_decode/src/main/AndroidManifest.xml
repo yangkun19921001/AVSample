@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.devyk.lame_audio_encode_decode">
+    <application>
+        <activity android:name=".sample.LameEncoderActivity"/>
+        <activity android:name=".sample.FFmpegMp3DecoderActivity"/>
+    </application>
+</manifest>
