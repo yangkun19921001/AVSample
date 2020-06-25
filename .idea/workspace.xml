@@ -52,73 +52,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3763acd-30d9-4728-960e-bda2afedccaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build_static_lib/liblame/arm64-v8a/include/lame/lame.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/common.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/encode/LameEncoder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/encode/LameEncoder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/jni/ffmpeg_mp3_native_api.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/FFmpegNativeApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/FFmpegMp3DecoderActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/LameEncoderActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/res/layout/activity_ffmpeg_mp3_decoder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/res/layout/activity_ffmpeg_mp3_encoder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_lame.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_lame_all.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/build_lame.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/build_lame_all.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdparty/lame/libs/arm64-v8a/libmp3lame.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdparty/lame/libs/armeabi-v7a/libmp3lame.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AVSample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AVSample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/lame_audio_encode_decode.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/src/androidTest/java/com/devyk/lame_audio_encode_decode/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/androidTest/java/com/devyk/lame_audio_encode_decode/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lame_audio_encode_decode/src/test/java/com/devyk/lame_audio_encode_decode/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/test/java/com/devyk/lame_audio_encode_decode/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/cpp/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/parseutils.h" beforeDir="false" afterPath="$PROJECT_DIR$/thirdparty/ffmpeg/include/libavutil/parseutils.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/FFmpegMp3DecoderActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+            <state relative-caret-position="600">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#51#359#0" expanded="true" />
                 <element signature="e#1270#1303#0" expanded="true" />
@@ -245,11 +179,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="17" column="103" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+            <state relative-caret-position="196">
+              <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -266,14 +200,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="e#38#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="39" column="101" selection-start-line="39" selection-start-column="101" selection-end-line="39" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -356,7 +287,6 @@
         <option value="$PROJECT_DIR$/ffmpeg_video_encode_decode/src/main/cpp/decode/H264_2_YUVDecoder.h" />
         <option value="$PROJECT_DIR$/ffmpeg_video_encode_decode/src/main/cpp/decode/H264_2_YUVDecoder.cpp" />
         <option value="$PROJECT_DIR$/ffmpeg_video_encode_decode/src/main/java/com/devyk/ffmpeg_video_encode/sample/FFmpegVideoDecoderActivity.kt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/build.gradle" />
         <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/src/main/cpp/encode/Mp3Encoder.h" />
         <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/src/main/res/layout/activity_ffmpeg_mp3_encoder.xml" />
@@ -390,6 +320,7 @@
         <option value="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/LameEncoderActivity.kt" />
         <option value="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/FFmpegMp3DecoderActivity.kt" />
         <option value="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -830,9 +761,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26556778" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26556778" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -847,10 +779,10 @@
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Build" order="6" visible="true" weight="0.113265306" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.04387755" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.113265306" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7744898" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2897959" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.38265306" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.030612245" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32959184" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -1306,13 +1238,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1643,10 +1568,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavcodec/jni.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/FFmpegMp3DecoderActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        <state relative-caret-position="600">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#51#359#0" expanded="true" />
             <element signature="e#1270#1303#0" expanded="true" />
@@ -1655,13 +1590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thirdparty/ffmpeg/include/libavcodec/jni.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.cpp">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="17" column="103" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+        <state relative-caret-position="126">
+          <caret line="39" column="101" selection-start-line="39" selection-start-column="101" selection-end-line="39" selection-end-column="101" />
         </state>
       </provider>
     </entry>
