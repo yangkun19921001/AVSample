@@ -39,7 +39,13 @@
 | [ffmpeg_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_audio_encode_decode)                               | FFmpeg API 实现音频 AAC 软编解码  |  ✅         |   2020-06-21      |
 | [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |
 | [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |
-|                                                              |                                 |          |          |
+| [JavaAVPlayer]() | Java API 实现音视频播放 | ❌ |          |
+| [NativeAVPlayer]() | Native 端实现音视频播放 | ❌ | |
+| [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
+| [AVEditer](https://github.com/yangkun19921001/AVEditer) | SDK 短视频 | 进行中... | |
+| ... |  |  | |
+| ... |  |  | |
+| ... |  |  | |
 
  
 
@@ -63,7 +69,7 @@
 | [十二、实战:设计一款播放器]()     | ❌        |
 | [十三、实战:设计一款短视频 SDK]() | ❌        |
 
-### 二、OpenGL ES 提高
+### 二、OpenGL ES  提高
 
 > 计划中...
 

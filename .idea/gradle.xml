@@ -13,9 +13,11 @@
             <option value="$PROJECT_DIR$/fdkaac_audio_encode_decode" />
             <option value="$PROJECT_DIR$/ffmpeg_audio_encode_decode" />
             <option value="$PROJECT_DIR$/ffmpeg_video_encode_decode" />
+            <option value="$PROJECT_DIR$/javaavplayer" />
             <option value="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode" />
             <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode" />
             <option value="$PROJECT_DIR$/mediacodec_video_encode_decode" />
+            <option value="$PROJECT_DIR$/nativeavplayer" />
             <option value="$PROJECT_DIR$/x264_video_encode" />
             <option value="$PROJECT_DIR$/yuv_convert" />
           </set>

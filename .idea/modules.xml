@@ -8,9 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" filepath="$PROJECT_DIR$/fdkaac_audio_encode_decode/fdkaac_audio_encode_decode.iml" />
       <module fileurl="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" filepath="$PROJECT_DIR$/ffmpeg_audio_encode_decode/ffmpeg_audio_encode_decode.iml" />
       <module fileurl="file://$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" filepath="$PROJECT_DIR$/ffmpeg_video_encode_decode/ffmpeg_video_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaavplayer/javaavplayer.iml" filepath="$PROJECT_DIR$/javaavplayer/javaavplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/lame_ffmpeg_mp3_encode_decode.iml" filepath="$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/lame_ffmpeg_mp3_encode_decode.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" filepath="$PROJECT_DIR$/mediacodec_audio_encode_decode/mediacodec_audio_encode_decode.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" filepath="$PROJECT_DIR$/mediacodec_video_encode_decode/mediacodec_video_encode_decode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nativeavplayer/nativeavplayer.iml" filepath="$PROJECT_DIR$/nativeavplayer/nativeavplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/x264_video_encode/x264_video_encode.iml" filepath="$PROJECT_DIR$/x264_video_encode/x264_video_encode.iml" />
       <module fileurl="file://$PROJECT_DIR$/yuv_convert/yuv_convert.iml" filepath="$PROJECT_DIR$/yuv_convert/yuv_convert.iml" />
     </modules>

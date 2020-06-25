@@ -1,4 +1,4 @@
-include ':app',                                                 //测试组件
+include ':app', ':javaavplayer', ':nativeavplayer',                                                 //测试组件
         ':common',                                              //核心组件
         ':ffmpeg_audio_encode_decode',                          //ffmpeg audio 软编解码
         ':ffmpeg_video_encode_decode',                          //ffmpeg video 软编解码
