@@ -42,7 +42,7 @@
 | [JavaAVPlayer]() | Java API 实现音视频播放 | ❌ |          |
 | [NativeAVPlayer]() | Native 端实现音视频播放 | ❌ | |
 | [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
-| [AVEditer](https://github.com/yangkun19921001/AVEditer) | SDK 短视频 | 进行中... | |
+| [AVEditer](https://github.com/yangkun19921001/AVEditer) | 实战项目-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | |
 | ... |  |  | |
 | ... |  |  | |
 | ... |  |  | |
