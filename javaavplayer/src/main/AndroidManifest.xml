@@ -3,5 +3,6 @@
     <application>
         <activity android:name=".sample.AudioMediaPlayActivity"/>
         <activity android:name=".sample.VideoMediaPlayActivity"/>
+        <activity android:name=".sample.AudioTrackPlayerActivity"/>
     </application>
 </manifest>

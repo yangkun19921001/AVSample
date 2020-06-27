@@ -52,7 +52,9 @@ public class VideoMediaPlayActivity : BaseActivity(), BasePlayer.IPlayerListener
 
     override fun init() {
         var btn_start = findViewById<Button>(R.id.btn_start);
+        btn_start.text = resources.getString(R.string.start_player)
         var btn_stop = findViewById<Button>(R.id.btn_stop);
+        btn_stop.text = resources.getString(R.string.stop_player)
         chronometer = findViewById<Chronometer>(R.id.timer);
         var surface = findViewById<SurfaceView>(R.id.surface);
         mVideoMediaPlayer = VideoMediaPlayer()

@@ -94,8 +94,8 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     public fun cleanTime(timer: Chronometer) {
-        timer.setBase(SystemClock.elapsedRealtime());
-        timer.stop()
+        timer?.setBase(SystemClock.elapsedRealtime());
+        timer?.stop()
     }
 
 

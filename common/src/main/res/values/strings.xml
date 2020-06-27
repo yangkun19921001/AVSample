@@ -9,4 +9,8 @@
 
     <string name="stop_decoder" tools:ignore="ExtraTranslation">结束解码</string>
     <string name="start_decoder" tools:ignore="ExtraTranslation">开始解码</string>
+
+
+    <string name="start_player" tools:ignore="ExtraTranslation">开始播放</string>
+    <string name="stop_player" tools:ignore="ExtraTranslation">停止播放</string>
 </resources>

@@ -62,6 +62,10 @@
                 android:layout_height="wrap_content"
                 android:text="mediaplayer mp4 player"/>
 
+        <Button android:onClick="audiotrack_play" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="audiotrack 播放 pcm"/>
+
     </LinearLayout>
 
 

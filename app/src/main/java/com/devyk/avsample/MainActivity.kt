@@ -11,6 +11,7 @@ import com.devyk.ffmpeg_video_encode.sample.FFmpegVideoDecoderActivity
 import com.devyk.ffmpeg_video_encode.sample.FFmpegVideoEncoderActivity
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.javaavplayer.sample.AudioMediaPlayActivity
+import com.devyk.javaavplayer.sample.AudioTrackPlayerActivity
 import com.devyk.javaavplayer.sample.VideoMediaPlayActivity
 import com.devyk.lame_audio_encode_decode.sample.FFmpegMp3DecoderActivity
 import com.devyk.lame_audio_encode_decode.sample.LameEncoderActivity
@@ -132,5 +133,12 @@ class MainActivity : BaseActivity() {
      */
     fun mediaplayer_video(view: View) {
         startActivity(Intent(this, VideoMediaPlayActivity::class.java))
+    }
+
+    /**
+     * Android AudioTrack API 实现音频播放
+     */
+    fun audiotrack_play(view: View) {
+        startActivity(Intent(this, AudioTrackPlayerActivity::class.java))
     }
 }
