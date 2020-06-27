@@ -40,10 +40,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3763acd-30d9-4728-960e-bda2afedccaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/audiotrack/AudioTrackImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/audiotrack/IAudioTrack.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioTrackPlayerActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_audiotrack_player.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/VideoConsumerGLPreview.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_yuv_play.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -57,11 +57,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaavplayer/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javaavplayer/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioMediaPlayActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioMediaPlayActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,112 +114,109 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/app/ActivityThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+            <state relative-caret-position="215">
+              <caret line="2790" selection-start-line="2790" selection-end-line="2790" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/media/AudioFormat.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/App.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="377" column="28" selection-start-line="377" selection-start-column="28" selection-end-line="377" selection-end-column="28" />
+            <state relative-caret-position="315">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioMediaPlayActivity.kt">
+        <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/java/nio/ByteBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="62" />
+            <state relative-caret-position="196">
+              <caret line="731" column="16" selection-start-line="731" selection-start-column="16" selection-end-line="731" selection-end-column="16" />
               <folding>
-                <element signature="e#39#319#0" expanded="true" />
-                <element signature="e#1273#1315#0" expanded="true" />
-                <element signature="e#1400#1441#0" expanded="true" />
+                <element signature="e#28066#28067#0" expanded="true" />
+                <element signature="e#28112#28113#0" expanded="true" />
+                <element signature="e#31510#31511#0" expanded="true" />
+                <element signature="e#31546#31547#0" expanded="true" />
+                <element signature="e#31817#31818#0" expanded="true" />
+                <element signature="e#31854#31855#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/media/AudioTrack.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/6a392bf0e4ce5fc841bf22c419dfd873ec438355/rxjava-2.2.2-sources.jar!/io/reactivex/functions/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="486" column="11" selection-start-line="486" selection-start-column="11" selection-end-line="486" selection-end-column="11" />
+            <state relative-caret-position="120">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/audiotrack/AudioTrackImpl.kt">
+        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="402">
+              <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
               <folding>
-                <element signature="e#43#141#0" expanded="true" />
+                <element signature="e#37#166#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/mediacodec/H264Decoder.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-522">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/6a392bf0e4ce5fc841bf22c419dfd873ec438355/rxjava-2.2.2-sources.jar!/io/reactivex/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="11952" column="28" selection-start-line="11952" selection-start-column="28" selection-end-line="11952" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/VideoConsumerGLPreview.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
+              <folding>
+                <element signature="e#37#482#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioTrackPlayerActivity.kt">
+        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+            <state relative-caret-position="408">
+              <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
               <folding>
-                <element signature="e#39#350#0" expanded="true" />
-                <element signature="e#708#750#0" expanded="true" />
-                <element signature="e#835#876#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/audiotrack/IAudioTrack.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-              <folding>
-                <element signature="e#43#193#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-              <folding>
-                <element signature="e#39#385#0" expanded="true" />
-                <element signature="e#1330#1372#0" expanded="true" />
-                <element signature="e#1457#1498#0" expanded="true" />
+                <element signature="e#39#514#0" expanded="true" />
+                <element signature="e#1952#1994#0" expanded="true" />
+                <element signature="e#2079#2120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -243,8 +236,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>queueInputBuffer</find>
-      <find>isStarted</find>
       <find>avi_write_header</find>
       <find>fwrite</find>
       <find>open</find>
@@ -273,6 +264,8 @@
       <find>mInputSurface</find>
       <find>AudioMediaPlayer</find>
       <find>status</find>
+      <find>onSurfaceCreated</find>
+      <find>videoConsumerGLPreview</find>
     </findStrings>
     <replaceStrings>
       <replace>mAacencoder</replace>
@@ -291,11 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/FFmpegNativeApi.kt" />
-        <option value="$PROJECT_DIR$/shell/build_lame_all.sh" />
-        <option value="$PROJECT_DIR$/shell/build_lame.sh" />
-        <option value="$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_lame_all.sh" />
-        <option value="$PROJECT_DIR$/shell/build_ffmpeg_with_x264_fdkaac_lame.sh" />
         <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/cpp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/src/main/cpp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ffmpeg_mp3_encode_decode/src/main/cpp/encode/Mp3Encoder.cpp" />
@@ -337,11 +325,16 @@
         <option value="$PROJECT_DIR$/common/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioMediaPlayActivity.kt" />
         <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/audiotrack/AudioTrackImpl.kt" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/devyk/common/base/BaseActivity.kt" />
         <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioTrackPlayerActivity.kt" />
+        <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/GLESActivity.kt" />
+        <option value="$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_yuv_play.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/VideoConsumerGLPreview.kt" />
+        <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt" />
+        <option value="$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt" />
       </list>
     </option>
   </component>
@@ -438,47 +431,68 @@
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javaavplayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="javaavplayer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javaavplayer" type="462c0819:PsiDirectoryNode" />
+              <item name="mediacodec_video_encode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediacodec_video_encode" type="462c0819:PsiDirectoryNode" />
+              <item name="mediacodec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediacodec_video_encode" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mediacodec_video_encode_decode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediacodec_video_encode" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="H264MediaCodecEDActivity" type="2c5a2ef7:KtClassOrObjectTreeNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -709,8 +723,8 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8573281" visible="true" weight="0.26556778" />
-      <window_info id="Structure" order="2" sideWeight="0.14267185" side_tool="true" visible="true" weight="0.26556778" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8559322" visible="true" weight="0.26556778" />
+      <window_info id="Structure" order="2" sideWeight="0.1440678" side_tool="true" visible="true" weight="0.26556778" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -719,7 +733,7 @@
       <window_info id="Capture Tool" order="8" />
       <window_info id="Favorites" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.2132653" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.39795917" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" weight="0.32959184" />
@@ -897,6 +911,48 @@
           <line>30</line>
           <properties />
           <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/VideoConsumerGLPreview.kt</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="414" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="416" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="424" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/fdkaac_audio_encode_decode/src/main/cpp/encode/AACEncoder.cpp</url>
@@ -1195,110 +1251,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACEncodeActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/java/com/devyk/ffmpeg_audio_encode/sample/FFmpegAACDecodeActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="82" column="1" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="82" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/res/layout/activity_ffmpeg_mp3_decoder.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="87" selection-start-line="6" selection-end-line="87" />
-          <folding>
-            <element signature="e#229#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/decode/AudioDecoder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="233" selection-start-line="5" selection-end-line="233" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg_audio_encode_decode/src/main/cpp/native_ffmpeg_audio.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="35" selection-end-column="7" />
-          <folding>
-            <element signature="e#38#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/decode/Mp3Decoder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
-          <folding>
-            <element signature="e#226#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/LameEncoderActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-          <folding>
-            <element signature="e#1781#1814#0" expanded="true" />
-            <element signature="e#1878#1910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/cpp/jni/ffmpeg_mp3_native_api.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-          <folding>
-            <element signature="e#39#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lame_ffmpeg_mp3_encode_decode/src/main/java/com/devyk/lame_audio_encode_decode/sample/FFmpegMp3DecoderActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#51#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/hardware/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10500">
@@ -1456,14 +1408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_video_mediaplayer.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/mediaplay/AudioMediaPlayer.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1521,18 +1465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-          <folding>
-            <element signature="e#39#385#0" expanded="true" />
-            <element signature="e#1330#1372#0" expanded="true" />
-            <element signature="e#1457#1498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioMediaPlayActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -1542,21 +1474,6 @@
             <element signature="e#1273#1315#0" expanded="true" />
             <element signature="e#1400#1441#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1603,12 +1520,150 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/AudioTrackPlayerActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="783">
           <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
           <folding>
             <element signature="e#39#350#0" expanded="true" />
             <element signature="e#708#750#0" expanded="true" />
             <element signature="e#835#876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/opengl/GLES20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="967" column="29" selection-start-line="967" selection-start-column="29" selection-end-line="967" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_video_mediaplayer.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/VideoMediaPlayActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="58" column="62" selection-start-line="53" selection-start-column="6" selection-end-line="58" selection-end-column="62" />
+          <folding>
+            <element signature="e#39#385#0" expanded="true" />
+            <element signature="e#1457#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="149" column="46" selection-start-line="149" selection-start-column="46" selection-end-line="149" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/res/layout/activity_yuv_play.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="2790" selection-start-line="2790" selection-end-line="2790" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/VideoConsumerGLPreview.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
+          <folding>
+            <element signature="e#37#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/mediacodec/H264Decoder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/6a392bf0e4ce5fc841bf22c419dfd873ec438355/rxjava-2.2.2-sources.jar!/io/reactivex/functions/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/6a392bf0e4ce5fc841bf22c419dfd873ec438355/rxjava-2.2.2-sources.jar!/io/reactivex/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="11952" column="28" selection-start-line="11952" selection-start-column="28" selection-end-line="11952" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Android/SDK/sources/android-29/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="731" column="16" selection-start-line="731" selection-start-column="16" selection-end-line="731" selection-end-column="16" />
+          <folding>
+            <element signature="e#28066#28067#0" expanded="true" />
+            <element signature="e#28112#28113#0" expanded="true" />
+            <element signature="e#31510#31511#0" expanded="true" />
+            <element signature="e#31546#31547#0" expanded="true" />
+            <element signature="e#31817#31818#0" expanded="true" />
+            <element signature="e#31854#31855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/gles/GLESMaanager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
+          <folding>
+            <element signature="e#37#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaavplayer/src/main/java/com/devyk/javaavplayer/sample/YUVPlayActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
+          <folding>
+            <element signature="e#39#514#0" expanded="true" />
+            <element signature="e#1952#1994#0" expanded="true" />
+            <element signature="e#2079#2120#0" expanded="true" />
           </folding>
         </state>
       </provider>

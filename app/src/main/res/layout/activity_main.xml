@@ -66,6 +66,10 @@
                 android:layout_height="wrap_content"
                 android:text="audiotrack 播放 pcm"/>
 
+        <Button android:onClick="gles_yuv_play" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GLES 播放 YUV"/>
+
     </LinearLayout>
 
 

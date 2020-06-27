@@ -13,6 +13,7 @@ import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.javaavplayer.sample.AudioMediaPlayActivity
 import com.devyk.javaavplayer.sample.AudioTrackPlayerActivity
 import com.devyk.javaavplayer.sample.VideoMediaPlayActivity
+import com.devyk.javaavplayer.sample.YUVPlayActivity
 import com.devyk.lame_audio_encode_decode.sample.FFmpegMp3DecoderActivity
 import com.devyk.lame_audio_encode_decode.sample.LameEncoderActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
@@ -140,5 +141,12 @@ class MainActivity : BaseActivity() {
      */
     fun audiotrack_play(view: View) {
         startActivity(Intent(this, AudioTrackPlayerActivity::class.java))
+    }
+
+    /**
+     * Android AudioTrack API 实现音频播放
+     */
+    fun gles_yuv_play(view: View) {
+        startActivity(Intent(this, YUVPlayActivity::class.java))
     }
 }

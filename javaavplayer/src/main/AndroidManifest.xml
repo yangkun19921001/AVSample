@@ -4,5 +4,6 @@
         <activity android:name=".sample.AudioMediaPlayActivity"/>
         <activity android:name=".sample.VideoMediaPlayActivity"/>
         <activity android:name=".sample.AudioTrackPlayerActivity"/>
+        <activity android:name=".sample.YUVPlayActivity"/>
     </application>
 </manifest>
