@@ -1,5 +1,6 @@
 package com.devyk.common
 
+import android.util.Log
 import log.ILog
 
 /**
@@ -13,15 +14,19 @@ import log.ILog
  */
 public object LogHelper : ILog {
     override fun i(tag: String, info: String?) {
+        Log.i(tag,info)
 
     }
 
     override fun e(tag: String, info: String?) {
+        Log.e(tag,info)
     }
 
     override fun w(tag: String, info: String?) {
+        Log.w(tag,info)
     }
 
     override fun d(tag: String, info: String?) {
+        Log.d(tag,info)
     }
 }

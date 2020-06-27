@@ -53,6 +53,15 @@
                 android:layout_height="wrap_content"
                 android:text="ffmpeg mp3 解码"/>
 
+
+        <Button android:onClick="mediaplayer_audio" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mediaplayer mp3 player"/>
+
+        <Button android:onClick="mediaplayer_video" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mediaplayer mp4 player"/>
+
     </LinearLayout>
 
 

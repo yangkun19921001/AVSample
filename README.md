@@ -91,6 +91,7 @@
 
 ## 参考
 
+- [bigflake/mediacodec](https://bigflake.com/mediacodec/)
 
 - [雷神-最简单的基于FFmpeg的移动端例子：Android 视频解码器-单个库版](https://blog.csdn.net/leixiaohua1020/article/details/47011021)
 

@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.devyk.javaavplayer"/>
+          package="com.devyk.javaavplayer">
+    <application>
+        <activity android:name=".sample.AudioMediaPlayActivity"/>
+        <activity android:name=".sample.VideoMediaPlayActivity"/>
+    </application>
+</manifest>
