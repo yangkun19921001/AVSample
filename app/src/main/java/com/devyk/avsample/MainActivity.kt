@@ -2,6 +2,7 @@ package com.devyk.avsample
 
 import android.content.Intent
 import android.view.View
+import com.blankj.utilcode.util.ToastUtils
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
@@ -18,6 +19,8 @@ import com.devyk.lame_audio_encode_decode.sample.FFmpegMp3DecoderActivity
 import com.devyk.lame_audio_encode_decode.sample.LameEncoderActivity
 import com.devyk.mediacodec_audio_encode.sample.AudioMediaCodecActivity
 import com.devyk.mediacodec_video_encode.sample.H264MediaCodecEDActivity
+import com.devyk.nativeavplayer.sample.NativeAudioPlayer
+import com.devyk.nativeavplayer.sample.NativeVideoPlayer
 import com.devyk.x264_video_encode.sample.x264EncodeActivity
 
 class MainActivity : BaseActivity() {
@@ -148,5 +151,20 @@ class MainActivity : BaseActivity() {
      */
     fun gles_yuv_play(view: View) {
         startActivity(Intent(this, YUVPlayActivity::class.java))
+    }
+
+    /**
+     * native OpenSL ES 实现 PCM 播放
+     */
+    fun native_audio_play(view: View){
+        startActivity(Intent(this,NativeAudioPlayer::class.java))
+    }
+
+    /**
+     * native OpenGL ES 实现 YUV 播放
+     */
+    fun native_video_play(view: View){
+//        ToastUtils.showLong("参考：https://github.com/yangkun19921001/AVEditer/tree/master/avedit/src/main/cpp/avplay/video")
+        startActivity(Intent(this, NativeVideoPlayer::class.java))
     }
 }

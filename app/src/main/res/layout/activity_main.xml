@@ -6,6 +6,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -69,6 +70,16 @@
         <Button android:onClick="gles_yuv_play" android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="GLES 播放 YUV"/>
+
+
+        <Button android:onClick="native_audio_play" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OpenSL ES 播放 PCM"/>
+
+
+        <Button android:onClick="native_video_play" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OpenGL ES 播放 YUV"/>
 
     </LinearLayout>
 

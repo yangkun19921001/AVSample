@@ -30,7 +30,7 @@ public class FFmpegAACEncodeActivity : BaseActivity() {
 
     override fun initListener() {
         AudioCapture.addRecordListener(object : AudioCapture.OnRecordListener {
-            override fun onStart() {
+            override fun onStart(sampleRate:Int,channels:Int,sampleFormat:Int) {
                 runOnUiThread {
                     timeClean()//计时器清零
                     setTimeFormat()

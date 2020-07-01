@@ -45,13 +45,13 @@ public object AudioUtils {
      * @see AudioFormat.CHANNEL_IN_MONO 单声道
      * @see AudioFormat.CHANNEL_IN_STEREO 立体声
      */
-    private var AUDIO_CHANNEL_CONFIG = AudioFormat.CHANNEL_IN_MONO
+    public  val AUDIO_CHANNEL_CONFIG = AudioFormat.CHANNEL_IN_MONO
 
     /**
      * 采样率 如果 AudioRecord 初始化失败，那么可以降低为 16000 ，或者检查权限是否开启
      * 默认 44100
      */
-    private var SAMPLE_RATE_IN_HZ = 44100
+    public  val SAMPLE_RATE_IN_HZ = 44100
 
     /**
      * 采样格式
@@ -59,7 +59,7 @@ public object AudioUtils {
      *
      * @see AudioFormat.ENCODING_PCM_16BIT 兼容大部分手机
      */
-    private var AUDIO_FROMAT = AudioFormat.ENCODING_PCM_16BIT
+    public  val AUDIO_FROMAT = AudioFormat.ENCODING_PCM_16BIT
 
     /**
      * 录音源
@@ -67,7 +67,7 @@ public object AudioUtils {
      * @see MediaRecorder.AudioSource.VOICE_RECOGNITION 用于语音识别，等同于默认
      * @see MediaRecorder.AudioSource.VOICE_COMMUNICATION 用于 VOIP 应用
      */
-    private var AUDIO_SOURCE = MediaRecorder.AudioSource.MIC;
+    public  val AUDIO_SOURCE = MediaRecorder.AudioSource.MIC;
 
     /**
      * 配置内部音频缓冲区的大小，由于不同厂商会有不同的实现。那么我们可以通过一个静态函数来 getMinBufferSize 来定义

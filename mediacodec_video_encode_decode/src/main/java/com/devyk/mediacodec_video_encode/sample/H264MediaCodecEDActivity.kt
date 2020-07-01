@@ -59,6 +59,8 @@ public class H264MediaCodecEDActivity : BaseActivity(), SurfaceHolder.Callback, 
         mH264Encoder?.prepare(applicationContext, VideoConfiguration.createDefault())
         mH264Encoder?.setOnEncodeListener(this)
 
+
+
     }
 
     override fun getLayoutId(): Int = R.layout.activity_mediacodec_video_ed

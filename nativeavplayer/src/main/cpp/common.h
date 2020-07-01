@@ -10,7 +10,9 @@
 #include "stdio.h"
 #include <sys/time.h>
 
-#define LOG_TAG "ffmpeg_"
+#define LOG_TAG "NATIVE_PLAYER "
+#define SUCCESSED 1
+#define ERROR 0
 
 #ifdef __ANDROID__
 #define LOGI(...)  __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)

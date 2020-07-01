@@ -146,7 +146,6 @@ class VideoConsumerGLPreview : GLSurfaceView, GLSurfaceView.Renderer {
         mBufferPositionU = mBufferWidthY * mBufferHeightY
         mBufferPositionV = mBufferPositionU + mBufferWidthUV * mBufferHeightUV
 
-
     }
 
 

@@ -25,11 +25,22 @@
             android:layout_height="wrap_content"/>
 
 
-    <SurfaceView
+    <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent">
 
-            android:id="@+id/surface"
-            android:layout_width="match_parent"
-                 android:layout_height="wrap_content"/>
+
+        <SurfaceView
+                android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        <com.devyk.common.LiveIdView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.devyk.common.LiveIdView>
+
+
+    </RelativeLayout>
 
 
 </LinearLayout>

@@ -8,6 +8,7 @@ import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.javaavplayer.R
 import com.devyk.javaavplayer.gles.GLESMaanager
 import io.reactivex.Observable
+import io.reactivex.ObservableSource
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_yuv_play.*
 import java.io.FileInputStream
 import java.util.*
 import java.util.concurrent.TimeUnit
+import java.util.function.Function
 
 /**
  * <pre>
@@ -145,3 +147,5 @@ public class YUVPlayActivity : BaseActivity() {
         mFileInputStream.close()
     }
 }
+
+

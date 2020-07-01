@@ -43,7 +43,7 @@ public class FDKAACEncodeActivty : BaseActivity() {
 
     override fun initListener() {
         AudioCapture.addRecordListener(object : AudioCapture.OnRecordListener {
-            override fun onStart() {
+            override fun onStart(sampleRate:Int,channels:Int,sampleFormat:Int) {
                 Handler().post {
                     timeClean()//计时器清零
                     setTimeFormat()

@@ -11,7 +11,7 @@ extern "C" {
 #include "libavutil/time.h"
 };
 
-#include "common.h"
+#include "../../../../../nativeavplayer/src/main/cpp/common.h"
 #include "pthread.h"
 
 class H264_2_YUVDecoder {

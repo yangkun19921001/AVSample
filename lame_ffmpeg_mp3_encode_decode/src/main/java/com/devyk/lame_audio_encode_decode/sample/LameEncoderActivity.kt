@@ -31,7 +31,7 @@ public class LameEncoderActivity : BaseActivity() {
 
     override fun initListener() {
         AudioCapture.addRecordListener(object : AudioCapture.OnRecordListener {
-            override fun onStart() {
+            override fun onStart(sampleRate:Int,channels:Int,sampleFormat:Int) {
 
                 runOnUiThread {
                     startTime(chronometer)

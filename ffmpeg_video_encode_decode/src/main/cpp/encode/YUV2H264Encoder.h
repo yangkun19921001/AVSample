@@ -13,7 +13,7 @@ extern "C" {
 #include "libavformat/avformat.h"
 };
 
-#include "common.h"
+#include "../../../../../nativeavplayer/src/main/cpp/common.h"
 #include "pthread.h"
 
 /**

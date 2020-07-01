@@ -3,6 +3,9 @@ package com.devyk.ikavedit.audio
 import android.media.AudioFormat
 import android.media.MediaRecorder
 import com.devyk.avedit.audio.AudioUtils
+import com.devyk.avedit.audio.AudioUtils.AUDIO_CHANNEL_CONFIG
+import com.devyk.avedit.audio.AudioUtils.AUDIO_FROMAT
+import com.devyk.avedit.audio.AudioUtils.SAMPLE_RATE_IN_HZ
 import com.devyk.common.LogHelper
 
 /**
@@ -106,7 +109,7 @@ object AudioCapture : Runnable {
     }
 
     public interface OnRecordListener {
-        fun onStart();
+        fun onStart(sampleRate:Int=SAMPLE_RATE_IN_HZ,channels:Int=AUDIO_CHANNEL_CONFIG,sampleFormat:Int=AUDIO_FROMAT);
         fun onStop();
         fun onData(byteArray: ByteArray);
     }

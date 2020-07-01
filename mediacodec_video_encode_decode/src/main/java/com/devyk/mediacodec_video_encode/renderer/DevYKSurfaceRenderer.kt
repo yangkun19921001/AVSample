@@ -28,15 +28,15 @@ public class DevYKSurfaceRenderer : SurfaceRenderer {
 
     private var mX = 0.0;
 
-    private var TAG = "DevYK-零基础音视频进阶学习文档"
+    private var TAG = "在线教育直播"
 
     constructor(context: Context, surface: Surface) : super(surface) {
         // setting some text paint
         if (mPaint == null) {
             mPaint = TextPaint()
             mPaint?.setAntiAlias(true)
-            mPaint?.setColor(Color.WHITE)
-            mPaint?.setTextSize(30f * context.getResources().getConfiguration().fontScale)
+            mPaint?.setColor(Color.GREEN)
+            mPaint?.setTextSize(60f * context.getResources().getConfiguration().fontScale)
             mPaint?.setTextAlign(Paint.Align.CENTER)
         }
         mWidth = context.getScreenWidth()
@@ -44,7 +44,7 @@ public class DevYKSurfaceRenderer : SurfaceRenderer {
     }
 
     override fun onDraw(canvas: Canvas) {
-        canvas.drawColor(Color.BLUE)
+        canvas.drawColor(Color.BLACK)
         if (mX >= 1) mX = 0.0
         mX +=0.004
         var matrix = Matrix()

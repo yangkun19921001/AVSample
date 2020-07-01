@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.devyk.nativeavplayer"/>
+          package="com.devyk.nativeavplayer">
+    <application>
+        <activity android:name=".sample.NativeAudioPlayer"/>
+        <activity android:name=".sample.NativeVideoPlayer"/>
+    </application>
+</manifest>
