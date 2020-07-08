@@ -20,7 +20,7 @@ import java.util.*
  *     desc    : This is AudioTrackPlayerActivity
  * </pre>
  */
-public class AudioTrackPlayerActivity : BaseActivity() {
+public class AudioTrackPlayerActivity : BaseActivity<Int>() {
 
     private val sampleRate = 44100;
     private val channels = AudioFormat.CHANNEL_OUT_MONO;

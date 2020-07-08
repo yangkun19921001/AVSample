@@ -25,7 +25,7 @@ import java.nio.ByteBuffer
  *     desc    : This is AudioMediaCodecActivity
  * </pre>
  */
-public class AudioMediaCodecActivity : BaseActivity(), IMediaCodecListener,OnAudioDecodeListener {
+public class AudioMediaCodecActivity : BaseActivity<Int>(), IMediaCodecListener,OnAudioDecodeListener {
 
 
     private var mStreamController: StreamController? = null

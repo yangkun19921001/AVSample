@@ -81,6 +81,11 @@
                 android:layout_height="wrap_content"
                 android:text="OpenGL ES 播放 YUV"/>
 
+
+        <Button android:onClick="camera_preview" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OpenGL ES 实现 Camera 预览"/>
+
     </LinearLayout>
 
 

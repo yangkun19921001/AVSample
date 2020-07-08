@@ -18,7 +18,7 @@ import com.devyk.ikavedit.base.BaseActivity
  * YUV play: ffplay -f rawvideo -video_size 352x288 352_288_i420.yuv
  * H264 play: ffplay 352_288_i420.h264
  */
-public class FFmpegVideoEncoderActivity : BaseActivity() {
+public class FFmpegVideoEncoderActivity : BaseActivity<Int>() {
 
     private var IN_YUV_PATH = "sdcard/avsample/352_288_i420.yuv"
     private var OUT_H264_PATH = "sdcard/avsample/352_288_i420.h264"

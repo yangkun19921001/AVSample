@@ -24,7 +24,7 @@ import com.devyk.lame_audio_encode_decode.R
  * </pre>
  */
 
-public class FFmpegMp3DecoderActivity : BaseActivity() {
+public class FFmpegMp3DecoderActivity : BaseActivity<Int>() {
 
     lateinit var chronometer: Chronometer
     lateinit var start: Button

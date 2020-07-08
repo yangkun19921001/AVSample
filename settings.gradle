@@ -1,4 +1,7 @@
-include ':app', ':javaavplayer', ':nativeavplayer',                                                 //测试组件
+include ':app', //测试组件
+        ':camerapreview',                    //相机预览
+        ':javaavplayer',                    //Java 端音视频播放
+        ':nativeavplayer',                            //native 端音视频播放
         ':common',                                              //核心组件
         ':ffmpeg_audio_encode_decode',                          //ffmpeg audio 软编解码
         ':ffmpeg_video_encode_decode',                          //ffmpeg video 软编解码

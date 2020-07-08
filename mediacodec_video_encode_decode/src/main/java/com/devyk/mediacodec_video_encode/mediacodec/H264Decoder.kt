@@ -1,7 +1,8 @@
 package com.devyk.mediacodec_video_encode.mediacodec
 
 import android.media.MediaCodec
-import com.devyk.mediacodec_video_encode.config.VideoConfiguration
+import com.devyk.common.config.VideoConfiguration
+import com.devyk.common.mediacodec.BaseVideoDecoder
 import java.nio.ByteBuffer
 
 /**

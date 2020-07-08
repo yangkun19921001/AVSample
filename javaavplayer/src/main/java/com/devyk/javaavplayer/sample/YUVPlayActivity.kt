@@ -28,7 +28,7 @@ import java.util.function.Function
  *     desc    : This is YUVPlayActivity
  * </pre>
  */
-public class YUVPlayActivity : BaseActivity() {
+public class YUVPlayActivity : BaseActivity<Int>() {
 
 
     private lateinit var chronometer: Chronometer

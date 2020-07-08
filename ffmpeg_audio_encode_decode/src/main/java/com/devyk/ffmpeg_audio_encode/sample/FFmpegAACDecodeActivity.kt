@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_ffmpeg_aac_encode.*
  *     desc    : This is FFmpegAACEncodeActivity
  * </pre>
  */
-public class FFmpegAACDecodeActivity : BaseActivity() {
+public class FFmpegAACDecodeActivity : BaseActivity<Int>() {
 
 
     var mNativeMethods: FFmpeg_Native_Methods? = null

@@ -4,7 +4,9 @@ import android.content.Context
 import android.media.MediaCodec
 import android.util.Log
 import android.view.Surface
-import com.devyk.mediacodec_video_encode.config.VideoConfiguration
+import com.devyk.common.config.VideoConfiguration
+import com.devyk.common.mediacodec.BaseVideoEncoder
+import com.devyk.common.mediacodec.OnVideoEncodeListener
 import com.devyk.mediacodec_video_encode.renderer.DevYKSurfaceRenderer
 import java.io.FileOutputStream
 import java.nio.ByteBuffer
@@ -96,7 +98,6 @@ public class H264Encoder : BaseVideoEncoder() {
         }
         listener?.onVideoEncode(bb!!,bi)
         mFileOutputStream?.write(h264Arrays)
-
     }
 
 

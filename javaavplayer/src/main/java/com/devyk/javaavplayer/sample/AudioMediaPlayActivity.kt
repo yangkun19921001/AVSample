@@ -17,7 +17,7 @@ import com.devyk.javaavplayer.mediaplay.BasePlayer
  *     desc    : This is AudioMediaPlayActivity
  * </pre>
  */
-public class AudioMediaPlayActivity : BaseActivity(), BasePlayer.IPlayerListener {
+public class AudioMediaPlayActivity : BaseActivity<Int>(), BasePlayer.IPlayerListener {
 
     private lateinit var chronometer: Chronometer
 

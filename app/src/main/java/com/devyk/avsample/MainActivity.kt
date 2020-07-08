@@ -2,7 +2,8 @@ package com.devyk.avsample
 
 import android.content.Intent
 import android.view.View
-import com.blankj.utilcode.util.ToastUtils
+import com.devyk.av.camerapreview.sample.CameraPreviewActivity
+import com.devyk.av.camerapreview.sample.GLSampleActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
@@ -23,7 +24,7 @@ import com.devyk.nativeavplayer.sample.NativeAudioPlayer
 import com.devyk.nativeavplayer.sample.NativeVideoPlayer
 import com.devyk.x264_video_encode.sample.x264EncodeActivity
 
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity<Int>() {
     override fun initListener() {
     }
 
@@ -166,5 +167,12 @@ class MainActivity : BaseActivity() {
     fun native_video_play(view: View){
 //        ToastUtils.showLong("参考：https://github.com/yangkun19921001/AVEditer/tree/master/avedit/src/main/cpp/avplay/video")
         startActivity(Intent(this, NativeVideoPlayer::class.java))
+    }
+
+    /**
+     * 实战项目：OpenGL ES 实现 Camera 预览
+     */
+    fun camera_preview(view: View){
+        startActivity(Intent(this, GLSampleActivity::class.java))
     }
 }

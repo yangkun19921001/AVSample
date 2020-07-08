@@ -20,7 +20,7 @@ import java.io.FileOutputStream
  * </pre>
  */
 
-class FDKAACDecodeActivity : BaseActivity() {
+class FDKAACDecodeActivity : BaseActivity<Int>() {
     lateinit var fdkaacDecode: FDKAACDecode;
     lateinit var readBuffer: FileInputStream;
     lateinit var writeBuffer: FileOutputStream;

@@ -20,7 +20,7 @@ import java.io.FileOutputStream
  * </pre>
  */
 
-public class AudioRecordActivty : BaseActivity() {
+public class AudioRecordActivty : BaseActivity<Int>() {
 
     var mFileOutputStream: FileOutputStream? = null;
 

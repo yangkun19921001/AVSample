@@ -20,7 +20,6 @@ public class App : Application() {
         super.onCreate()
 
         CrashUtils.init { crashInfo, e ->
-
             Log.e("OnCrashListener",crashInfo)
         }
     }

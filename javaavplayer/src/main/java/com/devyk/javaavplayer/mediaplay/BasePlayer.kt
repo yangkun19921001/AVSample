@@ -1,5 +1,6 @@
 package com.devyk.javaavplayer.mediaplay
 
+import android.animation.ValueAnimator
 import android.media.AudioAttributes
 import android.media.AudioAttributes.CONTENT_TYPE_MUSIC
 import android.media.MediaPlayer
@@ -43,6 +44,12 @@ public abstract class BasePlayer : IMediaplayer, MediaPlayer.OnPreparedListener,
         }
         mMediaPlayer.prepare()
         PLAY_STATUS = 1;
+
+
+
+
+        var valueAnimator = ValueAnimator()
+        valueAnimator.repeatMode = 6;
 
     }
 

@@ -18,17 +18,23 @@
 
 - lame: 3.100
 
+- rtmp: committed b0631b0
+
+  
+  
   
 
 ## 进阶路线
 
-![](https://devyk.oss-cn-qingdao.aliyuncs.com/blog/20200611233219.jpg)
+![](https://devyk.oss-cn-qingdao.aliyuncs.com/blog/20200702235045.jpg)
 
 **进阶路线图可以在组件库找到对应代码**
 
 > 由于工作时间比较忙，所以只能抽空更新。
 >
 > 暂时定于一周一更 ，不忙就多更！
+
+
 
 | 组件库                                                       | 对应关系                          | 是否完成 | 完成时间 |
 | ------------------------------------------------------------ | --------------------------------- | -------- | -------- |
@@ -40,11 +46,12 @@
 | [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |
 | [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |
 | [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) | ✅      |      2020-06-28     |
-| [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放 | ✅  | 2020-07-02 |
-| [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
+| [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放(PCM/YUV) | ✅  | 2020-07-02 |
+| [camerapreview]() | 实战:OpenGL ES 实现相机预览->硬编码->录制 mp4 | ❌ |  |
+| [RtmpPush]() | 实战项目- rtmp 推流 SDK | ❌ |  |
 | [AVEditer](https://github.com/yangkun19921001/AVEditer) | 实战项目-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | |
-| ... |  |  | |
-| ... |  |  | |
+| [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
+|                                                              |                                                         |           | |
 | ... |  |  | |
 
  
@@ -53,21 +60,25 @@
 
 ### 一、音视频基础 + 实战短视频 SDK
 
-| 目录                              | 是否完成 |
-| --------------------------------- | -------- |
-| [一、音频基础知识]()              | ❌        |
-| [二、视频基础知识]()              | ❌        |
-| [三、音频采集]()                  | ❌        |
-| [四、视频采集]()                  | ❌        |
-| [五、音频软编解码]()              | ❌        |
-| [六、视频软编解码]()              | ❌        |
-| [七、音频硬编解码]()              | ❌        |
-| [八、视频硬编解码]()              | ❌        |
-| [九、渲染 PCM]()                  | ❌        |
-| [十、渲染 YUV]()                  | ❌        |
-| [十一、MP3 编解码]()              | ❌        |
-| [十二、实战:设计一款播放器]()     | ❌        |
-| [十三、实战:设计一款短视频 SDK]() | ❌        |
+| 目录                                      | 是否完成 |
+| ----------------------------------------- | -------- |
+| [一、音频基础知识]()                      | ❌        |
+| [二、视频基础知识]()                      | ❌        |
+| [三、音频采集]()                          | ❌        |
+| [四、视频采集]()                          | ❌        |
+| [五、YUV 格式详解]()                      | ❌        |
+| [六、音频软编解码]()                      | ❌        |
+| [七、视频软编解码]()                      | ❌        |
+| [八、音频硬编解码]()                      | ❌        |
+| [九、视频硬编解码]()                      | ❌        |
+| [十、渲染 PCM]()                          | ❌        |
+| [十一、渲染 YUV]()                        | ❌        |
+| [十二、MP3 编解码]()                      | ❌        |
+| [十三、实战:设计一款 Android RTMP SDK ]() | ❌        |
+| [十四、实战:设计一款播放器]()             | ❌        |
+| [十五、实战:设计一款短视频 SDK]()         | ❌        |
+
+
 
 ### 二、OpenGL ES  提高
 

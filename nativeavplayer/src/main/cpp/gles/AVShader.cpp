@@ -114,6 +114,7 @@ bool AVShader::init(AVShaderType type) {
         LOGE("initShader GL_VERTEX_SHADER failed!");
         return false;
     }
+
     LOGE("initShader GL_VERTEX_SHADER success! %d", type);
 
     //片元yuv420 shader初始化
@@ -186,14 +187,15 @@ bool AVShader::init(AVShaderType type) {
             1.0f, 1.0f,
             0.0, 1.0
     };
+
     GLuint atex = (GLuint) glGetAttribLocation(program, "aTexCoord");
     glEnableVertexAttribArray(atex);
     glVertexAttribPointer(atex, 2, GL_FLOAT, GL_FALSE, 8, txts);
 
-
     //材质纹理初始化
     //设置纹理层
     glUniform1i(glGetUniformLocation(program, "yTexture"), 0); //对于纹理第1层
+
     switch (type) {
         case AVSHADER_YUV420P:
             glUniform1i(glGetUniformLocation(program, "uTexture"), 1); //对于纹理第2层
@@ -204,6 +206,7 @@ bool AVShader::init(AVShaderType type) {
             glUniform1i(glGetUniformLocation(program, "uvTexture"), 1); //对于纹理第2层
             break;
     }
+
     mux.unlock();
     LOGI("初始化Shader成功！");
     return true;

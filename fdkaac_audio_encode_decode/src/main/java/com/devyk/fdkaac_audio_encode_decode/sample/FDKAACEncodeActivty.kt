@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.activity_audio_fdkaac_encode.*
  * </pre>
  */
 
-public class FDKAACEncodeActivty : BaseActivity() {
+public class FDKAACEncodeActivty : BaseActivity<Int>() {
 
 
 

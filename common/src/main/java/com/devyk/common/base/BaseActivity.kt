@@ -25,16 +25,29 @@ import com.tbruyelle.rxpermissions2.RxPermissions
  * </pre>
  */
 
-abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity<T> : AppCompatActivity() {
     public var TAG = javaClass.simpleName;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(getLayoutId())
+        onContentViewBefore()
+
+        if (getLayoutId() is Int){
+            setContentView(getLayoutId() as Int)
+        }else  if (getLayoutId() is View){
+            setContentView(getLayoutId() as View)
+        }
         checkPermission()
         init();
         initListener();
         initData();
 
+
+    }
+
+    /**
+     * 在 setContentView 之前需要做的初始化
+     */
+    protected open fun onContentViewBefore() {
 
     }
 
@@ -44,7 +57,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun init()
 
-    abstract fun getLayoutId(): Int
+    abstract fun getLayoutId(): T
 
 
     protected fun setNotTitleBar() {

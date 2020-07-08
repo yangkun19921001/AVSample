@@ -3,12 +3,12 @@ package com.devyk.mediacodec_video_encode.sample
 import android.media.MediaCodec
 import android.view.SurfaceHolder
 import android.view.View
+import com.devyk.common.config.VideoConfiguration
+import com.devyk.common.mediacodec.OnVideoEncodeListener
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_video_encode.R
-import com.devyk.mediacodec_video_encode.config.VideoConfiguration
 import com.devyk.mediacodec_video_encode.mediacodec.H264Decoder
 import com.devyk.mediacodec_video_encode.mediacodec.H264Encoder
-import com.devyk.mediacodec_video_encode.mediacodec.OnVideoEncodeListener
 import kotlinx.android.synthetic.main.activity_mediacodec_video_ed.*
 import java.nio.ByteBuffer
 
@@ -24,7 +24,7 @@ import java.nio.ByteBuffer
  *     desc    : This is H264MediaCodecEDActivity
  * </pre>
  */
-public class H264MediaCodecEDActivity : BaseActivity(), SurfaceHolder.Callback, OnVideoEncodeListener {
+public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callback, OnVideoEncodeListener {
 
 
     private var mH264Encoder: H264Encoder? = null

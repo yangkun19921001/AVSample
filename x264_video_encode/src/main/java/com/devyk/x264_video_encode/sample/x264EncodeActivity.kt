@@ -25,7 +25,7 @@ import java.nio.ByteBuffer
  *     desc    : This is x264EncodeActiviy
  * </pre>
  */
-public class x264EncodeActivity : BaseActivity() {
+public class x264EncodeActivity : BaseActivity<Int>() {
 
     //    private var mYUV420SPPATH = "sdcard/waterfall_cif_352*288_i420.yuv"
     private var mYUV420SPPATH = "sdcard/record_1280_720_nv21.yuv"

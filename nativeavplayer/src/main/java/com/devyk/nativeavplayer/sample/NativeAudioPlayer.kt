@@ -22,7 +22,7 @@ import java.util.*
  * </pre>
  */
 
-class NativeAudioPlayer : BaseActivity() {
+class NativeAudioPlayer : BaseActivity<Int>() {
 
     private lateinit var mNativeAPI: NativeAPI
 

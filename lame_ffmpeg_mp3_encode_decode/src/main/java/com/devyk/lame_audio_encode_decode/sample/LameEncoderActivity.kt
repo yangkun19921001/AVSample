@@ -16,7 +16,7 @@ import com.devyk.lame_audio_encode_decode.R
  *     desc    : This is LameEncoderActivity
  * </pre>
  */
-public class LameEncoderActivity : BaseActivity() {
+public class LameEncoderActivity : BaseActivity<Int>() {
 
     lateinit var chronometer: Chronometer
     lateinit var start: Button

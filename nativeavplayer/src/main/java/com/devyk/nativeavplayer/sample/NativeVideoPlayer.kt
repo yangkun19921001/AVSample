@@ -24,7 +24,7 @@ import java.io.FileInputStream
  *
  */
 
-public class NativeVideoPlayer : BaseActivity() {
+public class NativeVideoPlayer : BaseActivity<Int>() {
 
     private var mYUV420SPPATH = "sdcard/waterfall_cif_352*288_i420.yuv"
     private  var mFileInputStream:FileInputStream?=null

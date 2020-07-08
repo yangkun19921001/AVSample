@@ -35,9 +35,7 @@
                 android:layout_height="wrap_content"/>
 
 
-        <com.devyk.common.LiveIdView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></com.devyk.common.LiveIdView>
+
 
 
     </RelativeLayout>

@@ -16,7 +16,7 @@ import com.devyk.ikavedit.base.BaseActivity
  * </pre>
  */
 
-public class FFmpegVideoDecoderActivity : BaseActivity() {
+public class FFmpegVideoDecoderActivity : BaseActivity<Int>() {
 
     private var OUT_YUV_PATH = "sdcard/avsample/352_288_i420_h264_yuv.yuv"
     private var IN_H264_PATH = "sdcard/avsample/352_288_i420.h264"
