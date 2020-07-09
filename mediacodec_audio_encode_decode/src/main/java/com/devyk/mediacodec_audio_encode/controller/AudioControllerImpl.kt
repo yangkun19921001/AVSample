@@ -5,9 +5,9 @@ import android.media.AudioRecord
 import android.media.MediaRecorder
 import android.util.Log
 import com.devyk.avedit.audio.AudioUtils
-import com.devyk.mediacodec_audio_encode.AudioConfiguration
+import com.devyk.common.config.AudioConfiguration
+import com.devyk.common.callback.OnAudioEncodeListener
 import com.devyk.mediacodec_audio_encode.AudioProcessor
-import com.devyk.mediacodec_audio_encode.mediacodec.OnAudioEncodeListener
 
 /**
  * <pre>

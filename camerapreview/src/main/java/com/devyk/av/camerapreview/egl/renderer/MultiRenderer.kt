@@ -257,8 +257,7 @@ public class MultiRenderer(context: Context) : IRenderer {
         GLES20.glUseProgram(program)
 
         //2. 绑定纹理
-        if (mShaderIndex != 2)
-            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mTextureID)
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mTextureID)
 
         //3. 绑定 VBO
         GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, mVboID);
@@ -272,30 +271,29 @@ public class MultiRenderer(context: Context) : IRenderer {
         GLES20.glEnableVertexAttribArray(fPosition)
         GLES20.glVertexAttribPointer(fPosition, 2, GLES20.GL_FLOAT, false, 8, mVertexData.size * 4)
 
-
-
         //6. 开始绘制
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4)
 
 
+        //----绘制第二张图片
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mImageTextureId)
+
+        //3. 绑定 VBO
+        GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, mVboID);
+
+        //4. 设置顶点坐标
+        GLES20.glEnableVertexAttribArray(vPosition)
+        GLES20.glVertexAttribPointer(vPosition, 2, GLES20.GL_FLOAT, false, 8, 32)
+
+        //5. 设置纹理坐标
+        GLES20.glEnableVertexAttribArray(fPosition)
+        GLES20.glVertexAttribPointer(fPosition, 2, GLES20.GL_FLOAT, false, 8, mVertexData.size * 4)
         if (mShaderIndex == 2) {
-            //----绘制第二张图片
-            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mImageTextureId)
-
-            //3. 绑定 VBO
-            GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, mVboID);
-
-            //4. 设置顶点坐标
-            GLES20.glEnableVertexAttribArray(vPosition)
-            GLES20.glVertexAttribPointer(vPosition, 2, GLES20.GL_FLOAT, false, 8, 32)
-
-            //5. 设置纹理坐标
-            GLES20.glEnableVertexAttribArray(fPosition)
-            GLES20.glVertexAttribPointer(fPosition, 2, GLES20.GL_FLOAT, false, 8, mVertexData.size * 4)
-
             //6. 开始绘制
             GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4)
 
+        }else{
+            GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 3)
         }
 
 

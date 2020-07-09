@@ -2,15 +2,16 @@ package com.devyk.av.camerapreview.widget
 
 import android.content.Context
 import android.graphics.SurfaceTexture
-import android.hardware.Camera
 import android.util.AttributeSet
 import android.view.Surface
 import com.devyk.av.camerapreview.config.RendererConfiguration
 import com.devyk.av.camerapreview.egl.renderer.CameraRenderer
 import com.devyk.av.camerapreview.widget.base.GLSurfaceView
 import android.view.WindowManager
+import com.devyk.av.camerapreview.callback.ICameraOpenListener
 import com.devyk.common.LogHelper
 import com.devyk.common.camera.CameraHolder
+import com.devyk.common.config.CameraConfiguration
 
 
 /**
@@ -22,13 +23,27 @@ import com.devyk.common.camera.CameraHolder
  *     desc    : This is CameraView
  * </pre>
  */
-public class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener {
+public open class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener {
 
 
+    /**
+     * Camera 渲染器
+     */
     protected lateinit var renderer: CameraRenderer
 
 
-    private var cameraId = Camera.CameraInfo.CAMERA_FACING_BACK
+    /**
+     * 相机预览的纹理 ID
+     */
+    protected var mTextureId = -1;
+
+    protected var mCameraOpenListener:ICameraOpenListener? = null
+
+
+    /**
+     * 默认后置摄像头
+     */
+    private var cameraId = CameraConfiguration.Facing.BACK
 
     constructor(context: Context?) : this(context, null)
     constructor(context: Context?, attrs: AttributeSet?) : this(context, attrs, 0)
@@ -36,11 +51,6 @@ public class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener
         renderer = CameraRenderer(context!!)
         configure(RendererConfiguration.Builder().setRenderer(renderer).setRendererMode(RENDERERMODE_CONTINUOUSLY).build())
         //第一次需要初始化预览角度
-        if (CameraHolder.instance().isOpenBackFirst()) {
-            cameraId = Camera.CameraInfo.CAMERA_FACING_BACK
-        } else {
-            cameraId = Camera.CameraInfo.CAMERA_FACING_FRONT
-        }
         previewAngle(context)
         addRendererListener()
     }
@@ -48,12 +58,16 @@ public class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener
 
     private fun addRendererListener() {
         renderer.setOnRendererListener(object : CameraRenderer.OnRendererListener {
-            override fun onCreate(textureId: Int) {
+            override fun onCreate(cameraTextureId: Int, textureID: Int) {
+                mTextureId = textureID
+                val cameraConfiguration =
+                    CameraConfiguration.Builder().setFacing(cameraId).build()
+                CameraHolder.instance().setConfiguration(cameraConfiguration)
                 CameraHolder.instance().openCamera()
-                CameraHolder.instance().setSurfaceTexture(textureId, this@CameraView);
+                CameraHolder.instance().setSurfaceTexture(cameraTextureId, this@CameraView);
                 CameraHolder.instance().startPreview();
-
-
+                LogHelper.e(TAG,"TextureId:${mTextureId}")
+                mCameraOpenListener?.onCameraOpen()
             }
 
             override fun onDraw() {
@@ -66,7 +80,7 @@ public class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener
     /**
      * 释放 Camera 资源的时候调用
      */
-    public fun releaseCamera() {
+    public open fun releaseCamera() {
         CameraHolder.instance().stopPreview()
         CameraHolder.instance().releaseCamera()
     }
@@ -80,39 +94,52 @@ public class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableListener
         LogHelper.d(TAG, "旋转角度：" + rotation)
         renderer.resetMatrix()
         when (rotation) {
+
             Surface.ROTATION_0 -> {
-                if (cameraId == Camera.CameraInfo.CAMERA_FACING_BACK) {
+                if (cameraId == CameraConfiguration.Facing.BACK) {
                     renderer.setAngle(90, 0, 0, 1);
                     renderer.setAngle(180, 1, 0, 0);
                 } else {
                     renderer.setAngle(90, 0, 0, 1);
                 }
             }
+
             Surface.ROTATION_90 -> {
-                if (cameraId == Camera.CameraInfo.CAMERA_FACING_BACK) {
+                if (cameraId == CameraConfiguration.Facing.BACK) {
                     renderer.setAngle(180, 0, 0, 1);
                     renderer.setAngle(180, 0, 1, 0);
                 } else {
                     renderer.setAngle(90, 0, 0, 1);
                 }
             }
+
             Surface.ROTATION_180 -> {
-                if (cameraId == Camera.CameraInfo.CAMERA_FACING_BACK) {
+                if (cameraId == CameraConfiguration.Facing.BACK) {
                     renderer.setAngle(90, 0, 0, 1);
                     renderer.setAngle(180, 0, 1, 0);
                 } else {
                     renderer.setAngle(-90, 0, 0, 1);
                 }
             }
+
             Surface.ROTATION_270 -> {
-                if (cameraId == Camera.CameraInfo.CAMERA_FACING_BACK) {
+                if (cameraId == CameraConfiguration.Facing.BACK) {
                     renderer.setAngle(180, 0, 1, 0);
                 } else {
                     renderer.setAngle(0, 0, 0, 1);
                 }
-
             }
         }
-
     }
+
+    /**
+     * 拿到纹理 ID
+     */
+    public fun getTextureId(): Int = mTextureId
+
+
+    public fun addCameraOpenCallback(listener:ICameraOpenListener){
+        mCameraOpenListener = listener
+    }
+
 }

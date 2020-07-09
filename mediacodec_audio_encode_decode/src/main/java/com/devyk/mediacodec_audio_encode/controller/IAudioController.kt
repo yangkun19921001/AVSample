@@ -1,7 +1,7 @@
 package com.devyk.mediacodec_audio_encode.controller
 
-import com.devyk.mediacodec_audio_encode.AudioConfiguration
-import com.devyk.mediacodec_audio_encode.mediacodec.OnAudioEncodeListener
+import com.devyk.common.config.AudioConfiguration
+import com.devyk.common.callback.OnAudioEncodeListener
 /**
  * <pre>
  *     author  : devyk on 2020-06-13 16:31

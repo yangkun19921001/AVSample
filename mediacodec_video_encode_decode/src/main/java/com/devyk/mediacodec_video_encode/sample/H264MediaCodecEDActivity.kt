@@ -4,11 +4,11 @@ import android.media.MediaCodec
 import android.view.SurfaceHolder
 import android.view.View
 import com.devyk.common.config.VideoConfiguration
-import com.devyk.common.mediacodec.OnVideoEncodeListener
+import com.devyk.common.callback.OnVideoEncodeListener
 import com.devyk.ikavedit.base.BaseActivity
 import com.devyk.mediacodec_video_encode.R
 import com.devyk.mediacodec_video_encode.mediacodec.H264Decoder
-import com.devyk.mediacodec_video_encode.mediacodec.H264Encoder
+import com.devyk.mediacodec_video_encode.mediacodec.WriteH264
 import kotlinx.android.synthetic.main.activity_mediacodec_video_ed.*
 import java.nio.ByteBuffer
 
@@ -24,10 +24,11 @@ import java.nio.ByteBuffer
  *     desc    : This is H264MediaCodecEDActivity
  * </pre>
  */
-public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callback, OnVideoEncodeListener {
+public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callback,
+    OnVideoEncodeListener {
 
 
-    private var mH264Encoder: H264Encoder? = null
+    private var mH264Encoder: WriteH264? = null
     private var mH264Decoder: H264Decoder? = null
     private var mH264Buffer: ByteArray? = null
 
@@ -53,7 +54,7 @@ public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callb
     }
 
     override fun init() {
-        mH264Encoder = H264Encoder()
+        mH264Encoder = WriteH264()
         mH264Decoder = H264Decoder()
         surface.getHolder().addCallback(this)
         mH264Encoder?.prepare(applicationContext, VideoConfiguration.createDefault())
@@ -114,5 +115,13 @@ public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callb
                 info.flags
             )
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mH264Decoder?.stop()
+        mH264Encoder?.stop()
+        mH264Encoder = null
+        mH264Decoder = null
     }
 }

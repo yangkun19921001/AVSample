@@ -5,8 +5,10 @@ import android.media.MediaCodec.CONFIGURE_FLAG_ENCODE
 import android.media.MediaCodecInfo
 import android.media.MediaFormat
 import android.util.Log
+import com.devyk.common.LogHelper
 import com.devyk.common.black.BlackListHelper
 import com.devyk.common.config.VideoConfiguration
+import java.util.logging.LogManager
 
 /**
  * <pre>
@@ -47,6 +49,7 @@ object VideoMediaCodec {
             try {
                 mediaCodec = MediaCodec.createEncoderByType(videoConfiguration.mime)
                 mediaCodec.configure(format, null, null, CONFIGURE_FLAG_ENCODE)
+                LogHelper.d(TAG, "mediacodec init successed!")
             } catch (e: Exception) {
                 e.printStackTrace()
                 mediaCodec = release(mediaCodec)
@@ -87,4 +90,5 @@ object VideoMediaCodec {
         val multiple = Math.ceil(size / 16.0).toInt()
         return multiple * 16
     }
+
 }

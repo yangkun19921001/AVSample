@@ -18,7 +18,6 @@ public class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
         CrashUtils.init { crashInfo, e ->
             Log.e("OnCrashListener",crashInfo)
         }

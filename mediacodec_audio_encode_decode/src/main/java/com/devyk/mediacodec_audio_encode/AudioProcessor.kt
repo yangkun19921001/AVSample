@@ -2,9 +2,9 @@ package com.devyk.mediacodec_audio_encode
 
 import android.media.AudioRecord
 import com.devyk.avedit.audio.AudioUtils
-import com.devyk.mediacodec_audio_encode.mediacodec.AudioEncoder
-import com.devyk.mediacodec_audio_encode.mediacodec.OnAudioEncodeListener
-import java.io.FileOutputStream
+import com.devyk.common.config.AudioConfiguration
+import com.devyk.common.mediacodec.AACEncoder
+import com.devyk.common.callback.OnAudioEncodeListener
 import java.util.*
 
 /**
@@ -23,7 +23,7 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
     private var mStopFlag: Boolean = false
     @Volatile
     private var mMute: Boolean = false
-    private var mAudioEncoder: AudioEncoder? = null
+    private var mAudioEncoder: AACEncoder? = null
     private val mRecordBuffer: ByteArray
     private val mRecordBufferSize: Int
 
@@ -33,7 +33,7 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
     init {
         mRecordBufferSize = AudioUtils.getMinBufferSize(audioConfiguration!!.frequency, audioConfiguration.channelCount)
         mRecordBuffer = ByteArray(mRecordBufferSize)
-        mAudioEncoder = AudioEncoder(audioConfiguration)
+        mAudioEncoder = AACEncoder(audioConfiguration)
         mAudioEncoder!!.prepareCoder()
     }
 

@@ -91,9 +91,9 @@ class CameraConfiguration private constructor(builder: Builder) {
     }
 
     companion object {
-        val DEFAULT_HEIGHT = 480
-        val DEFAULT_WIDTH = 640
-        val DEFAULT_FPS = 15
+        val DEFAULT_HEIGHT = 1280
+        val DEFAULT_WIDTH = 720
+        val DEFAULT_FPS = 25
         val DEFAULT_ROTATION = 0
         val DEFAULT_FACING = Facing.FRONT
         val DEFAULT_ORIENTATION = Orientation.PORTRAIT

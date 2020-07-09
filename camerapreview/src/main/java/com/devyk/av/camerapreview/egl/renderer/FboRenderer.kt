@@ -1,10 +1,12 @@
 package com.devyk.av.camerapreview.egl.renderer
 
 import android.content.Context
+import android.graphics.Bitmap
 import android.opengl.GLES20
 import com.devyk.av.camerapreview.R
 import com.devyk.av.camerapreview.callback.IRenderer
 import com.devyk.av.camerapreview.egl.ShaderHelper
+import com.devyk.av.camerapreview.utils.BitmapUtils
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
@@ -30,7 +32,7 @@ import java.nio.FloatBuffer
  */
 public class FboRenderer(context: Context) : IRenderer {
 
-    private var TAG =this.javaClass.simpleName
+    private var TAG = this.javaClass.simpleName
 
     /**
      * 顶点坐标
@@ -39,7 +41,12 @@ public class FboRenderer(context: Context) : IRenderer {
         -1f, -1f,
         1f, -1f,
         -1f, 1f,
-        1f, 1f
+        1f, 1f,
+
+        0f, 0f,
+        0f, 0f,
+        0f, 0f,
+        0f, 0f
     )
 
     /**
@@ -100,8 +107,29 @@ public class FboRenderer(context: Context) : IRenderer {
      */
     private lateinit var mFragmentBuffer: FloatBuffer
 
+    private lateinit var mBitmap: Bitmap
+    private var mBitmapTextureId = 0
 
     init {
+
+        mBitmap = BitmapUtils.creatBitmap("我是水印",context,20, "#ff0000", "#00000000")
+
+        var r = 1.0f * mBitmap.getWidth() / mBitmap.getHeight();
+        var w = r * 0.1f;
+
+        mVertexData[8] = 0.8f - w;
+        mVertexData[9] = -0.8f;
+
+        mVertexData[10] = 0.8f;
+        mVertexData[11] = -0.8f;
+
+        mVertexData[12] = 0.8f - w;
+        mVertexData[13] = -0.7f;
+
+        mVertexData[14] = 0.8f;
+        mVertexData[15] = -0.7f;
+
+
         mContext = context
         mVertexBuffer = ByteBuffer.allocateDirect(mVertexData.size * 4)
             .order(ByteOrder.nativeOrder()) //大内存在前面，字节对齐
@@ -149,6 +177,8 @@ public class FboRenderer(context: Context) : IRenderer {
         GLES20.glBufferSubData(GLES20.GL_ARRAY_BUFFER, mVertexData.size * 4, mFragmentData.size * 4, mFragmentBuffer);
         //4.4 解绑 VBO
         GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, 0)
+
+        mBitmapTextureId = ShaderHelper.loadBitmapTexture(mBitmap);
     }
 
     override fun onSurfaceChange(width: Int, height: Int) {
@@ -182,6 +212,18 @@ public class FboRenderer(context: Context) : IRenderer {
 
         //6. 开始绘制
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4)
+
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mBitmapTextureId)
+
+        GLES20.glEnableVertexAttribArray(vPosition)
+        GLES20.glVertexAttribPointer(vPosition, 2, GLES20.GL_FLOAT, false, 8,
+            32);
+
+        GLES20.glEnableVertexAttribArray(fPosition);
+        GLES20.glVertexAttribPointer(fPosition, 2, GLES20.GL_FLOAT, false, 8,
+            mVertexData.size * 4)
+
+        GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
 
         //7. 解绑
         // 解绑 纹理

@@ -1,9 +1,7 @@
 package com.devyk.av.camerapreview.egl.renderer
 
 import android.content.Context
-import android.graphics.BitmapFactory
 import android.opengl.GLES20
-import android.opengl.GLUtils
 import android.opengl.Matrix
 import com.devyk.av.camerapreview.callback.IRenderer
 import com.devyk.av.camerapreview.egl.ShaderHelper
@@ -12,7 +10,6 @@ import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
 import android.opengl.GLES11Ext
-import android.view.WindowManager
 import com.devyk.av.camerapreview.R
 
 
@@ -266,15 +263,13 @@ public class CameraRenderer(context: Context) : IRenderer {
         //7.绘制 Camera 数据
         mCameraTextureId = genCameraTextureId()
 
-        mRendererListener?.onCreate(mCameraTextureId)
+        mRendererListener?.onCreate(mCameraTextureId,mTextureID)
         GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, 0);
 
     }
 
     override fun onSurfaceChange(width: Int, height: Int) {
         //指定渲染框口的大小
-
-
         this.mHeight = height
         this.mWidth = width
 
@@ -338,7 +333,7 @@ public class CameraRenderer(context: Context) : IRenderer {
 
 
     public interface OnRendererListener {
-        fun onCreate(textureId: Int)
+        fun onCreate(cameraTextureId: Int, textureID: Int)
         fun onDraw()
     }
 

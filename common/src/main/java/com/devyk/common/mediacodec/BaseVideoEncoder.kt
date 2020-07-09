@@ -1,16 +1,16 @@
 package com.devyk.common.mediacodec
 
 import android.annotation.TargetApi
-import android.hardware.Camera
 import android.media.MediaCodec
+import android.media.MediaFormat
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
 import android.util.Log
 import android.view.Surface
+import com.devyk.common.LogHelper
 import com.devyk.common.config.VideoConfiguration
-import java.nio.ByteBuffer
 import java.util.concurrent.locks.ReentrantLock
 
 /**
@@ -22,19 +22,22 @@ import java.util.concurrent.locks.ReentrantLock
  *     desc    : This is VideoEncodec
  * </pre>
  */
-public abstract class BaseVideoEncoder : ICodec {
+public abstract class BaseVideoEncoder : IVideoCodec {
 
     private var mMediaCodec: MediaCodec? = null
     private var mPause: Boolean = false
     private var mHandlerThread: HandlerThread? = null
     private var mEncoderHandler: Handler? = null
-    private var mConfiguration: VideoConfiguration? = null
+    protected var mConfiguration: VideoConfiguration? = null
     private var mBufferInfo: MediaCodec.BufferInfo? = null
     @Volatile
     private var isStarted: Boolean = false
     private val encodeLock = ReentrantLock()
-    private var mSurface : Surface? = null
+    private lateinit var mSurface: Surface
     public val TAG = this.javaClass.simpleName
+
+
+    protected var mPts = 0L
 
     /**
      * 准备硬编码工作
@@ -43,6 +46,7 @@ public abstract class BaseVideoEncoder : ICodec {
         videoConfiguration?.run {
             mConfiguration = videoConfiguration
             mMediaCodec = VideoMediaCodec.getVideoMediaCodec(videoConfiguration)
+            LogHelper.e(TAG,"prepare success!")
         }
     }
 
@@ -63,8 +67,8 @@ public abstract class BaseVideoEncoder : ICodec {
     /**
      * 创建一个输入型的 Surface
      */
-    public fun getSurface(): Surface? {
-        return  mSurface
+    open fun getSurface(): Surface? {
+        return mSurface
     }
 
 
@@ -79,12 +83,12 @@ public abstract class BaseVideoEncoder : ICodec {
             mEncoderHandler = Handler(getLooper())
             mBufferInfo = MediaCodec.BufferInfo()
             //必须在  mMediaCodec?.start() 之前
-            mSurface =  mMediaCodec?.createInputSurface()
+            mSurface = mMediaCodec!!.createInputSurface()
             mMediaCodec?.start()
             mEncoderHandler?.post(swapDataRunnable)
             isStarted = true
             //必须在  mMediaCodec?.start() 之后
-            onSurfaceCreate(getSurface())
+            onSurfaceCreate(mSurface)
         }
     }
 
@@ -98,10 +102,12 @@ public abstract class BaseVideoEncoder : ICodec {
      * 停止编码
      */
     override fun stop() {
+        if (!isStarted)return
         isStarted = false
-        mEncoderHandler?.removeCallbacks(null)
+        mEncoderHandler?.removeCallbacks(swapDataRunnable)
         mHandlerThread?.quit()
         encodeLock.lock()
+        //提交一个空的缓冲区
         mMediaCodec?.signalEndOfInputStream()
         releaseEncoder()
         encodeLock.unlock()
@@ -146,7 +152,14 @@ public abstract class BaseVideoEncoder : ICodec {
             if (mMediaCodec != null) {
                 val outBufferIndex = mMediaCodec?.dequeueOutputBuffer(mBufferInfo!!, 12000)
                 if (outBufferIndex!! >= 0) {
+
                     val bb = outBuffers!![outBufferIndex]
+
+                    if (mPts == 0L)
+                        mPts = mBufferInfo!!.presentationTimeUs
+
+                    mBufferInfo!!.presentationTimeUs -= mPts
+
                     if (!mPause) {
                         onVideoEncode(bb, mBufferInfo!!)
                     }
@@ -167,4 +180,9 @@ public abstract class BaseVideoEncoder : ICodec {
             }
         }
     }
+
+    /**
+     * 获取输出的格式
+     */
+    public fun getOutputFormat(): MediaFormat? = mMediaCodec?.outputFormat
 }

@@ -1,5 +1,6 @@
 package com.devyk.common.config
 
+import android.media.MediaFormat
 import android.view.Surface
 import java.nio.ByteBuffer
 
@@ -101,6 +102,7 @@ class VideoConfiguration private constructor(builder: Builder) {
         }
 
         fun build(): VideoConfiguration {
+
             return VideoConfiguration(this)
         }
     }
@@ -108,11 +110,11 @@ class VideoConfiguration private constructor(builder: Builder) {
     companion object {
         val DEFAULT_HEIGHT = 1280
         val DEFAULT_WIDTH = 720
-        val DEFAULT_FPS = 15
+        val DEFAULT_FPS = 25
         val DEFAULT_MAX_BPS = 1800
         val DEFAULT_MIN_BPS = 400
         val DEFAULT_IFI = 2
-        val DEFAULT_MIME = "video/avc"
+        val DEFAULT_MIME =  MediaFormat.MIMETYPE_VIDEO_AVC
         val DEFAULT_MEDIA_CODEC = true
         val DEFAULT_CODEC_TYPE = ICODEC.ENCODE
         val DEFAULT_SPS_PPS_BUFFER : ByteBuffer?= null

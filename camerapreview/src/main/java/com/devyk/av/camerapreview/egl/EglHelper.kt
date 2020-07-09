@@ -42,8 +42,6 @@ class EglHelper {
         val version = IntArray(2)
         if (!mEgl!!.eglInitialize(mEglDisplay, version)) {
             throw RuntimeException("eglInitialize failed")
-
-
         }
 
         //4、设置显示设备的属性
@@ -91,7 +89,7 @@ class EglHelper {
             mEglContext = mEgl!!.eglCreateContext(mEglDisplay, configs[0], EGL10.EGL_NO_CONTEXT, attrib_list)
         }
 
-        //7、创阿金渲染的 Surface
+        //7、创建渲染的 Surface
         mEglSurface = mEgl!!.eglCreateWindowSurface(mEglDisplay, configs[0], surface, null)
 
         //8、绑定 EglContext 和 Surface 到显示设备中

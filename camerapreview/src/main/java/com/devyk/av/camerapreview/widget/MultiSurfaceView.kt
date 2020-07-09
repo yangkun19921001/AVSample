@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import com.devyk.av.camerapreview.callback.IRenderer
 import com.devyk.av.camerapreview.config.RendererConfiguration
 import com.devyk.av.camerapreview.egl.renderer.BitmapRenderer
+import com.devyk.av.camerapreview.egl.renderer.EncodeRenderer
 import com.devyk.av.camerapreview.egl.renderer.MultiRenderer
 import com.devyk.av.camerapreview.widget.base.GLSurfaceView
 import javax.microedition.khronos.egl.EGLContext

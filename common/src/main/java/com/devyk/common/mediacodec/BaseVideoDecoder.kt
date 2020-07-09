@@ -16,7 +16,7 @@ import java.util.concurrent.locks.ReentrantLock
  *     desc    : This is BaseVideoDecoder
  * </pre>
  */
-public open class BaseVideoDecoder : ICodec {
+public open class BaseVideoDecoder : IVideoCodec {
 
 
     public val TAG = this.javaClass.simpleName
@@ -121,7 +121,7 @@ public open class BaseVideoDecoder : ICodec {
                     }
                     decodeLock.unlock()
                 } catch (error:Exception){
-                    Log.e(TAG,error.message)
+                    Log.e(TAG,"enqueue:"+error?.message)
                 }
             }
         }
