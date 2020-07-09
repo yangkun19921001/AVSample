@@ -40,68 +40,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3763acd-30d9-4728-960e-bda2afedccaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/callback/ICameraOpenListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/callback/IGLThreadConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/controller/StreamController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/EncodeRenderer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/thread/GLThread.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/encode/MP4Encoder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/muxer/BaseMediaMuxer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/muxer/IMuxer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/muxer/MakeMP4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/utils/BitmapUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/RecordView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/H264Encoder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/devyk/avsample/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/EglHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/EglHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/ShaderHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/ShaderHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/CameraRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/CameraRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/FboRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/FboRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/MultiRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/MultiRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/sample/VideoRecordingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/sample/VideoRecordingActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/BitmapSurfaceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/BitmapSurfaceView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/CameraView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/CameraView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/MultiSurfaceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/MultiSurfaceView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/base/GLSurfaceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/base/GLSurfaceView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camerapreview/src/main/res/layout/activity_video_recording.xml" beforeDir="false" afterPath="$PROJECT_DIR$/camerapreview/src/main/res/layout/activity_video_recording.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/CameraConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/CameraConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/VideoConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/VideoConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/BaseVideoDecoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/BaseVideoDecoder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/BaseVideoEncoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/BaseVideoEncoder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/ICodec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/IVideoCodec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/OnVideoDecodeListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/callback/OnVideoDecodeListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/OnVideoEncodeListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/callback/OnVideoEncodeListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/VideoMediaCodec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/VideoMediaCodec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/fdkaac_audio_encode_decode/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/AudioConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/AudioConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/AudioProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/AudioProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/AudioControllerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/AudioControllerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/IAudioController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/IAudioController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/StreamController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/AudioStreamController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/AudioDecoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/AACDecoder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/AudioEncoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/AACEncoder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/AudioMediaCodec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/AudioMediaCodec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/BaseCodec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/BaseAudioCodec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/ICodec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/IAudioCodec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/OnAudioDecodeListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/callback/OnAudioDecodeListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/mediacodec/OnAudioEncodeListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/devyk/common/callback/OnAudioEncodeListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/sample/AudioMediaCodecActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/sample/AudioMediaCodecActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/mediacodec/H264Encoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/mediacodec/WriteH264.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,8 +159,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+            <state relative-caret-position="295">
+              <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -228,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/controller/StreamController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -311,7 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mediacodec_video_encode_decode/src/main/java/com/devyk/mediacodec_video_encode/sample/H264MediaCodecEDActivity.kt" />
         <option value="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/egl/renderer/MultiRenderer.kt" />
         <option value="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/muxer/MakeMP4.kt" />
         <option value="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/widget/CameraView.kt" />
@@ -361,6 +300,7 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/devyk/common/mediacodec/VideoMediaCodec.kt" />
         <option value="$PROJECT_DIR$/mediacodec_audio_encode_decode/src/main/java/com/devyk/mediacodec_audio_encode/controller/AudioStreamController.kt" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/devyk/common/config/VideoConfiguration.kt" />
+        <option value="$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/controller/StreamController.kt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -418,6 +358,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="camerapreview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="camerapreview" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="camerapreview" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AVSample" type="b2602c69:ProjectViewProjectNode" />
@@ -754,7 +704,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8515535" visible="true" weight="0.26556778" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8515535" visible="true" weight="0.26556778" />
       <window_info id="Structure" order="2" sideWeight="0.14844649" side_tool="true" weight="0.26556778" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -770,7 +720,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="4" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Build" order="6" weight="0.20204082" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22244897" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22244897" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2897959" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.21020408" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32959184" />
@@ -1855,20 +1805,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/controller/StreamController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/camerapreview/src/main/java/com/devyk/av/camerapreview/controller/StreamController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        <state relative-caret-position="295">
+          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
         </state>
       </provider>
     </entry>
