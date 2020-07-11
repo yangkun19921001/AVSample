@@ -2,6 +2,7 @@ package com.devyk.common.config
 
 import android.media.AudioFormat
 import android.media.MediaCodecInfo
+import android.media.MediaFormat
 
 /**
  * <pre>
@@ -115,7 +116,7 @@ class AudioConfiguration private constructor(builder: Builder) {
         val DEFAULT_MIN_BPS = 32
         val DEFAULT_ADTS = 0
         val DEFAULT_CODE_TYPE = CodeType.ENCODE
-        val DEFAULT_MIME = "audio/mp4a-latm"
+        val DEFAULT_MIME = MediaFormat.MIMETYPE_AUDIO_AAC
         val DEFAULT_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT
         val DEFAULT_AAC_PROFILE = MediaCodecInfo.CodecProfileLevel.AACObjectLC
         val DEFAULT_CHANNEL_COUNT = 1

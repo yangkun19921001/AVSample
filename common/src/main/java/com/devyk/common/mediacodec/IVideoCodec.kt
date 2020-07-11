@@ -22,7 +22,7 @@ public interface IVideoCodec {
     /**
      * 初始化编码器
      */
-    fun prepare(videoConfiguration: VideoConfiguration?){};
+    fun prepare(videoConfiguration: VideoConfiguration= VideoConfiguration.createDefault()){};
 
     /**
      * start 编码

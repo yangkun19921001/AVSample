@@ -2,6 +2,7 @@ package com.devyk.mediacodec_video_encode.mediacodec
 
 import android.content.Context
 import android.media.MediaCodec
+import android.media.MediaFormat
 import android.util.Log
 import android.view.Surface
 import com.devyk.common.LogHelper
@@ -23,6 +24,9 @@ import kotlin.experimental.and
  * </pre>
  */
 public class WriteH264 : H264Encoder() {
+    override fun onVideoOutformat(outputFormat: MediaFormat?) {
+
+    }
 
     private var mRenderer: DevYKSurfaceRenderer? = null
     private var mContext: Context? = null
@@ -51,7 +55,7 @@ public class WriteH264 : H264Encoder() {
     /**
      * 准备编码
      */
-    fun prepare(context: Context, convideoConfiguration: VideoConfiguration?) {
+    fun prepare(context: Context, convideoConfiguration: VideoConfiguration) {
         mContext = context
         prepare(convideoConfiguration)
 

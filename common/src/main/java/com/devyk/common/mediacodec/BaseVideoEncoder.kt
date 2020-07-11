@@ -28,7 +28,7 @@ public abstract class BaseVideoEncoder : IVideoCodec {
     private var mPause: Boolean = false
     private var mHandlerThread: HandlerThread? = null
     private var mEncoderHandler: Handler? = null
-    protected var mConfiguration: VideoConfiguration? = null
+    protected var mConfiguration = VideoConfiguration.createDefault()
     private var mBufferInfo: MediaCodec.BufferInfo? = null
     @Volatile
     private var isStarted: Boolean = false
@@ -37,16 +37,17 @@ public abstract class BaseVideoEncoder : IVideoCodec {
     public val TAG = this.javaClass.simpleName
 
 
-    protected var mPts = 0L
 
+
+    protected var mPts = 0L
     /**
      * 准备硬编码工作
      */
-    override fun prepare(videoConfiguration: VideoConfiguration?) {
+    override fun prepare(videoConfiguration: VideoConfiguration) {
         videoConfiguration?.run {
             mConfiguration = videoConfiguration
-            mMediaCodec = VideoMediaCodec.getVideoMediaCodec(videoConfiguration)
-            LogHelper.e(TAG,"prepare success!")
+            mMediaCodec = VideoMediaCodec.getVideoMediaCodec(mConfiguration)
+            LogHelper.e(TAG, "prepare success!")
         }
     }
 
@@ -102,7 +103,7 @@ public abstract class BaseVideoEncoder : IVideoCodec {
      * 停止编码
      */
     override fun stop() {
-        if (!isStarted)return
+        if (!isStarted) return
         isStarted = false
         mEncoderHandler?.removeCallbacks(swapDataRunnable)
         mHandlerThread?.quit()
@@ -128,11 +129,11 @@ public abstract class BaseVideoEncoder : IVideoCodec {
      * 动态码率设置
      */
     @TargetApi(Build.VERSION_CODES.KITKAT)
-    fun setRecorderBps(bps: Int) {
+    fun setEncodeBps(bps: Int) {
         if (mMediaCodec == null) {
             return
         }
-        Log.d(TAG, "bps :" + bps * 1024)
+        LogHelper.d(TAG, "bps :" + bps * 1024)
         val bitrate = Bundle()
         bitrate.putInt(MediaCodec.PARAMETER_KEY_VIDEO_BITRATE, bps * 1024)
         mMediaCodec?.setParameters(bitrate)
@@ -151,15 +152,23 @@ public abstract class BaseVideoEncoder : IVideoCodec {
             encodeLock.lock()
             if (mMediaCodec != null) {
                 val outBufferIndex = mMediaCodec?.dequeueOutputBuffer(mBufferInfo!!, 12000)
+
+
+                if (outBufferIndex == MediaCodec.INFO_OUTPUT_FORMAT_CHANGED) {
+                    onVideoOutformat(mMediaCodec?.outputFormat)
+                }
+
+
+
                 if (outBufferIndex!! >= 0) {
-
                     val bb = outBuffers!![outBufferIndex]
-
                     if (mPts == 0L)
-                        mPts = mBufferInfo!!.presentationTimeUs
+                        mPts = System.nanoTime() / 1000;
 
-                    mBufferInfo!!.presentationTimeUs -= mPts
+                    mBufferInfo!!.presentationTimeUs = System.nanoTime()/1000-mPts;
 
+
+                    LogHelper.e(TAG,"视频时间戳：${mBufferInfo!!.presentationTimeUs/1000_000}")
                     if (!mPause) {
                         onVideoEncode(bb, mBufferInfo!!)
                     }
@@ -181,8 +190,12 @@ public abstract class BaseVideoEncoder : IVideoCodec {
         }
     }
 
+    abstract fun onVideoOutformat(outputFormat: MediaFormat?)
+
     /**
      * 获取输出的格式
      */
     public fun getOutputFormat(): MediaFormat? = mMediaCodec?.outputFormat
+
+
 }

@@ -47,7 +47,7 @@
 | [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |
 | [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) | ✅      |      2020-06-28     |
 | [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放(PCM/YUV) | ✅  | 2020-07-02 |
-| [camerapreview](https://github.com/yangkun19921001/AVSample/tree/master/camerapreview) | 基础实战:OpenGL ES 实现相机预览->硬编码->音视频合成 mp4 | 进行中... |  |
+| [caamera_recorder](https://github.com/yangkun19921001/AVSample/tree/master/camera_recorder) | 基础实战:OpenGL ES 实现相机预览->硬编码->实时音视频合成 mp4 |  ✅  | 2020-07-11 |
 | [RtmpPush]() | 中级实战- rtmp 推流 SDK | ❌ |  |
 | [AVEditer](https://github.com/yangkun19921001/AVEditer) | 高级实战-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | |
 | [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
@@ -74,7 +74,7 @@
 | [十、渲染 PCM]()                          | ❌        |
 | [十一、渲染 YUV]()                        | ❌        |
 | [十二、MP3 编解码]()                      | ❌        |
-| [十三、基础实战: Camera 通过 OpenGL ES 实现音视频录制为 MP4 格式                 | ❌        |
+| [十三、基础实战: Camera 通过 OpenGL ES 实现音视频录制为 MP4 格式]                 | ❌        |
 | [十四、中级实战:设计一款 Android RTMP SDK ]() | ❌        |
 | [十五、进阶实战:设计一款播放器]()             | ❌        |
 | [十六、高级实战:设计一款短视频 SDK]()         | ❌        |

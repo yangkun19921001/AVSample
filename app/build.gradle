@@ -65,7 +65,7 @@ dependencies {
     implementation project(path: ':lame_ffmpeg_mp3_encode_decode')
     implementation project(path: ':javaavplayer')
     implementation project(path: ':nativeavplayer')
-    implementation project(path: ':camerapreview')
+    implementation project(path: ':camera_recorder')
 
 
 }

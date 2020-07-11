@@ -2,8 +2,7 @@ package com.devyk.avsample
 
 import android.content.Intent
 import android.view.View
-import com.devyk.av.camerapreview.sample.CameraPreviewActivity
-import com.devyk.av.camerapreview.sample.GLSampleActivity
+import com.devyk.av.camera_recorder.sample.GLSampleActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
@@ -24,7 +23,9 @@ import com.devyk.nativeavplayer.sample.NativeAudioPlayer
 import com.devyk.nativeavplayer.sample.NativeVideoPlayer
 import com.devyk.x264_video_encode.sample.x264EncodeActivity
 
-class MainActivity : BaseActivity<Int>() {
+class MainActivity : BaseActivity<Int>()  {
+
+
     override fun initListener() {
     }
 
@@ -33,6 +34,9 @@ class MainActivity : BaseActivity<Int>() {
 
     override fun init() {
         checkPermission()
+
+
+
     }
 
     override fun getLayoutId(): Int = R.layout.activity_main

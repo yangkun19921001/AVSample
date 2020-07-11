@@ -1,6 +1,7 @@
 package com.devyk.common.callback
 
 import android.media.MediaCodec
+import android.media.MediaFormat
 import java.nio.ByteBuffer
 
 /**
@@ -14,4 +15,5 @@ import java.nio.ByteBuffer
  */
 public interface OnAudioEncodeListener {
     fun onAudioEncode(bb: ByteBuffer, bi: MediaCodec.BufferInfo)
+    fun onAudioOutformat(outputFormat: MediaFormat?)
 }

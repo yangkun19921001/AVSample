@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.devyk.av.camera_recorder.widget.RecordView
+            android:layout_width="match_parent"
+            android:id="@+id/recording"
+            android:layout_height="match_parent"/>
+
+
+    <Button
+
+            android:layout_marginBottom="50dp"
+            android:onClick="start_record"
+            android:text="开始录制"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="stop_record"
+            android:text="停止录制"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

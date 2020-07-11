@@ -1,6 +1,7 @@
 package com.devyk.common.mediacodec
 
 import android.media.MediaCodec
+import android.media.MediaFormat
 import com.devyk.common.callback.OnVideoEncodeListener
 import java.nio.ByteBuffer
 
@@ -14,6 +15,11 @@ import java.nio.ByteBuffer
  * </pre>
  */
 public open class H264Encoder : BaseVideoEncoder() {
+
+
+    override fun onVideoOutformat(outputFormat: MediaFormat?) {
+        mListener?.onVideoOutformat(outputFormat)
+    }
 
 
     private var mListener: OnVideoEncodeListener? = null
@@ -31,4 +37,6 @@ public open class H264Encoder : BaseVideoEncoder() {
     fun setOnVideoEncodeListener(listener: OnVideoEncodeListener) {
         mListener = listener
     }
+
+
 }

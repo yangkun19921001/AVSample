@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.devyk.av.camera_recorder">
+    <application>
+        <activity android:name="com.devyk.av.camera_recorder.sample.CameraPreviewActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name="com.devyk.av.camera_recorder.sample.ShareTextureIdActivity"/>
+        <activity android:name="com.devyk.av.camera_recorder.sample.GLSampleActivity"/>
+        <activity android:name="com.devyk.av.camera_recorder.sample.DrawBitmapActivity"/>
+        <activity android:name="com.devyk.av.camera_recorder.sample.VideoRecordingActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.devyk.av.camera_recorder.sample.BitmapGenMp4Activity"/>
+    </application>
+</manifest>

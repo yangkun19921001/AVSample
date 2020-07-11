@@ -1,5 +1,5 @@
 include ':app', //测试组件
-        ':camerapreview',                    //相机预览
+        ':camera_recorder',                    //相机预览
         ':javaavplayer',                    //Java 端音视频播放
         ':nativeavplayer',                            //native 端音视频播放
         ':common',                                              //核心组件

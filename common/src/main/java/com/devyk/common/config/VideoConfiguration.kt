@@ -102,7 +102,6 @@ class VideoConfiguration private constructor(builder: Builder) {
         }
 
         fun build(): VideoConfiguration {
-
             return VideoConfiguration(this)
         }
     }

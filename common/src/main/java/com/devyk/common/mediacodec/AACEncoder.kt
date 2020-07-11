@@ -1,6 +1,7 @@
 package com.devyk.common.mediacodec
 
 import android.media.MediaCodec
+import android.media.MediaFormat
 import com.devyk.common.callback.OnAudioEncodeListener
 import com.devyk.common.config.AudioConfiguration
 import java.nio.ByteBuffer
@@ -16,6 +17,9 @@ import java.nio.ByteBuffer
  */
 
 class AACEncoder(private val mAudioConfiguration: AudioConfiguration?) : BaseAudioCodec(mAudioConfiguration) {
+    override fun onAudioOutformat(outputFormat: MediaFormat?) {
+        mListener?.onAudioOutformat(outputFormat)
+    }
 
     public var mListener: OnAudioEncodeListener? = null
 

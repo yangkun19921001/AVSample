@@ -1,6 +1,7 @@
 package com.devyk.mediacodec_video_encode.sample
 
 import android.media.MediaCodec
+import android.media.MediaFormat
 import android.view.SurfaceHolder
 import android.view.View
 import com.devyk.common.config.VideoConfiguration
@@ -26,6 +27,9 @@ import java.nio.ByteBuffer
  */
 public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callback,
     OnVideoEncodeListener {
+    override fun onVideoOutformat(outputFormat: MediaFormat?) {
+
+    }
 
 
     private var mH264Encoder: WriteH264? = null
@@ -89,7 +93,10 @@ public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callb
      * 注意：内部有写入文件的操作
      */
 
-    override fun onVideoEncode(data: ByteBuffer, info: MediaCodec.BufferInfo) {
+    override fun onVideoEncode(data: ByteBuffer?, info: MediaCodec.BufferInfo?) {
+
+        if (data == null || info == null)return
+
         if (mH264Buffer == null || mH264Buffer?.size!! < info.size) {
             mH264Buffer = ByteArray(info.size)
         }

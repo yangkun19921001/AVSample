@@ -60,13 +60,13 @@ dependencies {
     api rootProject.ext.androidx["appcompat"]
 
 
-
-
     //kotlin
     api rootProject.ext.kotlin["core-ktx"]
-    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api rootProject.ext.kotlin["kotlin-stdlib-jdk7"]
 
-
+    //协程 协程使用 参考扔无线大神的文章：https://kaixue.io/tag/kotlin-coroutines/
+    api rootProject.ext.kotlin["kotlinx-coroutines-core"]
+    api rootProject.ext.kotlin["kotlinx-coroutines-android"]
 
     //rx
     api rootProject.ext.rxs["rxJava"]

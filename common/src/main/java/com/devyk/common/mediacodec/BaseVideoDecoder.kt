@@ -27,7 +27,7 @@ public open class BaseVideoDecoder : IVideoCodec {
     /**
      * 解码的准备工作，需要配置 spspps mediacodec等一些信息
      */
-   public open fun configure(videoConfiguration: VideoConfiguration?) {
+   public open fun configure(videoConfiguration: VideoConfiguration) {
         super.prepare(videoConfiguration)
         videoConfiguration?.run {
             mWorker?.configure(this)

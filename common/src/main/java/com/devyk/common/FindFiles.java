@@ -7,6 +7,8 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.GlobalScope;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -77,6 +79,8 @@ public class FindFiles {
                 }
             }
         }
+
+
     }
 
     public void queryFiles(File dir, FILE_TYPE type, IFindFileCallback iFindFileCallback) {

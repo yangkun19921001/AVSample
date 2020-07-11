@@ -1,6 +1,7 @@
 package com.devyk.mediacodec_audio_encode
 
 import android.media.AudioRecord
+import android.media.MediaFormat
 import com.devyk.avedit.audio.AudioUtils
 import com.devyk.common.config.AudioConfiguration
 import com.devyk.common.mediacodec.AACEncoder
@@ -69,6 +70,8 @@ class AudioProcessor(private val mAudioRecord: AudioRecord?, audioConfiguration:
     fun setMute(mute: Boolean) {
         mMute = mute
     }
+
+    fun getOutputFormat():MediaFormat?=mAudioEncoder?.getOutputFormat()
 
     override fun run() {
         while (!mStopFlag) {

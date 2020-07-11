@@ -1,6 +1,7 @@
 package com.devyk.mediacodec_audio_encode.controller
 
 import android.media.MediaCodec
+import android.media.MediaFormat
 import com.devyk.common.config.AudioConfiguration
 import com.devyk.common.callback.OnAudioEncodeListener
 import com.devyk.mediacodec_audio_encode.utils.EncodeCastUtils
@@ -16,6 +17,9 @@ import java.nio.ByteBuffer
  * </pre>
  */
 public class AudioStreamController : OnAudioEncodeListener {
+    override fun onAudioOutformat(outputFormat: MediaFormat?) {
+
+    }
 
     private var mPacker: IMediaCodecListener? = null
     private lateinit var mAudioController: IAudioController

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceScreen
+            android:key="camera_gl_demo"
+            android:title="绘制图片">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.devyk.av.camera_recorder.sample.DrawBitmapActivity"
+                android:targetPackage="com.devyk.avsample"/>
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+            android:key="camera_gl_demo"
+            android:title="共享图片纹理 ID">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.devyk.av.camera_recorder.sample.ShareTextureIdActivity"
+                android:targetPackage="com.devyk.avsample"/>
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+            android:key="camera_gl_demo"
+            android:title="相机预览">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.devyk.av.camera_recorder.sample.CameraPreviewActivity"
+                android:targetPackage="com.devyk.avsample"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:key="camera_gl_demo"
+            android:title="视频编码录制">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.devyk.av.camera_recorder.sample.VideoRecordingActivity"
+                android:targetPackage="com.devyk.avsample"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:key="camera_gl_demo"
+            android:title="图片生成视频">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.devyk.av.camera_recorder.sample.BitmapGenMp4Activity"
+                android:targetPackage="com.devyk.avsample"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

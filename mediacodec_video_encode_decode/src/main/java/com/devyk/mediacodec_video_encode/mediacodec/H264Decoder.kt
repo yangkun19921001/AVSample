@@ -21,12 +21,13 @@ public class H264Decoder : BaseVideoDecoder() {
     }
 
 
-    override fun configure(videoConfiguration: VideoConfiguration?) {
+    override fun configure(videoConfiguration: VideoConfiguration) {
         super.configure(videoConfiguration)
     }
 
     override fun start() {
         super.start()
+
     }
 
     override fun stop() {
