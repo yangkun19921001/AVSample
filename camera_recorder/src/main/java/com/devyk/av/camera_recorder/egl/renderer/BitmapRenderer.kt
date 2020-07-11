@@ -144,6 +144,9 @@ public class BitmapRenderer(context: Context) : IRenderer {
 
     private var mRendererListener: OnRendererListener? = null
 
+
+    private var mImagePath = ""
+
     init {
         mContext = context
         mFboRenderer = FboRenderer(mContext)
@@ -262,7 +265,7 @@ public class BitmapRenderer(context: Context) : IRenderer {
         //解绑纹理
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, 0)
 
-        //7.绘制一张图片
+//        //7.绘制一张图片
         mImageTextureId = loadTexrute(R.drawable.huge)
 
         mRendererListener?.onCreate(mTextureID)
@@ -311,6 +314,8 @@ public class BitmapRenderer(context: Context) : IRenderer {
     }
 
     override fun onDraw() {
+
+        //7.绘制一张图片
         //绑定 fbo
         GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, mFboID);
 
@@ -352,7 +357,7 @@ public class BitmapRenderer(context: Context) : IRenderer {
         mFboRenderer.onDraw(mTextureID)
     }
 
-    private fun loadTexrute(src: Int): Int {
+    public fun loadTexrute(src: Int): Int {
         val textureIds = IntArray(1)
         GLES20.glGenTextures(1, textureIds, 0)
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureIds[0])
@@ -373,6 +378,9 @@ public class BitmapRenderer(context: Context) : IRenderer {
         return textureIds[0]
 
     }
+
+
+
 
 
     public interface OnRendererListener {

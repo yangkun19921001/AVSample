@@ -112,7 +112,7 @@ public class FboRenderer(context: Context) : IRenderer {
 
     init {
 
-        mBitmap = BitmapUtils.creatBitmap("我是水印",context,20, "#ff0000", "#00000000")
+        mBitmap = BitmapUtils.creatBitmap("零基础学习音视频教程",context,20, "#ff0000", "#00000000")
 
         var r = 1.0f * mBitmap.getWidth() / mBitmap.getHeight();
         var w = r * 0.1f;

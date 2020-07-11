@@ -106,7 +106,7 @@ public class EncodeRenderer(context: Context?, textureId: Int) : IRenderer {
         mTextureID = textureId
 
         context?.let {
-            mBitmap = BitmapUtils.creatBitmap("DevYK",context,20, "#ff0000", "#00000000")
+            mBitmap = BitmapUtils.creatBitmap("零基础学习音视频教程",context,20, "#ff0000", "#00000000")
         }
 
 
