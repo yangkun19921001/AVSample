@@ -39,7 +39,6 @@ public open class CameraView : GLSurfaceView, SurfaceTexture.OnFrameAvailableLis
 
     protected var mCameraOpenListener:ICameraOpenListener? = null
 
-
     /**
      * 默认后置摄像头
      */

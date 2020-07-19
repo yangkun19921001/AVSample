@@ -45,10 +45,10 @@
 | [ffmpeg_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_audio_encode_decode)                               | FFmpeg API 实现音频 AAC 软编解码  |  ✅         |   2020-06-21      |
 | [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |
 | [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |
-| [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) | ✅      |      2020-06-28     |
+| [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) |    |      2020-06-28     |
 | [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放(PCM/YUV) | ✅  | 2020-07-02 |
 | [camera_recorder](https://github.com/yangkun19921001/AVSample/tree/master/camera_recorder) | 基础实战:OpenGL ES 实现相机预览->硬编码->实时 音视频/图片音频 合成 mp4 |  ✅  | 2020-07-11 |
-| [RtmpPush]() | 中级实战- rtmp 推流 SDK | ❌ |  |
+| [RtmpPush](https://github.com/yangkun19921001/AVRtmpPushSDK) | 中级实战- rtmp 推流 SDK | ✅  | 2020-07-19 |
 | [AVEditer](https://github.com/yangkun19921001/AVEditer) | 高级实战-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | |
 | [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
 |                                                              |                                                         |           | |
