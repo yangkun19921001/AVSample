@@ -70,6 +70,7 @@ public class VideoRecordingActivity : BaseActivity<Int>(), ICameraOpenListener {
 
     override fun onDestroy() {
         super.onDestroy()
+        recording.stop()
         recording.releaseCamera()
     }
 }

@@ -3,6 +3,9 @@ package com.devyk.avsample
 import android.app.Application
 import android.util.Log
 import com.blankj.utilcode.util.CrashUtils
+import com.blankj.utilcode.util.FileUtils
+import com.devyk.crash_module.Crash
+import com.devyk.crash_module.inter.JavaCrashUtils
 
 /**
  * <pre>
@@ -18,8 +21,19 @@ public class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        CrashUtils.init { crashInfo, e ->
-            Log.e("OnCrashListener",crashInfo)
+        val javaPath = "sdcard/avsample/java_crash"
+        val nativePath = "sdcard/avsample/native_crash"
+        FileUtils.createOrExistsDir(javaPath)
+        FileUtils.createOrExistsDir(nativePath)
+        Crash.CrashBuild(applicationContext).javaCrashPath(javaPath,object :JavaCrashUtils.OnCrashListener{
+            override fun onCrash(crashInfo: String?, e: Throwable?) {
+                Log.e("OnCrashListener",crashInfo)
+            }
         }
+        ).nativeCrashPath(nativePath)
+            .build()
+//        CrashUtils.init { crashInfo, e ->
+//            Log.e("OnCrashListener",crashInfo)
+//        }
     }
 }

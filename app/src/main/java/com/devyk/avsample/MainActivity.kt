@@ -3,6 +3,7 @@ package com.devyk.avsample
 import android.content.Intent
 import android.view.View
 import com.devyk.av.camera_recorder.sample.GLSampleActivity
+import com.devyk.av.ffmpeg_muxer.FFmpegMuxerActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.AudioRecordActivty
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACDecodeActivity
 import com.devyk.fdkaac_audio_encode_decode.sample.FDKAACEncodeActivty
@@ -178,5 +179,12 @@ class MainActivity : BaseActivity<Int>()  {
      */
     fun camera_preview(view: View){
         startActivity(Intent(this, GLSampleActivity::class.java))
+    }
+
+    /**
+     * 音视频合成 MP4
+     */
+    fun mergeMp4(view: View){
+        startActivity(Intent(this, FFmpegMuxerActivity::class.java))
     }
 }

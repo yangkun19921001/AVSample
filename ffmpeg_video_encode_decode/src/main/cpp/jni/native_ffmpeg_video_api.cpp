@@ -8,7 +8,6 @@
 
 #define JNI_PATH "com/devyk/ffmpeg_video_encode/NativeFFmpegVideoApi"
 
-
 YUV2H264Encoder *mH264Encoder = 0;
 H264_2_YUVDecoder *mH264Decoder = 0;
 

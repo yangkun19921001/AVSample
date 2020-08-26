@@ -53,7 +53,7 @@ dependencies {
     //test
     testImplementation rootProject.ext.testDeps["junit"]
 
-
+    implementation 'com.github.yangkun19921001:YKCrash:1.0.1'
     //utils
     implementation rootProject.ext.commonDeps["android_utils"]
     implementation project(path: ':fdkaac_audio_encode_decode')
@@ -66,6 +66,7 @@ dependencies {
     implementation project(path: ':javaavplayer')
     implementation project(path: ':nativeavplayer')
     implementation project(path: ':camera_recorder')
+    implementation project(path: ':ffmpeg_muxer')
 
 
 }

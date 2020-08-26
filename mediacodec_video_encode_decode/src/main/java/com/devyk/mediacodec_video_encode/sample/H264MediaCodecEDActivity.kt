@@ -27,6 +27,10 @@ import java.nio.ByteBuffer
  */
 public class H264MediaCodecEDActivity : BaseActivity<Int>(), SurfaceHolder.Callback,
     OnVideoEncodeListener {
+
+
+
+
     override fun onVideoOutformat(outputFormat: MediaFormat?) {
 
     }

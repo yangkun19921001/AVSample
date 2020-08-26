@@ -1,4 +1,4 @@
-include ':app', //测试组件
+include ':app', ':ffmpeg_muxer', //测试组件
         ':camera_recorder',                    //相机预览
         ':javaavplayer',                    //Java 端音视频播放
         ':nativeavplayer',                            //native 端音视频播放

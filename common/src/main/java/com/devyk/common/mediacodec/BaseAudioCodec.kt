@@ -25,6 +25,7 @@ abstract class BaseAudioCodec(private val mAudioConfiguration: AudioConfiguratio
     private var TAG = javaClass.simpleName
     private var mPts = 0L
 
+    private var prevOutputPTSUs: Long = 0
     /**
      * 编码完成的函数自己不处理，交由子类处理
      */
@@ -69,11 +70,12 @@ abstract class BaseAudioCodec(private val mAudioConfiguration: AudioConfiguratio
 
             if (mPts == 0L)
                 mPts = System.nanoTime() / 1000;
-
+//
             mBufferInfo!!.presentationTimeUs = System.nanoTime() / 1000 - mPts;
-
+//            mBufferInfo!!.presentationTimeUs = getPTSUs()
             LogHelper.e(TAG, "音频时间戳：${mBufferInfo!!.presentationTimeUs / 1000_000}")
             onAudioData(outputBuffer, mBufferInfo)
+            prevOutputPTSUs = mBufferInfo.presentationTimeUs
             mMediaCodec!!.releaseOutputBuffer(outputBufferIndex, false)
             outputBufferIndex = mMediaCodec!!.dequeueOutputBuffer(mBufferInfo, 0)
         }
@@ -96,5 +98,15 @@ abstract class BaseAudioCodec(private val mAudioConfiguration: AudioConfiguratio
      */
     public fun getOutputFormat(): MediaFormat? = mMediaCodec?.outputFormat
 
+
+    protected fun getPTSUs(): Long {
+        var result = System.nanoTime() / 1000L
+        // presentationTimeUs should be monotonic
+        // otherwise muxer fail to write
+        if (result < prevOutputPTSUs) {
+            result = prevOutputPTSUs - result + result
+        }
+        return result
+    }
 
 }

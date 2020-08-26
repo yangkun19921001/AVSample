@@ -12,6 +12,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+
+
         <Button android:onClick="AudioCapture" android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:text="Audio 采集"/>
 
@@ -85,6 +88,10 @@
         <Button android:onClick="camera_preview" android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="OpenGL ES 实现 Camera 预览"/>
+
+        <Button android:onClick="mergeMp4" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="合成 MP4"/>
 
     </LinearLayout>
 

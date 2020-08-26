@@ -97,11 +97,15 @@ int H264_2_YUVDecoder::init(const char *inH264Path, const char *outYUVPath, int 
 
 int H264_2_YUVDecoder::decode(AVPacket *avPacket) {
     int ret = avcodec_send_packet(this->pCodecCtx, avPacket);
+    if(ret != 0){
+        LOGE("send packet error:%s",av_err2str(ret));
+        return 0;
+    }
     do {
         AVFrame *frame = av_frame_alloc();
         ret = avcodec_receive_frame(this->pCodecCtx, frame);
         if (ret < 0)
-            return 0;
+            continue;
         int y_size = pCodecCtx->width * pCodecCtx->height;
         fwrite(frame->data[0], 1, y_size, this->pOutFile);    //Y
         fwrite(frame->data[1], 1, y_size / 4, this->pOutFile);  //U

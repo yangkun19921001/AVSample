@@ -41,8 +41,15 @@ android {
     }
     externalNativeBuild {
         cmake {
-//            path file('src/main/cpp/CMakeLists.txt')
+            path file('src/main/cpp/CMakeLists.txt')
         }
+    }
+
+
+    //error:More than one file was found with OS independent path
+    packagingOptions {
+//        exclude 'lib/arm64-v8a/libmuxer.so'
+        exclude 'lib/arm64-v8a/libc++_shared.so'
     }
 
 
