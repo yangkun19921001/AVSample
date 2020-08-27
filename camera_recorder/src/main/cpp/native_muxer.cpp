@@ -14,7 +14,6 @@ FFmpegMuxer *fFmpegMuxer = 0;
 RecordingPublisher *recordingPublisher = 0;
 
 
-int isStart = false;
 
 void Android_JNI_init(JNIEnv *env, jobject obj,
                       jstring joutputPath) {
@@ -73,12 +72,10 @@ void Android_JNI_close(JNIEnv *env, jobject obj) {
 //        delete fFmpegMuxer;
 //        fFmpegMuxer = 0;
 //    }
-    isStart = false;
-
-    AVPacketPool::GetInstance()->getAudioPacketQueue()->abort();
-    AVPacketPool::GetInstance()->getVideoPacketQueue()->abort();
-    recordingPublisher->interruptPublisherPipe();
     if (recordingPublisher) {
+        AVPacketPool::GetInstance()->getAudioPacketQueue()->abort();
+        AVPacketPool::GetInstance()->getVideoPacketQueue()->abort();
+        recordingPublisher->interruptPublisherPipe();
         recordingPublisher->stop();
         delete recordingPublisher;
         recordingPublisher = nullptr;

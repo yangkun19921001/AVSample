@@ -45,7 +45,6 @@ public class RecordView : CameraView {
 
     override fun releaseCamera() {
         super.releaseCamera()
-        releaseCamera()
     }
 
     fun setDataSource(path: String) {

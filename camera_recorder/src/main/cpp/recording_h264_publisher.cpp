@@ -189,7 +189,7 @@ int RecordingH264Publisher::write_video_frame(AVFormatContext *oc, AVStream *st)
             if (ret != 0) {
                 LOGI("Error while writing Video frame: %s\n", av_err2str(ret));
             }
-//            av_free_packet(&pkt);
+            av_packet_unref(&pkt);
         } else {
             ret = 0;
         }
