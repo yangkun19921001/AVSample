@@ -14,6 +14,6 @@ object NativeMuxer {
         System.loadLibrary("muxer")
     }
 
-    external fun muxer(h264Path: String, audioPath: String, outputPath: String)
+    external fun AAC_H264_FILE_2_MP4(h264Path: String, audioPath: String, outputPath: String)
 
 }

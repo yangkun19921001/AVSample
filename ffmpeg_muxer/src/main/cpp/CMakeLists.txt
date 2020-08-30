@@ -10,6 +10,11 @@ set(FDK-AAC_PATH ${THIRD_PARTY_ROOT}/fdk_aac)
 #x264
 set(X264_PATH ${THIRD_PARTY_ROOT}/x264)
 
+
+#JNI 接口
+FILE(GLOB JNI_CPP ${CMAKE_SOURCE_DIR}/*.cpp)
+FILE(GLOB JNI_H ${CMAKE_SOURCE_DIR}/*.h)
+
 #FFmpeg 头文件
 include_directories(${FFMPEG_PATH}/include)
 #编码路径
@@ -17,10 +22,9 @@ include_directories(${NATIVE_AUDIO_ENCODE_PATH})
 #解码路径
 include_directories(${NATIVE_AUDIO_DECODE_PATH})
 #cpp 目录下的头文件
-include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${JNI_H})
 
-#JNI 接口
-FILE(GLOB JNI_CPP ${CMAKE_SOURCE_DIR}/*.cpp)
+
 
 
 #编解码库

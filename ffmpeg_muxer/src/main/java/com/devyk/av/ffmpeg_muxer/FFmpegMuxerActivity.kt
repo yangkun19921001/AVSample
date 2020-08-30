@@ -1,6 +1,7 @@
 package com.devyk.av.ffmpeg_muxer
 
 import android.view.View
+import com.blankj.utilcode.util.FileUtils
 import com.devyk.ikavedit.base.BaseActivity
 
 /**
@@ -31,7 +32,8 @@ public class FFmpegMuxerActivity : BaseActivity<Int>() {
      */
     public fun merge_mp4(view: View) {
         Thread {
-            NativeMuxer.muxer("sdcard/aveditor/123.h264", "sdcard/aveditor/123.aac", "sdcard/aveditor/ffmpeg_muxer.mp4")
+            FileUtils.createOrExistsFile("sdcard/aveditor/ffmpeg_muxer.mp4")
+            NativeMuxer.AAC_H264_FILE_2_MP4("sdcard/aveditor/123.h264", "sdcard/aveditor/123.aac", "sdcard/aveditor/ffmpeg_muxer.mp4")
         }.start()
     }
 }

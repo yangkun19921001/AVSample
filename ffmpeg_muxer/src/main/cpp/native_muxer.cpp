@@ -3,22 +3,26 @@
 //
 
 #include <jni.h>
-#include "FFmpegMuxer.h"
+#include "FFmpegH264_AAC_MP4_Muxer.h"
+#include "logger.h"
 
 
-
-void muxer(JNIEnv *env, jobject obj, jstring jvideoPath, jstring jaudioPath,
-                     jstring joutputPath) {
+void AAC_H264_FILE_To_MP4(JNIEnv *env, jobject obj, jstring jvideoPath, jstring jaudioPath,
+                          jstring joutputPath) {
 
     const char *videoPath = env->GetStringUTFChars(jvideoPath, NULL);
     const char *audioPath = env->GetStringUTFChars(jaudioPath, NULL);
     const char *outputPath = env->GetStringUTFChars(joutputPath, NULL);
 
-    FFmpegMuxer *fFmpegMuxer = new FFmpegMuxer();
+    FFmpegH264_AAC_MP4_Muxer *fFmpegMuxer = new FFmpegH264_AAC_MP4_Muxer();
 
-    fFmpegMuxer->Transform(videoPath, audioPath, outputPath);
+//    fFmpegMuxer->AAC_H264_FILE_To_MP4(videoPath, audioPath, outputPath);
+    fFmpegMuxer->AAC_H264_STREAM_To_MP4(videoPath, audioPath, outputPath);
+//    fFmpegMuxer->H264_stream_To_MP4(videoPath, audioPath, outputPath);
+
 
     delete fFmpegMuxer;
+
 
     env->ReleaseStringUTFChars(jvideoPath, videoPath);
     env->ReleaseStringUTFChars(jaudioPath, audioPath);
@@ -30,10 +34,8 @@ void muxer(JNIEnv *env, jobject obj, jstring jvideoPath, jstring jaudioPath,
  * 动态注册
  */
 JNINativeMethod methods[] = {
-        {"muxer", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", (void *) muxer}
+        {"AAC_H264_FILE_2_MP4", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", (void *) AAC_H264_FILE_To_MP4}
 };
-
-
 
 
 /**

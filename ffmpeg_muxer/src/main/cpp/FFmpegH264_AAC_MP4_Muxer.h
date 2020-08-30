@@ -13,7 +13,7 @@ extern "C" {
 #include <libswscale/swscale.h>
 };
 
-class FFmpegMuxer {
+class FFmpegH264_AAC_MP4_Muxer {
 
 private:
 
@@ -40,12 +40,41 @@ public:
 
     void WritePTS(AVPacket *avPacket, AVStream *inputStream);
 
+    /**
+     * AAC H264 open_input 方式读取文件
+     * @param videoPath
+     * @param audioPath
+     * @param outputPath
+     * @return
+     */
     int AAC_H264_FILE_To_MP4(const char *videoPath, const char *audioPath, const char *outputPath);
-    int Transform(const char *videoPath, const char *audioPath, const char *outputPath);
 
 
-    //------------------------- 测试 ---------------------
-    int memoryTransform(const char *videoPath, const char *audioPath, const char *outputPath);
+    /**
+     * FFMpeg 直接读取视频 H264 裸流数据
+     * @param videoPath
+     * @param audioPath
+     * @param outputPath
+     * @return
+     */
+    int H264_2_MP4(const char *videoPath, const char *audioPath, const char *outputPath);
+
+    /**
+    * FFMpeg 直接读取 AAC 裸流数据
+    * @param videoPath
+    * @param audioPath
+    * @param outputPath
+    * @return
+    */
+    int AAC_2_MP4(const char *videoPath, const char *audioPath, const char *outputPath);
+    /**
+    * FFMpeg 读取 AAC H264 裸流数据
+    * @param videoPath
+    * @param audioPath
+    * @param outputPath
+    * @return
+    */
+    int AAC_H264_STREAM_To_MP4(const char *videoPath, const char *audioPath, const char *outputPath);
 
 
 };
