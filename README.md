@@ -36,24 +36,24 @@
 
 
 
-| 组件库                                                       | 对应关系                          | 是否完成 | 完成时间 |
-| ------------------------------------------------------------ | --------------------------------- | -------- | -------- |
-| [fdkaac_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/fdkaac_audio_encode_decode/src/main/cpp) | Libfdk-aac 音频编解码             | ✅        | 2020-06-08 |
-| [x264_video_encode](https://github.com/yangkun19921001/AVSample/tree/master/x264_video_encode)                                        | Libx264 视频编码                | ✅       | 2020-06-11 |
-| [mediacodec_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_audio_encode_decode) | Android MediaCodec AAC 硬编解码   | ✅       | 2020-06-14 |
-| [mediacodec_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_video_encode_decode) | Android MediaCodec H264 硬编解码  | ✅       | 2020-06-16 |
-| [ffmpeg_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_audio_encode_decode)                               | FFmpeg API 实现音频 AAC 软编解码  |  ✅         |   2020-06-21      |
-| [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |
-| [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |
-| [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) |    ✅   |      2020-06-28     |
-| [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放(PCM/YUV) | ✅  | 2020-07-02 |
-| [ffmpeg_muxer](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_muxer) | 基于 h264,AAC 文件打包为 MP4 | ✅ | 2020-08-25 |
-| [camera_recorder](https://github.com/yangkun19921001/AVSample/tree/master/camera_recorder) | 基础实战:OpenGL ES 实现相机预览->硬编码->实时 音视频/图片音频 合成mp4 |  ✅  | 2020-07-11 |
-| [AVRtmpPushSDK](https://github.com/yangkun19921001/AVRtmpPushSDK) | 中级实战- rtmp 推流 SDK | ✅  | 2020-07-19 |
-| [AVEditer](https://github.com/yangkun19921001/AVEditer) | 高级实战-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | |
-| [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | |
-|                                                              |                                                         |           | |
-| ... |  |  | |
+| 组件库                                                       | 对应关系                          | 是否完成 | 完成时间 | 最后更新时间 |
+| ------------------------------------------------------------ | --------------------------------- | -------- | -------- | -------- |
+| [fdkaac_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/fdkaac_audio_encode_decode/src/main/cpp) | Libfdk-aac 音频编解码             | ✅        | 2020-06-08 |  |
+| [x264_video_encode](https://github.com/yangkun19921001/AVSample/tree/master/x264_video_encode)                                        | Libx264 视频编码                | ✅       | 2020-06-11 |  |
+| [mediacodec_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_audio_encode_decode) | Android MediaCodec AAC 硬编解码   | ✅       | 2020-06-14 |  |
+| [mediacodec_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/mediacodec_video_encode_decode) | Android MediaCodec H264 硬编解码  | ✅       | 2020-06-16 |  |
+| [ffmpeg_audio_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_audio_encode_decode)                               | FFmpeg API 实现音频 AAC 软编解码  |  ✅         |   2020-06-21      |         |
+| [ffmpeg_video_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_video_encode_decode)                               | FFmpeg API 实现视频 H264 软编解码 |  ✅        |   2020-06-23      |         |
+| [lame_ffmpeg_mp3_encode_decode](https://github.com/yangkun19921001/AVSample/tree/master/lame_ffmpeg_mp3_encode_decode)                                 | MP3 编解码                       | ✅          |    2020-06-25     |         |
+| [JavaAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/javaavplayer) | Java API 实现音视频播放(mp3/mp4/pcm/yuv) |    ✅   |      2020-06-28     |           |
+| [NativeAVPlayer](https://github.com/yangkun19921001/AVSample/tree/master/nativeavplayer) | Native 端实现音视频播放(PCM/YUV) | ✅  | 2020-07-02 |  |
+| [ffmpeg_muxer](https://github.com/yangkun19921001/AVSample/tree/master/ffmpeg_muxer) | 基于 h264,AAC 文件打包为 MP4 | ✅ | 2020-08-25 | 2020-08-30 |
+| [camera_recorder](https://github.com/yangkun19921001/AVSample/tree/master/camera_recorder) | 基础实战:OpenGL ES 实现相机预览->硬编码->实时 音视频/图片音频 FFmpeg 合成 mp4 |  ✅  | 2020-07-11 | 2020-08-30 |
+| [AVRtmpPushSDK](https://github.com/yangkun19921001/AVRtmpPushSDK) | 中级实战- rtmp 推流 SDK | ✅  | 2020-07-19 |  |
+| [AVEditer](https://github.com/yangkun19921001/AVEditer) | 高级实战-短视频 SDK(音视频编辑 + 直播推流 + 音视频播放)  | 进行中... | | |
+| [NDK_OpenGL_ES3.0](https://github.com/yangkun19921001/NDK_OpenGL_ES3.0) | Native 端 OpenGL ES 3.0 实践 | 进行中... | | |
+|                                                              |                                                         |           | | |
+| ... |  |  | | |
 
  
 
