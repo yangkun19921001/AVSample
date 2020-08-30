@@ -4,36 +4,35 @@
 
 #include <jni.h>
 #include <cstddef>
-#include "FFmpegMuxer.h"
 #include "AVPacketPool.h"
-#include "recording_h264_publisher.h"
-//#include "FFmpegMuxer.h"
+#include "mp4_muxer.h"
 
 
-FFmpegMuxer *fFmpegMuxer = 0;
-RecordingPublisher *recordingPublisher = 0;
-
-
+Mp4Muxer *mp4Muxer = 0;
 
 void Android_JNI_init(JNIEnv *env, jobject obj,
                       jstring joutputPath) {
 
     const char *outputPath = env->GetStringUTFChars(joutputPath, NULL);
 
-//    fFmpegMuxer = new FFmpegMuxer();
-
-//    fFmpegMuxer->Transform(outputPath);
-
-
-    recordingPublisher = new RecordingH264Publisher();
-    AVPacketPool::GetInstance()->destoryAudioPacketQueue();
-    AVPacketPool::GetInstance()->destoryRecordingVideoPacketQueue();
-    AVPacketPool::GetInstance()->initAVQueue();
-
-    int ret = recordingPublisher->init(const_cast<char *>(outputPath), 1280, 720, 25, 2000 * 1000, 44100, 1, 64 * 1000);
-    if (ret >= 0)
-        recordingPublisher->start();
-
+    mp4Muxer = new Mp4Muxer();
+    std::string tag_name("AVTools");
+    int ret = mp4Muxer->Init(outputPath, 1280, 720, 25, 2000 * 1000, 44100, 1, 64 * 1000, tag_name);
+    if (ret >= 0) {
+        while (1) {
+            ret = mp4Muxer->Encode();
+            if (ret < 0) {
+                break;
+            }
+        }
+        LOGE("MP4--->合并完成 %d  %s", ret,outputPath);
+    } else {
+        if (nullptr != mp4Muxer) {
+            mp4Muxer->Stop();
+            delete mp4Muxer;
+            mp4Muxer = nullptr;
+        }
+    }
 
     env->ReleaseStringUTFChars(joutputPath, outputPath);
 }
@@ -41,25 +40,9 @@ void Android_JNI_init(JNIEnv *env, jobject obj,
 void Android_JNI_enqueue(JNIEnv *env, jobject obj, jbyteArray data, jint isAudio, jlong pts) {
     jint size = env->GetArrayLength(data);
     jbyte *datas = env->GetByteArrayElements(data, 0);
-    if (recordingPublisher) {
-        if (isAudio) {
-            AVPacketPool::GetInstance()->enqueueAudio(reinterpret_cast<uint8_t *>(datas), size, pts);
-        } else {
-            AVPacketPool::GetInstance()->enqueueVideo(reinterpret_cast<uint8_t *>(datas), size, pts);
-        }
-//
-//        AVData avData;
-//        avData.alloc(size, reinterpret_cast<const char *>(datas));
-//        avData.isAudio = isAudio;
-//        avData.pts = pts;
-//        fFmpegMuxer->writeAVPacket(avData);
-    }
-//
-//    if (!isStart) {
-//        recordingPublisher->start();
-//        isStart = true;
-//
-//    }
+
+    if (mp4Muxer)
+        mp4Muxer->enqueue(reinterpret_cast<uint8_t *>(datas), isAudio, size, pts);
 
 
     env->ReleaseByteArrayElements(data, datas, 0);
@@ -67,28 +50,19 @@ void Android_JNI_enqueue(JNIEnv *env, jobject obj, jbyteArray data, jint isAudio
 }
 
 void Android_JNI_close(JNIEnv *env, jobject obj) {
-//    if (fFmpegMuxer) {
-//        fFmpegMuxer->close();
-//        delete fFmpegMuxer;
-//        fFmpegMuxer = 0;
-//    }
-    if (recordingPublisher) {
-        AVPacketPool::GetInstance()->getAudioPacketQueue()->abort();
-        AVPacketPool::GetInstance()->getVideoPacketQueue()->abort();
-        recordingPublisher->interruptPublisherPipe();
-        recordingPublisher->stop();
-        delete recordingPublisher;
-        recordingPublisher = nullptr;
-        AVPacketPool::GetInstance()->destoryRecordingVideoPacketQueue();
-        AVPacketPool::GetInstance()->destoryAudioPacketQueue();
+
+
+    if (mp4Muxer) {
+        if (nullptr != mp4Muxer) {
+            mp4Muxer->Stop();
+            delete mp4Muxer;
+            mp4Muxer = nullptr;
+        }
     }
 
 }
 
 void Android_JNI_start(JNIEnv *env, jobject obj) {
-    if (recordingPublisher) {
-        recordingPublisher->start();
-    }
 
 }
 

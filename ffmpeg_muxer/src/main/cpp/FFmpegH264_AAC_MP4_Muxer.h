@@ -6,7 +6,7 @@
 #define AVSAMPLE_FFMPEGMUXER_H
 
 
-extern "C"{
+extern "C" {
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavutil/avutil.h>
@@ -40,7 +40,13 @@ public:
 
     void WritePTS(AVPacket *avPacket, AVStream *inputStream);
 
+    int AAC_H264_FILE_To_MP4(const char *videoPath, const char *audioPath, const char *outputPath);
     int Transform(const char *videoPath, const char *audioPath, const char *outputPath);
+
+
+    //------------------------- 测试 ---------------------
+    int memoryTransform(const char *videoPath, const char *audioPath, const char *outputPath);
+
 
 };
 

@@ -127,10 +127,10 @@ public class MP4Packer(context: Context, textureId: Int, eglContext: EGLContext,
      *  音频 pts 时间戳问题 新的时间戳必须比旧的时间戳大
      */
     override fun onAudioEncode(bb: ByteBuffer, bi: MediaCodec.BufferInfo) {
-        var data = ByteArray(bi.size)
+        var data = ByteArray(bi.size )
         bb?.position(bi.offset)
         bb?.limit(bi.offset + bi.size)
-        bb.get(data)
+        bb.get(data,0,bi.size)
 //        addADTStoPacket(data, data.size)
         NativeMuxer.enqueue(data, 1, bi.presentationTimeUs)
 
