@@ -158,8 +158,6 @@ public abstract class BaseVideoEncoder : IVideoCodec {
                     onVideoOutformat(mMediaCodec?.outputFormat)
                 }
 
-
-
                 if (outBufferIndex!! >= 0) {
                     val bb = outBuffers!![outBufferIndex]
                     if (mPts == 0L)

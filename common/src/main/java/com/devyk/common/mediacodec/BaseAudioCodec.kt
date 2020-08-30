@@ -34,6 +34,7 @@ abstract class BaseAudioCodec(private val mAudioConfiguration: AudioConfiguratio
 
     @Synchronized
     override fun prepareCoder() {
+        mPts = 0;
         mMediaCodec = AudioMediaCodec.getAudioMediaCodec(mAudioConfiguration!!)
         mMediaCodec!!.start()
         Log.e("encode", "--start")
